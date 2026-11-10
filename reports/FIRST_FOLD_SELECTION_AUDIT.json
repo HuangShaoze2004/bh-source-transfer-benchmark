@@ -1,0 +1,39 @@
+{
+  "status": "PASS",
+  "checked_utc": "2026-11-10T05:53:07.279305+00:00",
+  "scope": "first outer fold internal selection and cache reuse, no external metrics",
+  "fold": "az_eln_2023",
+  "lock_sha256": "b7005aff7fa71ab452015047b8b3a0d0aa0efa718fcdb937915d1267f6576a84",
+  "selection_sha256": "4f04d0eb2b176d410cad456a4204caf84d1d27650a9d292ac9f3ae4e2667a978",
+  "common_completed_configurations": {
+    "erm": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "bal": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "dro": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  "neural_objectives": [
+    "erm",
+    "bal",
+    "dro"
+  ],
+  "tree_calibration_models": [
+    "R0_RF",
+    "R0_HGB",
+    "R1_substitute"
+  ],
+  "next_source_training_live_pid": 816239
+}
