@@ -1,0 +1,62 @@
+{
+  "checked_utc": "2026-11-10T03:23:19.879998+00:00",
+  "status": "INCOMPLETE",
+  "previous_turn_classification": "progress: implemented and launched full locked matrix; live processes verified this turn",
+  "evidence": {
+    "raw_data_audit": {
+      "status": "verified",
+      "paths": [
+        "DATA_AUDIT.md",
+        "data/audit/summary.json"
+      ]
+    },
+    "frozen_protocol": {
+      "status": "verified",
+      "sha256": "b7005aff7fa71ab452015047b8b3a0d0aa0efa718fcdb937915d1267f6576a84",
+      "all_artifact_hashes_match": true
+    },
+    "pretrained_smoke_and_fit": {
+      "status": "verified",
+      "path": "artifacts/FEASIBILITY.json"
+    },
+    "correctness_tests": {
+      "status": "verified",
+      "original_suite_passed": 65,
+      "additional_training_audit_tests_passed": 6,
+      "changed_report_regression_tests_passed": 12
+    },
+    "actual_training_state_audit": {
+      "status": "verified_for_completed_internal_trajectory_only",
+      "updates": 4560,
+      "swa_snapshots": [
+        21,
+        11
+      ],
+      "path": "runs/trajectories/dev_az_eln_2023_erm_g0_i0/last.pt"
+    },
+    "nested_development": {
+      "status": "running",
+      "completed_runs": [
+        "dev_az_eln_2023_erm_g0_i0",
+        "dev_az_eln_2023_erm_g0_i1",
+        "dev_az_eln_2023_bal_g0_i0"
+      ],
+      "running_or_pending_runs": [
+        "dev_az_eln_2023_bal_g0_i1"
+      ]
+    },
+    "formal_three_seed_comparison": {
+      "status": "pending"
+    },
+    "both_label_and_DD_sensitivities": {
+      "status": "data_prepared_training_pending"
+    },
+    "final_predictions_bootstrap_and_independent_metrics": {
+      "status": "pending"
+    },
+    "final_report_and_scientific_readiness": {
+      "status": "pending"
+    }
+  },
+  "completion_claim_permitted": false
+}

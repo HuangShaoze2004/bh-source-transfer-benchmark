@@ -455,6 +455,13 @@ def update_state(project, status, reason, audit=None):
 def finalize(project):
     project = Path(project).resolve()
     bundle = audit_project(project)
+    training_audit = {"status": "NOT_APPLICABLE", "reason": "Synthetic fixture without a neural training protocol"}
+    if "neural_base_config" in bundle["lock"]:
+        import importlib.util
+        spec = importlib.util.spec_from_file_location("saved_training_auditor", project/"scripts/audit_training.py")
+        module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(module)
+        training_audit = module.audit_project(project)
     out = project/"reports/final"
     acceptance, contrasts = validate_statistics(bundle)
     secondary = secondary_assessment(bundle, contrasts)
@@ -497,7 +504,7 @@ def finalize(project):
     dump(out/"domain_analysis.json", domain)
     intervals = pd.read_csv(out/"intervals.csv")
     scientific_figures(bundle, intervals, out)
-    core_complete = CORE_MODELS <= set(bundle["lock"]["models"]) and len(bundle["lock"]["seeds"]) >= 3 and domain["status"] == "COMPLETE"
+    core_complete = CORE_MODELS <= set(bundle["lock"]["models"]) and len(bundle["lock"]["seeds"]) >= 3 and domain["status"] == "COMPLETE" and training_audit['status'] in ('PASS','NOT_APPLICABLE')
     status = choose_status(acceptance, core_complete, True, sensitivity_states, budget, secondary)
     evidence_basis = ("primary_confirmed" if acceptance.get("status") == "INCREMENT_CRITERION_MET"
                       else "preregistered_secondary_holm" if any(s["meets_secondary_rule"] for s in secondary) else "no_increment_criterion_met")
@@ -531,7 +538,7 @@ def finalize(project):
              "精确试剂覆盖保留电荷、盐和配位形态。AZ/Merck/Roche催化剂精确结构训练覆盖可能为0，JNJ约1.95%；这不等于催化剂化学类别全新。需同时考虑底物新颖性、相似度、试剂形态覆盖和来源正类率。全部分层含行/底物对/来源覆盖见final/exploratory_domain_strata.csv。", "",
              "## 预注册敏感性分析", "", *sensitivity_text,
              "Dreher Doyle原版本缺少具体添加剂身份，仅作为条件不完整敏感性，不纳入主结论。其加入会改变严格测试集合；共同row_id配对结果使用固定主真值，不能把集合变化解释成训练改善。作者标签敏感性同时报告原生标签与固定主真值，标签标准变化和模型变化不能混为一谈。", "",
-             "## 运行成本、失败与独立核验", "", "预算记录：`" + json.dumps(budget, ensure_ascii=False) + "`。失败与重试累计；upper_bound标记的是结束时刻不明的孤儿任务保守收费。完整成功/失败账本见final/run_inventory.csv及../runs/ledger.jsonl。报告生成任务若仍在运行，其最终小额成本以随后完成的guard账本为准。", "",
+             "## 运行成本、失败与独立核验", "", "实际训练审计：`"+json.dumps(training_audit,ensure_ascii=False)+"`。逐轨迹更新数、样本曝光、SWA快照数及GroupDRO权重/有效样本量见final/training_budget_audit.csv与final/groupdro_trajectories.csv；权重图见final/groupdro_weight_trajectories.png。权重集中仅描述优化行为，不能证明未见来源泛化或反应机理。", "", "预算记录：`" + json.dumps(budget, ensure_ascii=False) + "`。失败与重试累计；upper_bound标记的是结束时刻不明的孤儿任务保守收费。完整成功/失败账本见final/run_inventory.csv及../runs/ledger.jsonl。报告生成任务若仍在运行，其最终小额成本以随后完成的guard账本为准。", "",
              markdown_table(failures[[c for c in ("run_id", "stage", "status", "exit_code", "gpu_hours", "cpu_core_hours", "reason") if c in failures]]), "",
              "独立审计PASS：逐条标签/来源/底物实体/底物对/条件ID与冻结records一致；锁定模型×seed×行矩阵完整；sklearn独立重建主表及逐来源逐seed指标，与原评价表在1e-10容差内一致。审计清单和源码hash见final/independent_audit.json。", "",
              "## 局限、文献差异与复现", "", "CAD、isolated yield、MisER与LCAP混合测量，统一10%阈值不消除测量差异；温度、时间、浓度与部分载量缺失。无标签预训练与测试结构的重叠不能排除。来源均衡可能解释部分收益，因此保留B_bal及B_bal_S。GroupDRO/SWA为成熟方法，注意力或特征归因不能证明机理。负结果如实交付，未达到门槛不强行宣称增量。", "",

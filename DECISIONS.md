@@ -32,3 +32,7 @@
 ## Environment bootstrap
 - Main packages pinned in requirements.lock.txt. Initial large wheel downloads were interrupted by this agent because throughput was poor; no GPU work was started. The installed PyTorch2.8.0+cu128 and its runtime dependencies were independently copied into this project's venv (not symlinked), with distribution provenance saved. Other pinned wheels installed from the public Tsinghua PyPI mirror. Other environments were not modified.
 - Setup outside the central job launcher is charged a conservative one CPU-core-hour allowance, covering environment work, initial downloads, data preparation and CPU unit tests; this is explicitly an upper-bound allowance, not a measured exact cost. Subsequent guarded runs use measured CPU accounting and elapsed allocated GPU time, including failures.
+
+## Post-freeze delivery audit, 2026-11-10T03:23:19.879998+00:00
+- Added an independent auditor for actual optimizer updates, training-only IDs, selection configs, all resumable states, sample exposure, normalized group weights/ESS and multiple SWA snapshots. It is invoked only after completed evaluation by the report generator. No frozen model, input, split, metric or selection code changed.
+- Six new fault-injection tests and twelve existing report regression tests passed. A completed internal ERM trajectory passed real-state audit (4560 updates; 21/11 SWA snapshots). Final 45-trajectory equality and diagnostics remain pending until those runs exist.
