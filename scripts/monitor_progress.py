@@ -31,6 +31,8 @@ def main():
                 family = "sensitivity_prediction"
             else:
                 family = "sensitivity_tree" if "R1_substitute" in run_id else "sensitivity_neural"
+        elif run_id.startswith("review_") and run_id.endswith("_evaluation_v1"):
+            family = "evaluation"
         counts[family][job["status"]] += 1
         if job["status"] != "running":
             continue
@@ -77,9 +79,26 @@ def main():
             path = root / name
             if not path.exists() or guard.sha256_file(path) != expected:
                 mismatches.append(name)
+    evaluation_progress = {}
+    projects = {"primary": root,
+                "author_labels": root / "sensitivity/author_labels",
+                "dd_original": root / "sensitivity/dd_original"}
+    for name, project in projects.items():
+        for scheme in ("pair", "pigeonhole"):
+            path = project / "reports/final" / f"bootstrap_{scheme}.json"
+            if not path.exists():
+                continue
+            try:
+                metadata = json.loads(path.read_text())
+                # Read only progress counters, never metric arrays or scores.
+                progress = {key: int(metadata[key]) for key in ("completed", "requested")}
+            except (OSError, ValueError, KeyError, TypeError) as exc:
+                progress = {"observation_error": str(exc)}
+            evaluation_progress.setdefault(name, {})[scheme] = progress
     print(json.dumps({"utc": dt.datetime.now(dt.timezone.utc).isoformat(),
                       "counts": dict(counts), "active": active,
                       "controller": controller, "budget": guard.totals(),
+                      "evaluation_progress": evaluation_progress,
                       "frozen_artifact_mismatches": mismatches,
                       "unreadable_status_files": unreadable}, indent=2))
 

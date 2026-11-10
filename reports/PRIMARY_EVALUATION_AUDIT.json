@@ -1,0 +1,169 @@
+{
+  "checked_utc": "2026-11-10T21:55:14.599878+00:00",
+  "status": "PASS",
+  "scope": "Complete primary evaluation only",
+  "independent_metric_and_leakage_audit": {
+    "status": "PASS",
+    "predictions_sha256": "26fa5487d45ac043bfc07e43bee7c9b789eeafd4e6d72f6a7adb86dc3950078d",
+    "lock_sha256": "b7005aff7fa71ab452015047b8b3a0d0aa0efa718fcdb937915d1267f6576a84",
+    "auditor_sha256": "9121865ef324505cabcf99ebd7e63deab0a149e2188b6c1a6d0ee7e38ed5a36c",
+    "checked_rows": 387666,
+    "metric_backend": "sklearn; no bh_transfer.evaluate import",
+    "split_summary": [
+      {
+        "fold": "az_eln_2023",
+        "source": "AZ ELN 2023",
+        "eligible": true,
+        "test_rows": 607,
+        "test_pairs": 376,
+        "test_aryls": 230,
+        "test_amines": 207,
+        "inner_splits": 2
+      },
+      {
+        "fold": "dreher_2014",
+        "source": "Dreher 2014",
+        "eligible": false,
+        "test_rows": 0,
+        "test_pairs": 0,
+        "test_aryls": 0,
+        "test_amines": 0,
+        "inner_splits": 2
+      },
+      {
+        "fold": "dreher_2016",
+        "source": "Dreher 2016",
+        "eligible": false,
+        "test_rows": 0,
+        "test_pairs": 0,
+        "test_aryls": 0,
+        "test_amines": 0,
+        "inner_splits": 2
+      },
+      {
+        "fold": "hitea_2024",
+        "source": "HiTEA 2024",
+        "eligible": false,
+        "test_rows": 1387,
+        "test_pairs": 15,
+        "test_aryls": 14,
+        "test_amines": 13,
+        "inner_splits": 2
+      },
+      {
+        "fold": "jnj_hte_2024",
+        "source": "JNJ HTE 2024",
+        "eligible": true,
+        "test_rows": 8016,
+        "test_pairs": 546,
+        "test_aryls": 90,
+        "test_amines": 65,
+        "inner_splits": 2
+      },
+      {
+        "fold": "merck_2025",
+        "source": "Merck 2025",
+        "eligible": true,
+        "test_rows": 2668,
+        "test_pairs": 2668,
+        "test_aryls": 335,
+        "test_amines": 8,
+        "inner_splits": 2
+      },
+      {
+        "fold": "roche_2023",
+        "source": "Roche 2023",
+        "eligible": true,
+        "test_rows": 1680,
+        "test_pairs": 65,
+        "test_aryls": 28,
+        "test_amines": 18,
+        "inner_splits": 2
+      }
+    ]
+  },
+  "statistics_checks": [
+    "bootstrap coverage and identities",
+    "registered contrast coverage",
+    "independent Holm correction",
+    "primary acceptance reconstruction"
+  ],
+  "registered_contrasts": 20,
+  "primary_acceptance": {
+    "status": "INCREMENT_CRITERION_NOT_MET",
+    "candidate": "B_A_S",
+    "comparator_set": [
+      "B",
+      "B_bal",
+      "R0_RF",
+      "R0_HGB",
+      "R1_substitute"
+    ],
+    "strongest_observed_comparator": "B",
+    "delta_auroc": 0.001045085165827575,
+    "bootstrap_vs_max_comparator": {
+      "low": -0.01266033758943054,
+      "high": 0.015264845157835338,
+      "valid_replicates": 5000,
+      "invalid_fraction": 0.0
+    },
+    "min_source_delta_vs_max_comparator": -0.048636741125867855,
+    "source_deltas": {
+      "AZ ELN 2023": 0.030595493015193265,
+      "JNJ HTE 2024": -0.048636741125867855,
+      "Merck 2025": 0.018327658052678997,
+      "Roche 2023": -0.0355815301354141
+    },
+    "combination_contrasts": [
+      {
+        "comparator": "B_A",
+        "delta": -0.0009315203937364513,
+        "low": -0.003317552986986849,
+        "high": 0.0012942492848156343,
+        "valid_replicates": 5000,
+        "invalid_fraction": 0.0
+      },
+      {
+        "comparator": "B_S",
+        "delta": 0.002147859544104014,
+        "low": -0.012269970691785675,
+        "high": 0.017214129932947655,
+        "valid_replicates": 5000,
+        "invalid_fraction": 0.0
+      },
+      {
+        "comparator": "B_bal_S",
+        "delta": 0.01838064072751089,
+        "low": 0.00958917432614812,
+        "high": 0.027600129978278473,
+        "valid_replicates": 5000,
+        "invalid_fraction": 0.0
+      }
+    ],
+    "criteria": {
+      "min_macro_delta": 0.02,
+      "max_source_regression": 0.03,
+      "ci_low_above": 0,
+      "max_invalid_bootstrap_fraction": 0.05
+    },
+    "limitation": "Evidence conditional on these sources and fitted seeds; not a publication-readiness verdict"
+  },
+  "artifact_sha256": {
+    "FINAL_EVAL_LOCK.json": "b7005aff7fa71ab452015047b8b3a0d0aa0efa718fcdb937915d1267f6576a84",
+    "artifacts/PREDICTION_COMPLETENESS.json": "a7a11a33ea2acac1197efef08346211ee4159e34d1d8cf9f68dc01092cb68246",
+    "artifacts/predictions.parquet": "26fa5487d45ac043bfc07e43bee7c9b789eeafd4e6d72f6a7adb86dc3950078d",
+    "reports/final/evaluation_manifest.json": "4f6bb34a358f74bc10a81b121dfbd3dd0888ed744458e3fa0c6883329d1c8d5c",
+    "reports/final/main_table.csv": "2b04bac819649f6128754babc1749bad979210d1b0a8f77d981832d19e264e8f",
+    "reports/final/metrics_by_source_seed.csv": "0f53f7648391f3403929970fd4c6e06de184ce875e95bce161dbe6168847f63b",
+    "reports/final/comparisons.json": "948ef38a9a3a66f5359e0b7ca38bc1468b02e1cdc828929b53cb9727f17d79fd",
+    "reports/final/acceptance.json": "1e9919c1d54d187fb622f988789a877e12c64ebd2243e28f9254cdfa42ae9c04",
+    "reports/final/bootstrap_pair.json": "5eb6bd0ee2cb73fba17fe43fc8be6edbf71474ac2b8e5cf263ee3b15acc707e9",
+    "reports/final/bootstrap_pair.npz": "b328f1d92aa9ea9607e52385de63bc6dc693f502409f499783dcf45be608bbe4",
+    "reports/final/bootstrap_pigeonhole.json": "216ddd8f482ca27c917bc437933b8aaa97c5104c525bbc52cfecff639ff0fe85",
+    "reports/final/bootstrap_pigeonhole.npz": "7ab6b0fe24482354a623efc054702cd0d03bef97fde330df5ec0578dba45d2c2"
+  },
+  "runner_sha256": "b3450ce242b89b5328977f107a547a0102cffb797063c1db911d68289f1f89d0",
+  "sensitivity_results_read": false,
+  "experimental_completion_claimed": false,
+  "limitation": "Bootstrap draws were checked, not independently regenerated; both training sensitivities and full final reporting remain required."
+}

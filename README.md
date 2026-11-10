@@ -65,6 +65,14 @@ OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 .venv/bin/python scri
 
 The completed audit is archived in `reports/ALL_FORMAL_NEURAL_RUNTIME_AUDIT.json`; its tables and plots are in `reports/final/`. This verifies training artifacts and does not establish external performance or completion of sensitivity analyses. The final report checks training and prediction evidence again after full evaluation.
 
+After the complete primary evaluation manifest exists, independently reconstruct its metrics and verify leakage, bootstrap identities, registered contrasts, Holm correction and primary acceptance:
+
+```bash
+OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 .venv/bin/python scripts/run_guard.py --run-id review_primary_metrics_pre_sensitivity_v1 --stage review --threads 1 -- .venv/bin/python scripts/audit_primary_evaluation.py --project .
+```
+
+Its evidence is in `reports/PRIMARY_EVALUATION_AUDIT.json`. This primary-only audit does not read incomplete sensitivity results or finalize scientific readiness. Bootstrap draws are checked rather than independently regenerated.
+
 ## Output interpretation
 
 All seeds are evaluated separately before averaging metrics; no seed ensemble is reported as a single model. Bootstrap samples substrate pairs, not individual condition rows or seeds. Shared-substrate sensitivity is required because even thousands of pairs may share very few amines. Top-k uses measured alternatives only. Negative outcomes, incomplete source coverage, baseline reconstruction limitations and heterogeneous yield assays must remain visible.
