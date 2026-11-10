@@ -1,0 +1,97 @@
+{
+  "status": "PASS",
+  "fold": "az_eln_2023",
+  "training_rows": 22435,
+  "strict_test_rows": 607,
+  "all_changed_labels": 28,
+  "changed_labels_in_strict_test": 23,
+  "changed_labels_in_training": 0,
+  "audited": [
+    {
+      "seed": 17,
+      "objective": "erm",
+      "updates": 4680,
+      "checkpoint_parameter_equality": {
+        "best.pt": true,
+        "swa_050.pt": true
+      }
+    },
+    {
+      "seed": 17,
+      "objective": "dro",
+      "updates": 4680,
+      "checkpoint_parameter_equality": {
+        "best.pt": false,
+        "swa_075.pt": false
+      }
+    },
+    {
+      "seed": 42,
+      "objective": "erm",
+      "updates": 4680,
+      "checkpoint_parameter_equality": {
+        "best.pt": true,
+        "swa_050.pt": true
+      }
+    },
+    {
+      "seed": 42,
+      "objective": "dro",
+      "updates": 4680,
+      "checkpoint_parameter_equality": {
+        "best.pt": true,
+        "swa_075.pt": true
+      }
+    },
+    {
+      "seed": 2026,
+      "objective": "erm",
+      "updates": 4680,
+      "checkpoint_parameter_equality": {
+        "best.pt": true,
+        "swa_050.pt": true
+      }
+    },
+    {
+      "seed": 2026,
+      "objective": "dro",
+      "updates": 4680,
+      "checkpoint_parameter_equality": {
+        "best.pt": true,
+        "swa_075.pt": true
+      }
+    }
+  ],
+  "all_selected_checkpoint_tensors_equal": false,
+  "main_lock_sha256": "b7005aff7fa71ab452015047b8b3a0d0aa0efa718fcdb937915d1267f6576a84",
+  "sensitivity_lock_sha256": "208273c7d487cbaae271a3f6d004f655b0a318a5554c637eee9106600fa8814f",
+  "outer_predictions_read": false,
+  "seed17_dro_numerical_diagnostic": {
+    "group_history_rows": 28080,
+    "fixed_sampling_exposure_and_lr_columns_equal": true,
+    "first_numeric_difference": {
+      "step": 886,
+      "source": "Dreher 2014",
+      "field": "weight",
+      "primary": 0.017917271703481674,
+      "alternative": 0.017917267978191376,
+      "abs_delta": 3.725290298461914e-09
+    },
+    "max_abs_log_differences": {
+      "group_loss": 0.14110469818115234,
+      "weight": 0.0009483397006988525,
+      "group_weight_ess": 0.0020461082458496094,
+      "effective_batch_ess": 0.016370007782402496
+    },
+    "checkpoint_parameter_distances": {
+      "best.pt": {
+        "max_absolute_parameter_delta": 0.001692028425168246,
+        "relative_l2_parameter_delta": 0.0004634337648964306
+      },
+      "swa_075.pt": {
+        "max_absolute_parameter_delta": 0.0016958090127445757,
+        "relative_l2_parameter_delta": 0.0004973226013853332
+      }
+    }
+  }
+}
