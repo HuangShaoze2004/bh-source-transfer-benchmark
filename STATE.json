@@ -1,0 +1,45 @@
+{
+  "status": "CONTINUE",
+  "phase": "representation_fixes_and_correctness_tests",
+  "project": "bh_source_robust_transfer",
+  "goal": "controlled cross-source, both-substrates-unseen C-N coupling feasibility prediction",
+  "gpu_hours_limit": 160,
+  "cpu_core_hours_limit": 500,
+  "development_gpu_hours_limit": 50,
+  "feasibility_gpu_hours_limit": 12,
+  "formal_gpu_hours_reserved": 80,
+  "shared_cpu_thread_limit": 4,
+  "seeds": [
+    17,
+    42,
+    2026
+  ],
+  "outer_metrics_released": false,
+  "completed": [
+    "read_only_environment_check",
+    "startup_literature_and_code_review",
+    "isolated_environment",
+    "raw_data_hash_and_readonly_snapshot",
+    "instruction_preserved"
+  ],
+  "pending": [
+    "isolated_environment",
+    "data_audit",
+    "split_and_input_freeze",
+    "smoke_and_throughput",
+    "nested_selection",
+    "formal_runs",
+    "statistical_review",
+    "experiment_report"
+  ],
+  "budget_accounting": "append-only runs/ledger.jsonl; elapsed GPU job time and measured process CPU time include failures; setup is separately accounted",
+  "limitations": [
+    "Target-product permission not established",
+    "Original QM descriptor names/provenance not verified",
+    "Unlabeled pretraining overlap cannot be excluded"
+  ],
+  "representation_decisions": [
+    "two explicit dative tokens with original IDs retained",
+    "DRFP molecular API avoids separator ambiguity"
+  ]
+}
