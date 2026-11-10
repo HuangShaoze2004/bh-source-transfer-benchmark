@@ -522,6 +522,7 @@ def finalize(project):
              "若仅secondary达标，明确表示主B_A_S确认未成功、预注册简化方案获得多重校正支持；这不改写主假设，不从外层结果追认新的独立确认。简化方案还必须在宏AUROC上不劣于B_bal_S。", "",
              "## 数据、问题与固定协议", "", "目标为未见来源且芳基、胺各自均未见时，判断记录的 Yield 是否至少为10；恰好10为正例。不是精确产率、高产率或未实测条件推荐的验证。",
              f"原始行数 `{data_audit.get('raw_rows', '见DATA_AUDIT')}`；主数据行数 `{len(bundle['records'])}`。合格主来源数 `{sum(f['eligible'] for f in bundle['lock']['folds'])}`；所有来源统计与逐行处置见 [DATA_AUDIT](../DATA_AUDIT.md)。", "",
+             f"机器可核验冻结记录见 [FINAL_EVAL_LOCK](../FINAL_EVAL_LOCK.json)，SHA256 `{sha256(project/'FINAL_EVAL_LOCK.json')}`。EXPERIMENT_PROTOCOL.md保留冻结前的working标题；实际冻结状态、训练预算、候选方法、seed及内层选择规则由该只读锁和其绑定制品给出，外层评价按该锁执行。", "",
              markdown_table(pd.DataFrame(bundle["split_summary"])), "",
              "外层LOSO的整个开发集包含验证/校准，测试两类底物与其实体集合均无交集；同对条件和重复实验不随机跨边界。独立审计从冻结records与splits重新核验，而非复用训练检查函数。",
              "原始存储指纹不可解析，已重算。R0为不使用产品的DRFP；R1_substitute为作者启发的底物Morgan表示＋公开RDKit21试剂描述符，是声明的强替代对照，未准确重建作者底物–产品DRFP＋原QM生产模型，不能声称超过原作模型。全部神经方法使用同样的RDKit21输入。", "",

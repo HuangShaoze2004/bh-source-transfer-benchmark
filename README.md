@@ -31,6 +31,8 @@ OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 .venv/bin/python -u s
 
 On this existing project, reuse the saved lock and resume the pipeline; do not regenerate splits, rerun preflight under changed code IDs, or overwrite the lock. The launcher checks running process identities, inherited resource locks, budget totals and artifact identities before starting a run. All failures and retries remain in `runs/ledger.jsonl`. A stopped trajectory resumes its optimizer, sampler, RNG, GroupDRO and SWA states. Different code/data/config requires a new, explicitly recorded revision/run identity.
 
+`EXPERIMENT_PROTOCOL.md` retains its pre-freeze working title as part of the hashed snapshot. The read-only `FINAL_EVAL_LOCK.json` records the actual frozen status, training budget, candidates, seeds and inner selection rules; evaluation verifies that lock and its bound artifacts. Preserve the historical protocol bytes when resuming.
+
 Only after full prediction coverage is verified:
 
 ```bash
