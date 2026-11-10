@@ -1,0 +1,270 @@
+{
+  "author_labels": {
+    "rows": 23185,
+    "main_artifacts_unchanged": true,
+    "independent_checks": 21,
+    "labels_sha256": "4148abe101ca15ea5c01e9c980580c71b4e2627172f6cb0012caa1b4df075f42",
+    "features_sha256": "9659800e3b890e81669c969a7332b53550155ff4048bb2f566afa2a24fc90296",
+    "splits_sha256": "5219bf35b711b5bd1fc7b73f0532b03dab206f367dd149d1ec2932084e67b0a3",
+    "costs": [
+      {
+        "pid": 704995,
+        "command": [
+          "scripts/prepare_sensitivity.py",
+          "--kind",
+          "author_labels"
+        ],
+        "start_unix": 1794279394.477066,
+        "status": "complete",
+        "elapsed_seconds": 1.279717206954956,
+        "cpu_seconds": 1.279936245,
+        "gpu_seconds": 0,
+        "source_commit": "3a44e398d9fed3f08cf396f1153be2960193f581"
+      }
+    ],
+    "sources": {
+      "az_eln_2023": {
+        "eligible": true,
+        "summary": {
+          "rows": 607,
+          "pairs": 376,
+          "positive_rows": 467,
+          "negative_rows": 140,
+          "positive_pairs": 299,
+          "negative_pairs": 99,
+          "aryls": 230,
+          "amines": 207,
+          "positive_rate": 0.7693574958813838
+        }
+      },
+      "dreher_2014": {
+        "eligible": false,
+        "summary": {
+          "rows": 0,
+          "pairs": 0,
+          "positive_rows": 0,
+          "negative_rows": 0,
+          "positive_pairs": 0,
+          "negative_pairs": 0,
+          "aryls": 0,
+          "amines": 0,
+          "positive_rate": null
+        }
+      },
+      "dreher_2016": {
+        "eligible": false,
+        "summary": {
+          "rows": 0,
+          "pairs": 0,
+          "positive_rows": 0,
+          "negative_rows": 0,
+          "positive_pairs": 0,
+          "negative_pairs": 0,
+          "aryls": 0,
+          "amines": 0,
+          "positive_rate": null
+        }
+      },
+      "hitea_2024": {
+        "eligible": false,
+        "summary": {
+          "rows": 1387,
+          "pairs": 15,
+          "positive_rows": 194,
+          "negative_rows": 1193,
+          "positive_pairs": 11,
+          "negative_pairs": 12,
+          "aryls": 14,
+          "amines": 13,
+          "positive_rate": 0.13987022350396539
+        }
+      },
+      "jnj_hte_2024": {
+        "eligible": true,
+        "summary": {
+          "rows": 8016,
+          "pairs": 546,
+          "positive_rows": 2917,
+          "negative_rows": 5099,
+          "positive_pairs": 519,
+          "negative_pairs": 309,
+          "aryls": 90,
+          "amines": 65,
+          "positive_rate": 0.3638972055888224
+        }
+      },
+      "merck_2025": {
+        "eligible": true,
+        "summary": {
+          "rows": 2668,
+          "pairs": 2668,
+          "positive_rows": 1080,
+          "negative_rows": 1588,
+          "positive_pairs": 1080,
+          "negative_pairs": 1588,
+          "aryls": 335,
+          "amines": 8,
+          "positive_rate": 0.4047976011994003
+        }
+      },
+      "roche_2023": {
+        "eligible": true,
+        "summary": {
+          "rows": 1680,
+          "pairs": 65,
+          "positive_rows": 754,
+          "negative_rows": 926,
+          "positive_pairs": 55,
+          "negative_pairs": 61,
+          "aryls": 28,
+          "amines": 18,
+          "positive_rate": 0.4488095238095238
+        }
+      }
+    }
+  },
+  "dd_original": {
+    "rows": 27497,
+    "main_artifacts_unchanged": true,
+    "independent_checks": 24,
+    "labels_sha256": "dbad816b7f66f3636568769d843a7ca00dfaff0dad1149a1716ac759fdd7b392",
+    "features_sha256": "b9071319b578f7acc6f22901ddee1f6148cc95ccf68646e52ec853d249d98fd4",
+    "splits_sha256": "66783683c3d0486d2468409adbf2f05ec97e23ca82aff130986660bea69a79c9",
+    "costs": [
+      {
+        "pid": 705402,
+        "command": [
+          "scripts/prepare_sensitivity.py",
+          "--kind",
+          "dd_original"
+        ],
+        "start_unix": 1794279432.3687897,
+        "status": "complete",
+        "elapsed_seconds": 31.813374042510986,
+        "cpu_seconds": 31.810894288,
+        "gpu_seconds": 0,
+        "source_commit": "3a44e398d9fed3f08cf396f1153be2960193f581"
+      }
+    ],
+    "sources": {
+      "az_eln_2023": {
+        "eligible": true,
+        "summary": {
+          "rows": 604,
+          "pairs": 373,
+          "positive_rows": 465,
+          "negative_rows": 139,
+          "positive_pairs": 297,
+          "negative_pairs": 98,
+          "aryls": 228,
+          "amines": 207,
+          "positive_rate": 0.7698675496688742
+        }
+      },
+      "dreher_2014": {
+        "eligible": false,
+        "summary": {
+          "rows": 0,
+          "pairs": 0,
+          "positive_rows": 0,
+          "negative_rows": 0,
+          "positive_pairs": 0,
+          "negative_pairs": 0,
+          "aryls": 0,
+          "amines": 0,
+          "positive_rate": null
+        }
+      },
+      "dreher_2016": {
+        "eligible": false,
+        "summary": {
+          "rows": 0,
+          "pairs": 0,
+          "positive_rows": 0,
+          "negative_rows": 0,
+          "positive_pairs": 0,
+          "negative_pairs": 0,
+          "aryls": 0,
+          "amines": 0,
+          "positive_rate": null
+        }
+      },
+      "dreher_doyle_2018": {
+        "eligible": false,
+        "summary": {
+          "rows": 0,
+          "pairs": 0,
+          "positive_rows": 0,
+          "negative_rows": 0,
+          "positive_pairs": 0,
+          "negative_pairs": 0,
+          "aryls": 0,
+          "amines": 0,
+          "positive_rate": null
+        }
+      },
+      "hitea_2024": {
+        "eligible": false,
+        "summary": {
+          "rows": 1381,
+          "pairs": 14,
+          "positive_rows": 188,
+          "negative_rows": 1193,
+          "positive_pairs": 10,
+          "negative_pairs": 12,
+          "aryls": 13,
+          "amines": 12,
+          "positive_rate": 0.13613323678493844
+        }
+      },
+      "jnj_hte_2024": {
+        "eligible": true,
+        "summary": {
+          "rows": 7896,
+          "pairs": 522,
+          "positive_rows": 2797,
+          "negative_rows": 5099,
+          "positive_pairs": 495,
+          "negative_pairs": 309,
+          "aryls": 89,
+          "amines": 65,
+          "positive_rate": 0.35422998986828774
+        }
+      },
+      "merck_2025": {
+        "eligible": true,
+        "summary": {
+          "rows": 2668,
+          "pairs": 2668,
+          "positive_rows": 1080,
+          "negative_rows": 1588,
+          "positive_pairs": 1080,
+          "negative_pairs": 1588,
+          "aryls": 335,
+          "amines": 8,
+          "positive_rate": 0.4047976011994003
+        }
+      },
+      "roche_2023": {
+        "eligible": true,
+        "summary": {
+          "rows": 1560,
+          "pairs": 60,
+          "positive_rows": 663,
+          "negative_rows": 897,
+          "positive_pairs": 50,
+          "negative_pairs": 57,
+          "aryls": 27,
+          "amines": 17,
+          "positive_rate": 0.425
+        }
+      }
+    }
+  },
+  "cross_dataset_checks": {
+    "primary_rows_features_exactly_equal_inside_dd_original": true,
+    "author_label_changes_exactly": 28,
+    "primary_y_primary_split_retained": true,
+    "no_training_started": true
+  }
+}

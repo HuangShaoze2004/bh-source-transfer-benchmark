@@ -1,6 +1,6 @@
 {
   "status": "CONTINUE",
-  "phase": "representation_fixes_and_correctness_tests",
+  "phase": "locked_primary_pipeline_running",
   "project": "bh_source_robust_transfer",
   "goal": "controlled cross-source, both-substrates-unseen C-N coupling feasibility prediction",
   "gpu_hours_limit": 160,
@@ -20,7 +20,12 @@
     "startup_literature_and_code_review",
     "isolated_environment",
     "raw_data_hash_and_readonly_snapshot",
-    "instruction_preserved"
+    "instruction_preserved",
+    "data_audit",
+    "input_and_split_checks",
+    "cpu_correctness_tests",
+    "gpu_fit_and_throughput",
+    "final_protocol_lock"
   ],
   "pending": [
     "isolated_environment",
@@ -41,5 +46,13 @@
   "representation_decisions": [
     "two explicit dative tokens with original IDs retained",
     "DRFP molecular API avoids separator ambiguity"
-  ]
+  ],
+  "evaluation_lock_sha256": "b7005aff7fa71ab452015047b8b3a0d0aa0efa718fcdb937915d1267f6576a84",
+  "controller": {
+    "controller_pid": 712160,
+    "controller_start_time": 1794280064.29,
+    "phase": "locked_primary_pipeline_running",
+    "utc": "2026-11-10T03:16:45.020740+00:00",
+    "worker_pid": 706992
+  }
 }

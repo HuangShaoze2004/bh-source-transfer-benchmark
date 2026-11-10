@@ -1,0 +1,30 @@
+{
+  "purpose": "chemistry and domain covariates only, no model performance",
+  "predictions_read": false,
+  "source_artifacts": {
+    "records.parquet": "9c11cb4c36c2ac65f098f9aacfc2a8e9e2e75356be93e5f2d8271b83b936e212",
+    "splits.json": "5219bf35b711b5bd1fc7b73f0532b03dab206f367dd149d1ec2932084e67b0a3",
+    "features.npz": "9659800e3b890e81669c969a7332b53550155ff4048bb2f566afa2a24fc90296",
+    "feature_manifest.json": "1debbb2b78fda57f3f91b9186a94c74ce6515969f32d1df7512c41e7b3124b65"
+  },
+  "main_artifacts_unchanged": true,
+  "script_sha256": "c38105688b976f99157551a2e35386619a1222def71e4e7d29debfb905a75b25",
+  "rdkit_version": "2025.03.6",
+  "fingerprint": {
+    "method": "Morgan",
+    "radius": 2,
+    "bits": 2048,
+    "includeChirality": false
+  },
+  "similarity_reference": "outer train_ids only, including its internal validation rows; separate aryl and amine roles",
+  "test_row_count": 14358,
+  "unique_substrate_structures_cached": 1485,
+  "similarity_bins": [
+    0.0,
+    0.3,
+    0.5,
+    0.7,
+    1.0
+  ],
+  "output_sha256": "dbfb1638b182311dfd5eaad99c629c76f62bcaf799d81f6d18a3cc3552d1c836"
+}

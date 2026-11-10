@@ -10,7 +10,8 @@ Use Python3.12 in a new local `.venv`. Exact distributions are in `requirements.
 
 ```bash
 uv venv .venv --python python3.12
-uv pip install --python .venv/bin/python --extra-index-url https://download.pytorch.org/whl/cu128 -r requirements.lock.txt
+uv pip install --python .venv/bin/python --index-url https://download.pytorch.org/whl/cu128 torch==2.8.0+cu128
+uv pip install --python .venv/bin/python -r requirements.lock.txt
 uv pip install --python .venv/bin/python --no-deps -e .
 .venv/bin/python scripts/fetch_weights.py
 OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 .venv/bin/python scripts/prepare_data.py

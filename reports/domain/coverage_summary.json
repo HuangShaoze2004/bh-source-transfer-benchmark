@@ -1,0 +1,287 @@
+{
+  "az_eln_2023": {
+    "source": "AZ ELN 2023",
+    "eligible": true,
+    "train_rows": 22435,
+    "test_rows": 607,
+    "test_pairs": 376,
+    "train_positive_rate": 0.37018052150657454,
+    "train_source_balanced_positive_rate": 0.3008455567532334,
+    "source_all_main_positive_rate": 0.7506666666666667,
+    "source_test_positive_rate": 0.7693574958813838,
+    "training_unique_aryl_structures": 513,
+    "training_unique_amine_structures": 471,
+    "catalyst_test_row_coverage": 0.0,
+    "catalyst_test_unique_structure_coverage": 0.0,
+    "base_test_row_coverage": 0.9686985172981878,
+    "base_test_unique_structure_coverage": 0.7272727272727273,
+    "solvent_test_row_coverage": 0.9637561779242174,
+    "solvent_test_unique_structure_coverage": 0.46153846153846156,
+    "aryl_max_similarity_quantiles": {
+      "0": 0.2,
+      "25": 0.25,
+      "50": 0.3488372093023256,
+      "75": 0.47685185185185186,
+      "90": 0.56,
+      "95": 0.6213709677419347,
+      "100": 0.8571428571428571
+    },
+    "amine_max_similarity_quantiles": {
+      "0": 0.15217391304347827,
+      "25": 0.26666666666666666,
+      "50": 0.35714285714285715,
+      "75": 0.45,
+      "90": 0.6071428571428571,
+      "95": 0.8571428571428571,
+      "100": 0.8571428571428571
+    },
+    "amine_type_rows": {
+      "primary": 375,
+      "secondary": 193,
+      "other": 22,
+      "aromatic_N": 17
+    },
+    "aryl_halogen_class_rows": {
+      "Cl": 258,
+      "Br": 162,
+      "Br+F": 65,
+      "I": 41,
+      "Cl+I": 23,
+      "Br+Cl": 19,
+      "Cl+F": 18,
+      "none": 8,
+      "Br+I": 8,
+      "F+I": 3,
+      "Br+Cl+F": 2
+    },
+    "heteroaromatic_rows": 416,
+    "all_reagents_seen_rows": 0
+  },
+  "dreher_2014": {
+    "source": "Dreher 2014",
+    "eligible": false,
+    "train_rows": 22417,
+    "test_rows": 0,
+    "test_pairs": 0,
+    "train_positive_rate": 0.393183744479636,
+    "train_source_balanced_positive_rate": 0.4142379178643445,
+    "source_all_main_positive_rate": 0.0703125,
+    "source_test_positive_rate": null,
+    "training_unique_aryl_structures": 799,
+    "training_unique_amine_structures": 682
+  },
+  "dreher_2016": {
+    "source": "Dreher 2016",
+    "eligible": false,
+    "train_rows": 23041,
+    "test_rows": 0,
+    "test_pairs": 0,
+    "train_positive_rate": 0.38309969185365217,
+    "train_source_balanced_positive_rate": 0.3785029641606408,
+    "source_all_main_positive_rate": 0.2847222222222222,
+    "source_test_positive_rate": null,
+    "training_unique_aryl_structures": 797,
+    "training_unique_amine_structures": 687
+  },
+  "hitea_2024": {
+    "source": "HiTEA 2024",
+    "eligible": false,
+    "train_rows": 20553,
+    "test_rows": 1387,
+    "test_pairs": 15,
+    "train_positive_rate": 0.4068992361212475,
+    "train_source_balanced_positive_rate": 0.3939784510457021,
+    "source_all_main_positive_rate": 0.1918693009118541,
+    "source_test_positive_rate": 0.13987022350396539,
+    "training_unique_aryl_structures": 778,
+    "training_unique_amine_structures": 670,
+    "catalyst_test_row_coverage": 0.03028118240807498,
+    "catalyst_test_unique_structure_coverage": 0.03571428571428571,
+    "base_test_row_coverage": 0.4260994953136265,
+    "base_test_unique_structure_coverage": 0.17857142857142858,
+    "solvent_test_row_coverage": 0.8810382119682768,
+    "solvent_test_unique_structure_coverage": 0.8,
+    "aryl_max_similarity_quantiles": {
+      "0": 0.2564102564102564,
+      "25": 0.2978723404255319,
+      "50": 0.40540540540540543,
+      "75": 0.40816326530612246,
+      "90": 0.4375,
+      "95": 0.52,
+      "100": 0.52
+    },
+    "amine_max_similarity_quantiles": {
+      "0": 0.23684210526315788,
+      "25": 0.25,
+      "50": 0.525,
+      "75": 0.8125,
+      "90": 0.8571428571428571,
+      "95": 0.8571428571428571,
+      "100": 0.8571428571428571
+    },
+    "amine_type_rows": {
+      "aromatic_N": 495,
+      "primary": 333,
+      "secondary": 319,
+      "other": 240
+    },
+    "aryl_halogen_class_rows": {
+      "Br": 905,
+      "Cl+F": 183,
+      "I": 158,
+      "F+I": 120,
+      "Cl": 20,
+      "Cl+I": 1
+    },
+    "heteroaromatic_rows": 1386,
+    "all_reagents_seen_rows": 18
+  },
+  "jnj_hte_2024": {
+    "source": "JNJ HTE 2024",
+    "eligible": true,
+    "train_rows": 11857,
+    "test_rows": 8016,
+    "test_pairs": 546,
+    "train_positive_rate": 0.3741249894577043,
+    "train_source_balanced_positive_rate": 0.3607495115554933,
+    "source_all_main_positive_rate": 0.3912429378531073,
+    "source_test_positive_rate": 0.3638972055888224,
+    "training_unique_aryl_structures": 708,
+    "training_unique_amine_structures": 620,
+    "catalyst_test_row_coverage": 0.019461077844311378,
+    "catalyst_test_unique_structure_coverage": 0.03125,
+    "base_test_row_coverage": 0.8977045908183633,
+    "base_test_unique_structure_coverage": 0.75,
+    "solvent_test_row_coverage": 1.0,
+    "solvent_test_unique_structure_coverage": 1.0,
+    "aryl_max_similarity_quantiles": {
+      "0": 0.22857142857142856,
+      "25": 0.3333333333333333,
+      "50": 0.4074074074074074,
+      "75": 0.5,
+      "90": 0.631578947368421,
+      "95": 0.6774193548387096,
+      "100": 0.7241379310344828
+    },
+    "amine_max_similarity_quantiles": {
+      "0": 0.2222222222222222,
+      "25": 0.27906976744186046,
+      "50": 0.3333333333333333,
+      "75": 0.375,
+      "90": 0.4482758620689655,
+      "95": 0.4666666666666667,
+      "100": 0.5882352941176471
+    },
+    "amine_type_rows": {
+      "primary": 4936,
+      "secondary": 3080
+    },
+    "aryl_halogen_class_rows": {
+      "Br": 4592,
+      "Cl": 1952,
+      "Cl+F": 432,
+      "Br+F": 400,
+      "I": 400,
+      "F+I": 160,
+      "Br+Cl": 80
+    },
+    "heteroaromatic_rows": 7000,
+    "all_reagents_seen_rows": 130
+  },
+  "merck_2025": {
+    "source": "Merck 2025",
+    "eligible": true,
+    "train_rows": 18981,
+    "test_rows": 2668,
+    "test_pairs": 2668,
+    "train_positive_rate": 0.37258310942521466,
+    "train_source_balanced_positive_rate": 0.3547546380514679,
+    "source_all_main_positive_rate": 0.42721217887725976,
+    "source_test_positive_rate": 0.4047976011994003,
+    "training_unique_aryl_structures": 462,
+    "training_unique_amine_structures": 340,
+    "catalyst_test_row_coverage": 0.0,
+    "catalyst_test_unique_structure_coverage": 0.0,
+    "base_test_row_coverage": 0.0,
+    "base_test_unique_structure_coverage": 0.0,
+    "solvent_test_row_coverage": 1.0,
+    "solvent_test_unique_structure_coverage": 1.0,
+    "aryl_max_similarity_quantiles": {
+      "0": 0.19402985074626866,
+      "25": 0.32432432432432434,
+      "50": 0.39285714285714285,
+      "75": 0.4594594594594595,
+      "90": 0.5517241379310345,
+      "95": 0.6129032258064516,
+      "100": 0.8571428571428571
+    },
+    "amine_max_similarity_quantiles": {
+      "0": 0.2692307692307692,
+      "25": 0.3870967741935484,
+      "50": 0.41666666666666663,
+      "75": 0.4639846743295019,
+      "90": 0.5806451612903226,
+      "95": 0.5806451612903226,
+      "100": 0.5806451612903226
+    },
+    "amine_type_rows": {
+      "secondary": 2668
+    },
+    "aryl_halogen_class_rows": {
+      "Br": 2012,
+      "Br+Cl": 352,
+      "Br+F": 248,
+      "Br+Cl+F": 56
+    },
+    "heteroaromatic_rows": 1268,
+    "all_reagents_seen_rows": 0
+  },
+  "roche_2023": {
+    "source": "Roche 2023",
+    "eligible": true,
+    "train_rows": 19826,
+    "test_rows": 1680,
+    "test_pairs": 65,
+    "train_positive_rate": 0.3727933017250076,
+    "train_source_balanced_positive_rate": 0.35267096775518497,
+    "source_all_main_positive_rate": 0.4397142006549568,
+    "source_test_positive_rate": 0.4488095238095238,
+    "training_unique_aryl_structures": 769,
+    "training_unique_amine_structures": 666,
+    "catalyst_test_row_coverage": 0.0,
+    "catalyst_test_unique_structure_coverage": 0.0,
+    "base_test_row_coverage": 1.0,
+    "base_test_unique_structure_coverage": 1.0,
+    "solvent_test_row_coverage": 1.0,
+    "solvent_test_unique_structure_coverage": 1.0,
+    "aryl_max_similarity_quantiles": {
+      "0": 0.3076923076923077,
+      "25": 0.40625,
+      "50": 0.5,
+      "75": 0.5,
+      "90": 0.5517241379310345,
+      "95": 0.6818181818181818,
+      "100": 0.6818181818181818
+    },
+    "amine_max_similarity_quantiles": {
+      "0": 0.17857142857142858,
+      "25": 0.3333333333333333,
+      "50": 0.4444444444444444,
+      "75": 0.5357142857142857,
+      "90": 0.56,
+      "95": 0.5833333333333334,
+      "100": 0.75
+    },
+    "amine_type_rows": {
+      "secondary": 720,
+      "primary": 480,
+      "aromatic_N": 312,
+      "other": 168
+    },
+    "aryl_halogen_class_rows": {
+      "Br": 1680
+    },
+    "heteroaromatic_rows": 1080,
+    "all_reagents_seen_rows": 0
+  }
+}
