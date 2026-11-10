@@ -51,6 +51,8 @@ After every main inner selection is complete, the optional CPU coordinator below
 
 ```bash
 OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 .venv/bin/python scripts/precompute_sensitivity_trees.py
+# After all30 fits exist, independently inspect frozen IDs, RFs and train-only imputation:
+OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 .venv/bin/python scripts/run_guard.py --run-id review_all_sensitivity_trees_v1 --stage review --threads 1 -- .venv/bin/python scripts/audit_sensitivity_trees.py
 ```
 
 ## Output interpretation
