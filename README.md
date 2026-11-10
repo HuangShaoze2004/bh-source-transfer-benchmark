@@ -39,6 +39,14 @@ Only after full prediction coverage is verified:
 
 CPU thread constraints apply to all commands, including BLAS and subprocesses. `scripts/run_guard.py` enforces four shared CPU slots and serial GPU access; use it for substantial computation. Do not wrap the coordinating pipeline itself in a resource lease that its child jobs also need.
 
+Inspect live process identities, completed jobs, current epochs, cumulative costs and frozen artifact hashes without opening external predictions or metrics:
+
+```bash
+OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 .venv/bin/python scripts/monitor_progress.py
+```
+
+An absent process during an inspection is a reason to recheck the job status and logs, not to start another copy automatically.
+
 ## Output interpretation
 
 All seeds are evaluated separately before averaging metrics; no seed ensemble is reported as a single model. Bootstrap samples substrate pairs, not individual condition rows or seeds. Shared-substrate sensitivity is required because even thousands of pairs may share very few amines. Top-k uses measured alternatives only. Negative outcomes, incomplete source coverage, baseline reconstruction limitations and heterogeneous yield assays must remain visible.
