@@ -30,3 +30,7 @@ Implementation tasks are delegated by module; only the root runner may launch GP
 - Started the45 already-prespecified formal tree fits (5 nonempty folds x3 seeds x3 fixed tree methods) through the original pipeline.job API. Their hyperparameters are fixed and independent of neural inner selection; only fitting/checkpoint saving occurs. No outer prediction or evaluation is performed early.
 - Exact formal run IDs/specs/output directories will be reused by the main coordinator; no duplicate budget is allocated. Current GPU+inner-tree+formal-tree workloads occupy CPU slots0/1/2, each with BLAS and job threads1, below the shared limit4.
 - At verification,14 tree inner jobs and2 formal tree fits had completed; neural training and both CPU queues were live with increasing CPU times.
+
+## All tree inner controls ready, 2026-11-10T03:59:42.914630+00:00
+- All30 frozen tree inner fits completed and passed the independent runtime audit: exact per-fold training/validation IDs, prediction row order and finite probabilities, representation dimensions, key estimator settings, successful resource-guard completion and one worker per fit. Evidence: reports/ALL_TREE_INNER_RUNTIME_AUDIT.json; review_all_tree_inners_v1 measured6.37 CPU seconds and0 GPU seconds.
+- The precompute coordinator exited0. Main pipeline can reuse these artifacts without re-fitting. Neural selection and formal tree training continue; final external metrics, neural formal fits and both sensitivity runs remain pending.

@@ -1,0 +1,255 @@
+{
+  "status": "PASS",
+  "checked_utc": "2026-11-10T03:59:02.160621+00:00",
+  "scope": "all locked inner tree controls; no external metrics",
+  "runs_verified": 30,
+  "checks": [
+    "exact locked train and validation IDs",
+    "completed successful guard state",
+    "validation row order and finite bounded probabilities",
+    "model dimensionality and pinned estimator parameters",
+    "one CPU worker per fit"
+  ],
+  "runs": [
+    {
+      "run_id": "dev_az_eln_2023_R0_RF_i0",
+      "fold": "az_eln_2023",
+      "model": "R0_RF",
+      "n_training": 18231,
+      "n_validation": 2684,
+      "n_features": 2048
+    },
+    {
+      "run_id": "dev_az_eln_2023_R0_RF_i1",
+      "fold": "az_eln_2023",
+      "model": "R0_RF",
+      "n_training": 11107,
+      "n_validation": 8448,
+      "n_features": 2048
+    },
+    {
+      "run_id": "dev_az_eln_2023_R0_HGB_i0",
+      "fold": "az_eln_2023",
+      "model": "R0_HGB",
+      "n_training": 18231,
+      "n_validation": 2684,
+      "n_features": 2048
+    },
+    {
+      "run_id": "dev_az_eln_2023_R0_HGB_i1",
+      "fold": "az_eln_2023",
+      "model": "R0_HGB",
+      "n_training": 11107,
+      "n_validation": 8448,
+      "n_features": 2048
+    },
+    {
+      "run_id": "dev_az_eln_2023_R1_substitute_i0",
+      "fold": "az_eln_2023",
+      "model": "R1_substitute",
+      "n_training": 18231,
+      "n_validation": 2684,
+      "n_features": 2069
+    },
+    {
+      "run_id": "dev_az_eln_2023_R1_substitute_i1",
+      "fold": "az_eln_2023",
+      "model": "R1_substitute",
+      "n_training": 11107,
+      "n_validation": 8448,
+      "n_features": 2069
+    },
+    {
+      "run_id": "dev_hitea_2024_R0_RF_i0",
+      "fold": "hitea_2024",
+      "model": "R0_RF",
+      "n_training": 16349,
+      "n_validation": 2668,
+      "n_features": 2048
+    },
+    {
+      "run_id": "dev_hitea_2024_R0_RF_i1",
+      "fold": "hitea_2024",
+      "model": "R0_RF",
+      "n_training": 9225,
+      "n_validation": 8016,
+      "n_features": 2048
+    },
+    {
+      "run_id": "dev_hitea_2024_R0_HGB_i0",
+      "fold": "hitea_2024",
+      "model": "R0_HGB",
+      "n_training": 16349,
+      "n_validation": 2668,
+      "n_features": 2048
+    },
+    {
+      "run_id": "dev_hitea_2024_R0_HGB_i1",
+      "fold": "hitea_2024",
+      "model": "R0_HGB",
+      "n_training": 9225,
+      "n_validation": 8016,
+      "n_features": 2048
+    },
+    {
+      "run_id": "dev_hitea_2024_R1_substitute_i0",
+      "fold": "hitea_2024",
+      "model": "R1_substitute",
+      "n_training": 16349,
+      "n_validation": 2668,
+      "n_features": 2069
+    },
+    {
+      "run_id": "dev_hitea_2024_R1_substitute_i1",
+      "fold": "hitea_2024",
+      "model": "R1_substitute",
+      "n_training": 9225,
+      "n_validation": 8016,
+      "n_features": 2069
+    },
+    {
+      "run_id": "dev_jnj_hte_2024_R0_RF_i0",
+      "fold": "jnj_hte_2024",
+      "model": "R0_RF",
+      "n_training": 7653,
+      "n_validation": 2700,
+      "n_features": 2048
+    },
+    {
+      "run_id": "dev_jnj_hte_2024_R0_RF_i1",
+      "fold": "jnj_hte_2024",
+      "model": "R0_RF",
+      "n_training": 11107,
+      "n_validation": 614,
+      "n_features": 2048
+    },
+    {
+      "run_id": "dev_jnj_hte_2024_R0_HGB_i0",
+      "fold": "jnj_hte_2024",
+      "model": "R0_HGB",
+      "n_training": 7653,
+      "n_validation": 2700,
+      "n_features": 2048
+    },
+    {
+      "run_id": "dev_jnj_hte_2024_R0_HGB_i1",
+      "fold": "jnj_hte_2024",
+      "model": "R0_HGB",
+      "n_training": 11107,
+      "n_validation": 614,
+      "n_features": 2048
+    },
+    {
+      "run_id": "dev_jnj_hte_2024_R1_substitute_i0",
+      "fold": "jnj_hte_2024",
+      "model": "R1_substitute",
+      "n_training": 7653,
+      "n_validation": 2700,
+      "n_features": 2069
+    },
+    {
+      "run_id": "dev_jnj_hte_2024_R1_substitute_i1",
+      "fold": "jnj_hte_2024",
+      "model": "R1_substitute",
+      "n_training": 11107,
+      "n_validation": 614,
+      "n_features": 2069
+    },
+    {
+      "run_id": "dev_merck_2025_R0_RF_i0",
+      "fold": "merck_2025",
+      "model": "R0_RF",
+      "n_training": 7653,
+      "n_validation": 8640,
+      "n_features": 2048
+    },
+    {
+      "run_id": "dev_merck_2025_R0_RF_i1",
+      "fold": "merck_2025",
+      "model": "R0_RF",
+      "n_training": 18231,
+      "n_validation": 610,
+      "n_features": 2048
+    },
+    {
+      "run_id": "dev_merck_2025_R0_HGB_i0",
+      "fold": "merck_2025",
+      "model": "R0_HGB",
+      "n_training": 7653,
+      "n_validation": 8640,
+      "n_features": 2048
+    },
+    {
+      "run_id": "dev_merck_2025_R0_HGB_i1",
+      "fold": "merck_2025",
+      "model": "R0_HGB",
+      "n_training": 18231,
+      "n_validation": 610,
+      "n_features": 2048
+    },
+    {
+      "run_id": "dev_merck_2025_R1_substitute_i0",
+      "fold": "merck_2025",
+      "model": "R1_substitute",
+      "n_training": 7653,
+      "n_validation": 8640,
+      "n_features": 2069
+    },
+    {
+      "run_id": "dev_merck_2025_R1_substitute_i1",
+      "fold": "merck_2025",
+      "model": "R1_substitute",
+      "n_training": 18231,
+      "n_validation": 610,
+      "n_features": 2069
+    },
+    {
+      "run_id": "dev_roche_2023_R0_RF_i0",
+      "fold": "roche_2023",
+      "model": "R0_RF",
+      "n_training": 15622,
+      "n_validation": 2668,
+      "n_features": 2048
+    },
+    {
+      "run_id": "dev_roche_2023_R0_RF_i1",
+      "fold": "roche_2023",
+      "model": "R0_RF",
+      "n_training": 8498,
+      "n_validation": 8136,
+      "n_features": 2048
+    },
+    {
+      "run_id": "dev_roche_2023_R0_HGB_i0",
+      "fold": "roche_2023",
+      "model": "R0_HGB",
+      "n_training": 15622,
+      "n_validation": 2668,
+      "n_features": 2048
+    },
+    {
+      "run_id": "dev_roche_2023_R0_HGB_i1",
+      "fold": "roche_2023",
+      "model": "R0_HGB",
+      "n_training": 8498,
+      "n_validation": 8136,
+      "n_features": 2048
+    },
+    {
+      "run_id": "dev_roche_2023_R1_substitute_i0",
+      "fold": "roche_2023",
+      "model": "R1_substitute",
+      "n_training": 15622,
+      "n_validation": 2668,
+      "n_features": 2069
+    },
+    {
+      "run_id": "dev_roche_2023_R1_substitute_i1",
+      "fold": "roche_2023",
+      "model": "R1_substitute",
+      "n_training": 8498,
+      "n_validation": 8136,
+      "n_features": 2069
+    }
+  ]
+}
