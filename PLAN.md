@@ -20,3 +20,8 @@ Implementation tasks are delegated by module; only the root runner may launch GP
 - Frozen artifact hashes all match. External metrics remain sealed.
 - Added and tested post-release audit of real optimizer budgets, training-only checkpoint IDs, full resume state, sample exposure, normalized group weights/ESS and genuine SWA averaging. Final report will require this audit.
 - Main formal matrix, two training sensitivities, full statistical evaluation and final experiment report are still pending; completion is not claimed.
+
+## CPU baseline overlap, 2026-11-10T03:43:44.174032+00:00
+- First matched neural grid configuration completed all6 inner trajectories (3 objectives x2 sources); next frozen grid is running.
+- Precompute only the first outer fold's6 already-planned tree inner jobs through the existing pipeline.job/guard API while GPU work proceeds. Same run IDs, specs, output paths and cache identities will be reused by the primary coordinator. No extra candidate or test evaluation.
+- Two R0_RF jobs completed on18231/11107 training rows with2684/8448 internal-validation predictions, all finite. R0_HGB live on CPU slot1 while the sole GPU job uses CPU slot0.
