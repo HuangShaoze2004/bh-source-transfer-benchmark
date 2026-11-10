@@ -57,6 +57,14 @@ OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 .venv/bin/python scri
 OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 .venv/bin/python scripts/run_guard.py --run-id review_all_sensitivity_trees_v1 --stage review --threads 1 -- .venv/bin/python scripts/audit_sensitivity_trees.py
 ```
 
+After all45 main formal neural trajectories exist, audit their saved training IDs, matched update budgets, source diagnostics, recovery fields and multiple SWA snapshots without reading external predictions:
+
+```bash
+OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 .venv/bin/python scripts/run_guard.py --run-id review_all_formal_neural_v1 --stage review --threads 1 -- .venv/bin/python scripts/audit_training.py --project .
+```
+
+The completed audit is archived in `reports/ALL_FORMAL_NEURAL_RUNTIME_AUDIT.json`; its tables and plots are in `reports/final/`. This verifies training artifacts and does not establish external performance or completion of sensitivity analyses. The final report checks training and prediction evidence again after full evaluation.
+
 ## Output interpretation
 
 All seeds are evaluated separately before averaging metrics; no seed ensemble is reported as a single model. Bootstrap samples substrate pairs, not individual condition rows or seeds. Shared-substrate sensitivity is required because even thousands of pairs may share very few amines. Top-k uses measured alternatives only. Negative outcomes, incomplete source coverage, baseline reconstruction limitations and heterogeneous yield assays must remain visible.
