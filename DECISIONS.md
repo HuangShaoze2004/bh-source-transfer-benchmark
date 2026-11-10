@@ -40,3 +40,8 @@
 ## Real GPU GroupDRO integration check, 2026-11-10T03:27:54.240345+00:00
 - Four inner trajectories completed and the first GroupDRO worker was verified live by PID/start time and increasing CPU time. No failed job status observed.
 - Independently recomputed q_g proportional to exp(0.01 times cumulative logged group loss) for the first600 complete logged steps of dev_az_eln_2023_dro_g0_i0. All5 sources had8 observations per effective batch; losses were finite, weights summed to1, and maximum absolute recurrence error was5.84049e-7. Evidence: reports/GROUPDRO_RUNTIME_CHECK.json. This validates only the recorded training prefix, not unseen-source performance or final matrix completion.
+
+## First completed GPU GroupDRO trajectory audit, 2026-11-10T03:38:15.837032+00:00
+- Recomputed all4560 recorded GroupDRO weight updates independently; maximum error1.89093e-6. Full resumable state, exposure counts, normalized group weights and21/11 SWA snapshots passed the saved-state auditor.
+- Corresponding ERM, balanced ERM and GroupDRO inner trajectories each executed4560 optimizer updates. This is controlled-budget implementation evidence only; no outer performance was read or used to modify candidates.
+- review_first_completed_groupdro_v1 was CPU-only, measured and charged by the central guard. Report: reports/GROUPDRO_COMPLETED_TRAJECTORY_AUDIT.json.
