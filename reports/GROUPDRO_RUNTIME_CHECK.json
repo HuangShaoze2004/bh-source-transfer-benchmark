@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "scope": "completed logged prefix of ongoing inner GroupDRO GPU trajectory; no external performance",
+  "run_id": "dev_az_eln_2023_dro_g0_i0",
+  "steps_checked": 600,
+  "groups": 5,
+  "eta": 0.01,
+  "checked_equal_source_batch_counts": true,
+  "checked_finite_losses": true,
+  "max_weight_recurrence_error": 5.840490404085408e-07,
+  "checked_pid": 723525,
+  "process_create_time": 1794281154.18
+}

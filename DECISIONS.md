@@ -36,3 +36,7 @@
 ## Post-freeze delivery audit, 2026-11-10T03:23:19.879998+00:00
 - Added an independent auditor for actual optimizer updates, training-only IDs, selection configs, all resumable states, sample exposure, normalized group weights/ESS and multiple SWA snapshots. It is invoked only after completed evaluation by the report generator. No frozen model, input, split, metric or selection code changed.
 - Six new fault-injection tests and twelve existing report regression tests passed. A completed internal ERM trajectory passed real-state audit (4560 updates; 21/11 SWA snapshots). Final 45-trajectory equality and diagnostics remain pending until those runs exist.
+
+## Real GPU GroupDRO integration check, 2026-11-10T03:27:54.240345+00:00
+- Four inner trajectories completed and the first GroupDRO worker was verified live by PID/start time and increasing CPU time. No failed job status observed.
+- Independently recomputed q_g proportional to exp(0.01 times cumulative logged group loss) for the first600 complete logged steps of dev_az_eln_2023_dro_g0_i0. All5 sources had8 observations per effective batch; losses were finite, weights summed to1, and maximum absolute recurrence error was5.84049e-7. Evidence: reports/GROUPDRO_RUNTIME_CHECK.json. This validates only the recorded training prefix, not unseen-source performance or final matrix completion.
