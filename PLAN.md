@@ -25,3 +25,8 @@ Implementation tasks are delegated by module; only the root runner may launch GP
 - First matched neural grid configuration completed all6 inner trajectories (3 objectives x2 sources); next frozen grid is running.
 - Precompute only the first outer fold's6 already-planned tree inner jobs through the existing pipeline.job/guard API while GPU work proceeds. Same run IDs, specs, output paths and cache identities will be reused by the primary coordinator. No extra candidate or test evaluation.
 - Two R0_RF jobs completed on18231/11107 training rows with2684/8448 internal-validation predictions, all finite. R0_HGB live on CPU slot1 while the sole GPU job uses CPU slot0.
+
+## Overlap of fixed formal CPU controls, 2026-11-10T03:51:10.933035+00:00
+- Started the45 already-prespecified formal tree fits (5 nonempty folds x3 seeds x3 fixed tree methods) through the original pipeline.job API. Their hyperparameters are fixed and independent of neural inner selection; only fitting/checkpoint saving occurs. No outer prediction or evaluation is performed early.
+- Exact formal run IDs/specs/output directories will be reused by the main coordinator; no duplicate budget is allocated. Current GPU+inner-tree+formal-tree workloads occupy CPU slots0/1/2, each with BLAS and job threads1, below the shared limit4.
+- At verification,14 tree inner jobs and2 formal tree fits had completed; neural training and both CPU queues were live with increasing CPU times.
