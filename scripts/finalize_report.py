@@ -383,7 +383,7 @@ def scientific_figures(bundle, intervals, out):
     for i in range(len(source)):
         for j in range(len(source.columns)):
             ax.text(j, i, f"{source.iloc[i,j]:.3f}", ha="center", va="center", color="white" if source.iloc[i,j] < .65 else "black", fontsize=8)
-    fig.colorbar(heat, ax=ax, label="AUROC, individual-seed metrics averaged")
+    fig.colorbar(heat, ax=ax, label="Mean AUROC across seeds")
     fig.tight_layout()
     for suffix in ("png", "pdf"):
         fig.savefig(out/f"source_auroc_heatmap.{suffix}", dpi=200)
@@ -518,7 +518,8 @@ def finalize(project):
     tokenizer = read_json(project/"weights/rxnfp/tokenizer_extension_manifest.json", {})
     data_audit = read_json(project/"data/audit/summary.json", {})
     lines = ["# 跨来源 C–N 偶联可行性预测：实验报告", "", "本文件是计算实验记录与证据核验，不是论文；未投稿、不承诺录用。", "",
-             f"最终状态：**{status}**。主候选固定为 `{bundle['lock'].get('acceptance_candidate')}`；接受规则结果 `{acceptance.get('status')}`；证据类别 `{evidence_basis}`。", "",
+             f"当前状态：**{status}**。主候选固定为 `{bundle['lock'].get('acceptance_candidate')}`；接受规则结果 `{acceptance.get('status')}`；证据类别 `{evidence_basis}`。", "",
+             *(["这是阶段报告；仍有实验或核验待完成。", ""] if status == "CONTINUE" else []),
              "若仅secondary达标，明确表示主B_A_S确认未成功、预注册简化方案获得多重校正支持；这不改写主假设，不从外层结果追认新的独立确认。简化方案还必须在宏AUROC上不劣于B_bal_S。", "",
              "## 数据、问题与固定协议", "", "目标为未见来源且芳基、胺各自均未见时，判断记录的 Yield 是否至少为10；恰好10为正例。不是精确产率、高产率或未实测条件推荐的验证。",
              f"原始行数 `{data_audit.get('raw_rows', '见DATA_AUDIT')}`；主数据行数 `{len(bundle['records'])}`。合格主来源数 `{sum(f['eligible'] for f in bundle['lock']['folds'])}`；所有来源统计与逐行处置见 [DATA_AUDIT](../DATA_AUDIT.md)。", "",
@@ -537,10 +538,12 @@ def finalize(project):
              "结构相似度固定bins为[0,.3],(.3,.5],(.5,.7],(.7,1]；粗类型/试剂覆盖结果均为探索性描述，不进行选择性分层机理宣称：", "",
              markdown_table(pd.DataFrame(domain.get("summary", []))), "",
              "精确试剂覆盖保留电荷、盐和配位形态。AZ/Merck/Roche催化剂精确结构训练覆盖可能为0，JNJ约1.95%；这不等于催化剂化学类别全新。需同时考虑底物新颖性、相似度、试剂形态覆盖和来源正类率。全部分层含行/底物对/来源覆盖见final/exploratory_domain_strata.csv。", "",
+             *(["主实验逐来源退步、消融、校准和实测条件覆盖的解释见 [主实验失败分析](PRIMARY_FAILURE_ANALYSIS.md)。", ""] if (project/"reports/PRIMARY_FAILURE_ANALYSIS.md").exists() else []),
              "## 预注册敏感性分析", "", *sensitivity_text,
              "Dreher Doyle原版本缺少具体添加剂身份，仅作为条件不完整敏感性，不纳入主结论。其加入会改变严格测试集合；共同row_id配对结果使用固定主真值，不能把集合变化解释成训练改善。作者标签敏感性同时报告原生标签与固定主真值，标签标准变化和模型变化不能混为一谈。", "",
              "## 运行成本、失败与独立核验", "", "实际训练审计：`"+json.dumps(training_audit,ensure_ascii=False)+"`。逐轨迹更新数、样本曝光、SWA快照数及GroupDRO权重/有效样本量见final/training_budget_audit.csv与final/groupdro_trajectories.csv；权重图见final/groupdro_weight_trajectories.png。权重集中仅描述优化行为，不能证明未见来源泛化或反应机理。", "", "预算记录：`" + json.dumps(budget, ensure_ascii=False) + "`。失败与重试累计；upper_bound标记保守收费，包括结束时刻不明的孤儿任务及协调器自身CPU用量预留；子训练任务单独计费。完整成功/失败账本见final/run_inventory.csv及../runs/ledger.jsonl。报告生成任务若仍在运行，其最终小额成本以随后完成的guard账本为准。", "",
-             markdown_table(failures[[c for c in ("run_id", "stage", "status", "exit_code", "gpu_hours", "cpu_core_hours", "reason") if c in failures]]), "",
+             ("账本无失败或中断的任务记录；环境下载中断见 [DECISIONS](../DECISIONS.md)。" if failures.empty else
+              markdown_table(failures[[c for c in ("run_id", "stage", "status", "exit_code", "gpu_hours", "cpu_core_hours", "reason") if c in failures]])), "",
              "CPU对照实际拟合证据：[30次主内层拟合审计](ALL_TREE_INNER_RUNTIME_AUDIT.json)、[45次主正式拟合审计](ALL_FORMAL_TREE_RUNTIME_AUDIT.json)、[30次敏感性RF拟合审计](ALL_SENSITIVITY_TREE_RUNTIME_AUDIT.json)。具体检查范围、训练分区、固定参数和已保存文件的核验记录见各审计报告；审计过程未读取外层预测或指标。", "",
              "独立审计PASS：逐条标签/来源/底物实体/底物对/条件ID与冻结records一致；锁定模型×seed×行矩阵完整；sklearn独立重建主表及逐来源逐seed指标，与原评价表在1e-10容差内一致。审计清单和源码hash见final/independent_audit.json。", "",
              "## 局限、文献差异与复现", "", "CAD、isolated yield、MisER与LCAP混合测量，统一10%阈值不消除测量差异；温度、时间、浓度与部分载量缺失。无标签预训练与测试结构的重叠不能排除。来源均衡可能解释部分收益，因此保留B_bal及B_bal_S。GroupDRO/SWA为成熟方法，注意力或特征归因不能证明机理。负结果如实交付，未达到门槛不强行宣称增量。", "",

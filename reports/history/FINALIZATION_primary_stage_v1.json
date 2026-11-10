@@ -1,0 +1,175 @@
+{
+  "status": "CONTINUE",
+  "independent_audit": {
+    "status": "PASS",
+    "predictions_sha256": "26fa5487d45ac043bfc07e43bee7c9b789eeafd4e6d72f6a7adb86dc3950078d",
+    "lock_sha256": "b7005aff7fa71ab452015047b8b3a0d0aa0efa718fcdb937915d1267f6576a84",
+    "auditor_sha256": "9121865ef324505cabcf99ebd7e63deab0a149e2188b6c1a6d0ee7e38ed5a36c",
+    "checked_rows": 387666,
+    "metric_backend": "sklearn; no bh_transfer.evaluate import",
+    "split_summary": [
+      {
+        "fold": "az_eln_2023",
+        "source": "AZ ELN 2023",
+        "eligible": true,
+        "test_rows": 607,
+        "test_pairs": 376,
+        "test_aryls": 230,
+        "test_amines": 207,
+        "inner_splits": 2
+      },
+      {
+        "fold": "dreher_2014",
+        "source": "Dreher 2014",
+        "eligible": false,
+        "test_rows": 0,
+        "test_pairs": 0,
+        "test_aryls": 0,
+        "test_amines": 0,
+        "inner_splits": 2
+      },
+      {
+        "fold": "dreher_2016",
+        "source": "Dreher 2016",
+        "eligible": false,
+        "test_rows": 0,
+        "test_pairs": 0,
+        "test_aryls": 0,
+        "test_amines": 0,
+        "inner_splits": 2
+      },
+      {
+        "fold": "hitea_2024",
+        "source": "HiTEA 2024",
+        "eligible": false,
+        "test_rows": 1387,
+        "test_pairs": 15,
+        "test_aryls": 14,
+        "test_amines": 13,
+        "inner_splits": 2
+      },
+      {
+        "fold": "jnj_hte_2024",
+        "source": "JNJ HTE 2024",
+        "eligible": true,
+        "test_rows": 8016,
+        "test_pairs": 546,
+        "test_aryls": 90,
+        "test_amines": 65,
+        "inner_splits": 2
+      },
+      {
+        "fold": "merck_2025",
+        "source": "Merck 2025",
+        "eligible": true,
+        "test_rows": 2668,
+        "test_pairs": 2668,
+        "test_aryls": 335,
+        "test_amines": 8,
+        "inner_splits": 2
+      },
+      {
+        "fold": "roche_2023",
+        "source": "Roche 2023",
+        "eligible": true,
+        "test_rows": 1680,
+        "test_pairs": 65,
+        "test_aryls": 28,
+        "test_amines": 18,
+        "inner_splits": 2
+      }
+    ]
+  },
+  "sensitivity_states": {
+    "author_labels": "PENDING",
+    "dd_original": "PENDING"
+  },
+  "core_complete": true,
+  "acceptance": {
+    "status": "INCREMENT_CRITERION_NOT_MET",
+    "candidate": "B_A_S",
+    "comparator_set": [
+      "B",
+      "B_bal",
+      "R0_RF",
+      "R0_HGB",
+      "R1_substitute"
+    ],
+    "strongest_observed_comparator": "B",
+    "delta_auroc": 0.001045085165827575,
+    "bootstrap_vs_max_comparator": {
+      "low": -0.01266033758943054,
+      "high": 0.015264845157835338,
+      "valid_replicates": 5000,
+      "invalid_fraction": 0.0
+    },
+    "min_source_delta_vs_max_comparator": -0.048636741125867855,
+    "source_deltas": {
+      "AZ ELN 2023": 0.030595493015193265,
+      "JNJ HTE 2024": -0.048636741125867855,
+      "Merck 2025": 0.018327658052678997,
+      "Roche 2023": -0.0355815301354141
+    },
+    "combination_contrasts": [
+      {
+        "comparator": "B_A",
+        "delta": -0.0009315203937364513,
+        "low": -0.003317552986986849,
+        "high": 0.0012942492848156343,
+        "valid_replicates": 5000,
+        "invalid_fraction": 0.0
+      },
+      {
+        "comparator": "B_S",
+        "delta": 0.002147859544104014,
+        "low": -0.012269970691785675,
+        "high": 0.017214129932947655,
+        "valid_replicates": 5000,
+        "invalid_fraction": 0.0
+      },
+      {
+        "comparator": "B_bal_S",
+        "delta": 0.01838064072751089,
+        "low": 0.00958917432614812,
+        "high": 0.027600129978278473,
+        "valid_replicates": 5000,
+        "invalid_fraction": 0.0
+      }
+    ],
+    "criteria": {
+      "min_macro_delta": 0.02,
+      "max_source_regression": 0.03,
+      "ci_low_above": 0,
+      "max_invalid_bootstrap_fraction": 0.05
+    },
+    "limitation": "Evidence conditional on these sources and fitted seeds; not a publication-readiness verdict"
+  },
+  "secondary": [
+    {
+      "candidate": "B_A",
+      "preregistered": true,
+      "family": "all frozen contrasts, Holm corrected",
+      "meets_secondary_rule": false,
+      "minimum_source_delta": -0.05147699591063465,
+      "delta_vs_balanced_swa": 0.01931216112124734,
+      "interpretation": "Secondary evidence only; no post-test winner declared as independent primary confirmation"
+    },
+    {
+      "candidate": "B_S",
+      "preregistered": true,
+      "family": "all frozen contrasts, Holm corrected",
+      "meets_secondary_rule": false,
+      "minimum_source_delta": -0.030646888331412936,
+      "delta_vs_balanced_swa": 0.016232781183406875,
+      "interpretation": "Secondary evidence only; no post-test winner declared as independent primary confirmation"
+    }
+  ],
+  "evidence_basis": "no_increment_criterion_met",
+  "budget": {
+    "gpu_hours": 18.887058356025566,
+    "cpu_core_hours": 21.52842643111111,
+    "active_cpu_threads": 1,
+    "development_gpu_hours": 12.129947342723607,
+    "feasibility_gpu_hours": 0.025113719089163673
+  }
+}

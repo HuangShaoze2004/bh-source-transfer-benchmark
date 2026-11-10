@@ -71,5 +71,9 @@
   },
   "external_predictions_or_metrics_read": false,
   "plot_visually_inspected": true,
-  "scope_note": "Checks saved full training IDs/configuration/update budgets, source exposures/weights/ESS, optimizer/scheduler/sampler/RNG fields, and multiple SWA snapshots. This does not establish external generalization or final experimental completion."
+  "scope_note": "Checks saved full training IDs/configuration/update budgets, source exposures/weights/ESS, optimizer/scheduler/sampler/RNG fields, and multiple SWA snapshots. This does not establish external generalization or final experimental completion.",
+  "historical_artifact_archives": {
+    "reports/final/groupdro_weight_trajectories.pdf": "reports/history/groupdro_weight_trajectories_pre_release.pdf"
+  },
+  "archival_note": "The pre-release PDF is byte-exact against its recorded SHA256. Later report renders update only PDF CreationDate; other audited artifact hashes still match."
 }
