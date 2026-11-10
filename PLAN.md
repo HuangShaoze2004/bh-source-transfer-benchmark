@@ -14,3 +14,9 @@ Status: CONTINUE. User approved implementation on 2026-11-10.
 Budgets: <=160 GPU h total; development <=50 GPU h including first feasibility <=12; reserve 80 for formal work, 30 for sensitivity/review/retries. <=500 CPU core h including failed work. Shared total CPU threads <=4, exclusive <=16. GPU jobs serial; wait for other users' jobs.
 
 Implementation tasks are delegated by module; only the root runner may launch GPU jobs. All active workers currently use one CPU/BLAS thread each.
+
+## Verified continuation, 2026-11-10T03:24:13.504935+00:00
+- Controller PID712160 and coordinator PID706992 both revalidated live; current neural worker PID720305 was running with increasing CPU time and five completed epochs. Three inner trajectories completed. No duplicate restart.
+- Frozen artifact hashes all match. External metrics remain sealed.
+- Added and tested post-release audit of real optimizer budgets, training-only checkpoint IDs, full resume state, sample exposure, normalized group weights/ESS and genuine SWA averaging. Final report will require this audit.
+- Main formal matrix, two training sensitivities, full statistical evaluation and final experiment report are still pending; completion is not claimed.
