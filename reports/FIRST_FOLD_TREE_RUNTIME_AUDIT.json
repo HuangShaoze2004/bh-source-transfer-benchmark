@@ -1,0 +1,54 @@
+{
+  "status": "PASS",
+  "scope": "six locked inner controls; no external metrics",
+  "runs": [
+    {
+      "run_id": "dev_az_eln_2023_R0_HGB_i0",
+      "model": "R0_HGB",
+      "features": 2048,
+      "n_train": 18231,
+      "n_internal_validation": 2684,
+      "estimator_parameters_verified": true
+    },
+    {
+      "run_id": "dev_az_eln_2023_R0_HGB_i1",
+      "model": "R0_HGB",
+      "features": 2048,
+      "n_train": 11107,
+      "n_internal_validation": 8448,
+      "estimator_parameters_verified": true
+    },
+    {
+      "run_id": "dev_az_eln_2023_R0_RF_i0",
+      "model": "R0_RF",
+      "features": 2048,
+      "n_train": 18231,
+      "n_internal_validation": 2684,
+      "estimator_parameters_verified": true
+    },
+    {
+      "run_id": "dev_az_eln_2023_R0_RF_i1",
+      "model": "R0_RF",
+      "features": 2048,
+      "n_train": 11107,
+      "n_internal_validation": 8448,
+      "estimator_parameters_verified": true
+    },
+    {
+      "run_id": "dev_az_eln_2023_R1_substitute_i0",
+      "model": "R1_substitute",
+      "features": 2069,
+      "n_train": 18231,
+      "n_internal_validation": 2684,
+      "estimator_parameters_verified": true
+    },
+    {
+      "run_id": "dev_az_eln_2023_R1_substitute_i1",
+      "model": "R1_substitute",
+      "features": 2069,
+      "n_train": 11107,
+      "n_internal_validation": 8448,
+      "estimator_parameters_verified": true
+    }
+  ]
+}

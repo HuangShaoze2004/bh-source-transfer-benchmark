@@ -45,3 +45,8 @@
 - Recomputed all4560 recorded GroupDRO weight updates independently; maximum error1.89093e-6. Full resumable state, exposure counts, normalized group weights and21/11 SWA snapshots passed the saved-state auditor.
 - Corresponding ERM, balanced ERM and GroupDRO inner trajectories each executed4560 optimizer updates. This is controlled-budget implementation evidence only; no outer performance was read or used to modify candidates.
 - review_first_completed_groupdro_v1 was CPU-only, measured and charged by the central guard. Report: reports/GROUPDRO_COMPLETED_TRAJECTORY_AUDIT.json.
+
+## First-fold tree controls executed and audited, 2026-11-10T03:46:04.779797+00:00
+- All6 precomputed, already-locked tree inner jobs completed successfully: R0_RF/R0_HGB/R1_substitute on the same2 internal source holdouts. Validation probabilities were finite and bounded; IDs/lengths matched their fixed specs. No predictive performance summary was inspected.
+- Deserialized estimators were independently checked: R0 representations2048 dimensions; R1 substitute2069 dimensions; expected seed42, RF300/500 trees, entropy/balanced/log2/min_samples_split4, and HGB200 iterations with early_stopping=False. Report: reports/FIRST_FOLD_TREE_RUNTIME_AUDIT.json.
+- Their existing run identities and output paths allow the main pipeline to reuse completed jobs. CPU and GPU workers used separate CPU slots; no parallel GPU task was launched.
