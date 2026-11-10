@@ -26,6 +26,11 @@ def main():
             phase = "inner" if run_id.startswith("dev_") else "formal"
             model = "tree" if any(x in run_id for x in ("R0_RF", "R0_HGB", "R1_substitute")) else "neural"
             family = f"{phase}_{model}"
+        elif run_id.startswith("sens_"):
+            if "_predict_" in run_id:
+                family = "sensitivity_prediction"
+            else:
+                family = "sensitivity_tree" if "R1_substitute" in run_id else "sensitivity_neural"
         counts[family][job["status"]] += 1
         if job["status"] != "running":
             continue
@@ -40,6 +45,17 @@ def main():
         else:
             item["current_job_status"] = json.loads(path.read_text())["status"]
         history = root / "runs/trajectories" / run_id / "validation_history.csv"
+        command = job.get("command", [])
+        if "--spec" in command:
+            try:
+                spec_path = Path(command[command.index("--spec") + 1])
+                if not spec_path.is_absolute():
+                    spec_path = root / spec_path
+                spec = json.loads(spec_path.read_text())
+                if "output_dir" in spec:
+                    history = Path(spec["output_dir"]) / "validation_history.csv"
+            except (OSError, ValueError, IndexError) as exc:
+                item["spec_observation_error"] = str(exc)
         if history.exists():
             item["epochs_completed"] = max(0, len(history.read_text().splitlines()) - 1)
         active.append(item)

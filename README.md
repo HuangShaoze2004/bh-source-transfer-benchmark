@@ -47,6 +47,12 @@ OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 .venv/bin/python scri
 
 An absent process during an inspection is a reason to recheck the job status and logs, not to start another copy automatically.
 
+After every main inner selection is complete, the optional CPU coordinator below can fit the30 already-planned sensitivity RF controls while formal GPU training runs. It uses the sensitivity pipeline's exact job API/specs/run IDs and coordinator lease; the later sensitivity run reuses the fits. It generates no outer predictions. Each child fit has its own resource/budget guard; coordinator self-CPU is conservatively reserved separately in the ledger.
+
+```bash
+OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 .venv/bin/python scripts/precompute_sensitivity_trees.py
+```
+
 ## Output interpretation
 
 All seeds are evaluated separately before averaging metrics; no seed ensemble is reported as a single model. Bootstrap samples substrate pairs, not individual condition rows or seeds. Shared-substrate sensitivity is required because even thousands of pairs may share very few amines. Top-k uses measured alternatives only. Negative outcomes, incomplete source coverage, baseline reconstruction limitations and heterogeneous yield assays must remain visible.
