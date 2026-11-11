@@ -73,6 +73,15 @@ OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 .venv/bin/python scri
 
 Its evidence is in `reports/PRIMARY_EVALUATION_AUDIT.json`. This primary-only audit does not read incomplete sensitivity results or finalize scientific readiness. Bootstrap draws are checked rather than independently regenerated.
 
+After each sensitivity branch finishes its 30 neural trajectories, inspect its frozen data and code hashes, inherited configurations, training rows, update budgets, recovery states and checkpoint artifact hashes.
+
+```bash
+OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 .venv/bin/python scripts/run_guard.py --run-id review_author_labels_neural_runtime_v1 --stage review --threads 1 -- .venv/bin/python scripts/audit_sensitivity_neural.py --kind author_labels
+OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 .venv/bin/python scripts/run_guard.py --run-id review_dd_original_neural_runtime_v1 --stage review --threads 1 -- .venv/bin/python scripts/audit_sensitivity_neural.py --kind dd_original
+```
+
+The audit writes `reports/AUTHOR_LABELS_NEURAL_RUNTIME_AUDIT.json` or `reports/DD_ORIGINAL_NEURAL_RUNTIME_AUDIT.json` after checking every trajectory in that branch.
+
 ## Output interpretation
 
 All seeds are evaluated separately before averaging metrics; no seed ensemble is reported as a single model. Bootstrap samples substrate pairs, not individual condition rows or seeds. Shared-substrate sensitivity is required because even thousands of pairs may share very few amines. Top-k uses measured alternatives only. Negative outcomes, incomplete source coverage, baseline reconstruction limitations and heterogeneous yield assays must remain visible.

@@ -1,0 +1,198 @@
+{
+  "status": "PASS",
+  "eligible_sources": [
+    "AZ ELN 2023",
+    "JNJ HTE 2024",
+    "Merck 2025",
+    "Roche 2023"
+  ],
+  "qualified_source_count": 4,
+  "checked_summary_values": 30,
+  "checks": [
+    {
+      "model": "R1_substitute",
+      "truth_regime": "fixed_primary_truth",
+      "metric": "auroc",
+      "paired_delta": 0.000269366329573375
+    },
+    {
+      "model": "R1_substitute",
+      "truth_regime": "fixed_primary_truth",
+      "metric": "auprc",
+      "paired_delta": 0.00029936700740436394
+    },
+    {
+      "model": "R1_substitute",
+      "truth_regime": "fixed_primary_truth",
+      "metric": "brier",
+      "paired_delta": 0.0015496637314308
+    },
+    {
+      "model": "R1_substitute",
+      "truth_regime": "native_sensitivity_truth",
+      "metric": "auroc",
+      "paired_delta": 0.000269366329573375
+    },
+    {
+      "model": "R1_substitute",
+      "truth_regime": "native_sensitivity_truth",
+      "metric": "auprc",
+      "paired_delta": 0.00029936700740436394
+    },
+    {
+      "model": "R1_substitute",
+      "truth_regime": "native_sensitivity_truth",
+      "metric": "brier",
+      "paired_delta": 0.0015496637314308
+    },
+    {
+      "model": "B",
+      "truth_regime": "fixed_primary_truth",
+      "metric": "auroc",
+      "paired_delta": -0.0011755651114940858
+    },
+    {
+      "model": "B",
+      "truth_regime": "fixed_primary_truth",
+      "metric": "auprc",
+      "paired_delta": -0.0009568278917444957
+    },
+    {
+      "model": "B",
+      "truth_regime": "fixed_primary_truth",
+      "metric": "brier",
+      "paired_delta": 0.0010054532543442758
+    },
+    {
+      "model": "B",
+      "truth_regime": "native_sensitivity_truth",
+      "metric": "auroc",
+      "paired_delta": -0.0011755651114940858
+    },
+    {
+      "model": "B",
+      "truth_regime": "native_sensitivity_truth",
+      "metric": "auprc",
+      "paired_delta": -0.0009568278917444957
+    },
+    {
+      "model": "B",
+      "truth_regime": "native_sensitivity_truth",
+      "metric": "brier",
+      "paired_delta": 0.0010054532543442758
+    },
+    {
+      "model": "B_S",
+      "truth_regime": "fixed_primary_truth",
+      "metric": "auroc",
+      "paired_delta": -0.0015840895626870835
+    },
+    {
+      "model": "B_S",
+      "truth_regime": "fixed_primary_truth",
+      "metric": "auprc",
+      "paired_delta": -0.001230213587947231
+    },
+    {
+      "model": "B_S",
+      "truth_regime": "fixed_primary_truth",
+      "metric": "brier",
+      "paired_delta": 0.0002549863386576539
+    },
+    {
+      "model": "B_S",
+      "truth_regime": "native_sensitivity_truth",
+      "metric": "auroc",
+      "paired_delta": -0.0015840895626870835
+    },
+    {
+      "model": "B_S",
+      "truth_regime": "native_sensitivity_truth",
+      "metric": "auprc",
+      "paired_delta": -0.001230213587947231
+    },
+    {
+      "model": "B_S",
+      "truth_regime": "native_sensitivity_truth",
+      "metric": "brier",
+      "paired_delta": 0.0002549863386576539
+    },
+    {
+      "model": "B_A",
+      "truth_regime": "fixed_primary_truth",
+      "metric": "auroc",
+      "paired_delta": 5.5260376287715555e-05
+    },
+    {
+      "model": "B_A",
+      "truth_regime": "fixed_primary_truth",
+      "metric": "auprc",
+      "paired_delta": -0.0028881040717951556
+    },
+    {
+      "model": "B_A",
+      "truth_regime": "fixed_primary_truth",
+      "metric": "brier",
+      "paired_delta": -0.00035044761483597753
+    },
+    {
+      "model": "B_A",
+      "truth_regime": "native_sensitivity_truth",
+      "metric": "auroc",
+      "paired_delta": 4.725016255709628e-05
+    },
+    {
+      "model": "B_A",
+      "truth_regime": "native_sensitivity_truth",
+      "metric": "auprc",
+      "paired_delta": -0.002883470484126599
+    },
+    {
+      "model": "B_A",
+      "truth_regime": "native_sensitivity_truth",
+      "metric": "brier",
+      "paired_delta": -0.0003629435600442654
+    },
+    {
+      "model": "B_A_S",
+      "truth_regime": "fixed_primary_truth",
+      "metric": "auroc",
+      "paired_delta": 0.0005479627259599531
+    },
+    {
+      "model": "B_A_S",
+      "truth_regime": "fixed_primary_truth",
+      "metric": "auprc",
+      "paired_delta": -0.002117504189781752
+    },
+    {
+      "model": "B_A_S",
+      "truth_regime": "fixed_primary_truth",
+      "metric": "brier",
+      "paired_delta": -0.000263540058520755
+    },
+    {
+      "model": "B_A_S",
+      "truth_regime": "native_sensitivity_truth",
+      "metric": "auroc",
+      "paired_delta": 0.0005478491169445264
+    },
+    {
+      "model": "B_A_S",
+      "truth_regime": "native_sensitivity_truth",
+      "metric": "auprc",
+      "paired_delta": -0.002115618562140769
+    },
+    {
+      "model": "B_A_S",
+      "truth_regime": "native_sensitivity_truth",
+      "metric": "brier",
+      "paired_delta": -0.0002725609103506425
+    }
+  ],
+  "primary_evaluation_hashes_unchanged": true,
+  "paired_csv_sha256": "a1b063a366119f97f96ab4c95d6d2ac8f23cf774df8ca45e4e8208f8d8f8b27e",
+  "reporting_source_sha256": "97c66b863e5c7bebc6974d95c91533434aea0c8297add49f1353eb43f397a999",
+  "preserved_report": "reports/history/EXPERIMENT_REPORT_author_labels_before_summary_fix.md",
+  "scope": "Independent standard-library equal-source aggregation of every model, truth regime and metric in the complete author-label paired table"
+}

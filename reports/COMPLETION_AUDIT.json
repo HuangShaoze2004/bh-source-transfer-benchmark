@@ -1,7 +1,7 @@
 {
-  "checked_utc": "2026-11-10T21:56:51.467604+00:00",
+  "checked_utc": "2026-11-11T02:39:44.741965+00:00",
   "status": "INCOMPLETE",
-  "previous_turn_classification": "progress: uniform complete primary evaluation and independent metric reconstruction completed; frozen sensitivity training remains live",
+  "previous_turn_classification": "progress: full author-label training and evaluation independently checked, all common-row summaries corrected, DD process verified live",
   "evidence": {
     "raw_data_audit": {
       "status": "verified",
@@ -55,17 +55,19 @@
       "tree_runtime_audit": "reports/ALL_FORMAL_TREE_RUNTIME_AUDIT.json"
     },
     "both_label_and_DD_sensitivities": {
-      "status": "author_label_neural_running_DD_neural_pending",
+      "status": "author_labels_complete_DD_running",
       "completed_rf_fits": 30,
       "rf_runtime_audit": "reports/ALL_SENSITIVITY_TREE_RUNTIME_AUDIT.json",
       "author_label_lock": "sensitivity/author_labels/FINAL_EVAL_LOCK.json",
       "dd_lock": "sensitivity/dd_original/FINAL_EVAL_LOCK.json",
       "live_neural_counts": {
-        "running": 1
-      }
+        "completed": 31
+      },
+      "author_labels_training_audit": "reports/AUTHOR_LABELS_NEURAL_RUNTIME_AUDIT.json",
+      "author_labels_metric_audit": "sensitivity/author_labels/reports/final/independent_audit.json"
     },
     "final_predictions_bootstrap_and_independent_metrics": {
-      "status": "primary_complete_sensitivities_pending",
+      "status": "primary_and_author_labels_complete_DD_pending",
       "primary_rows": 387666,
       "primary_files": 135,
       "pair_replicates": 5000,
@@ -73,11 +75,19 @@
       "registered_contrasts": 20,
       "audit": "reports/PRIMARY_EVALUATION_AUDIT.json",
       "primary_increment_criterion_met": false,
-      "bootstrap_draws_independently_regenerated": false
+      "bootstrap_draws_independently_regenerated": false,
+      "author_labels_rows": 215370,
+      "common_row_summary_audit": "reports/COMMON_ROW_SUMMARY_AUDIT.json"
     },
     "final_report_and_scientific_readiness": {
-      "status": "pending",
+      "status": "stage_report_exists_DD_and_final_verification_pending",
+      "path": "reports/EXPERIMENT_REPORT.md",
       "completion_claim_permitted": false
+    },
+    "common_summary_regression_tests": {
+      "status": "PASS",
+      "passed": 15,
+      "run_id": "review_common_summary_regression_v1"
     }
   },
   "completion_claim_permitted": false,
@@ -85,7 +95,7 @@
   "prior_snapshot_sha256": "900040e9f8f8e3d3e8a812f9fdef2a53a8ff3e7212669293d49d8d9424bb7fd2",
   "preparation_checks_originally_recorded_utc": "2026-11-10T03:23:19.879998+00:00",
   "live_runtime_snapshot": {
-    "utc": "2026-11-10T21:56:51.677207+00:00",
+    "utc": "2026-11-11T02:39:44.693937+00:00",
     "counts": {
       "inner_tree": {
         "completed": 30
@@ -94,7 +104,7 @@
         "completed": 120
       },
       "other": {
-        "completed": 150
+        "completed": 160
       },
       "formal_tree": {
         "completed": 45
@@ -103,42 +113,45 @@
         "completed": 45
       },
       "evaluation": {
-        "completed": 1
+        "completed": 2
       },
       "sensitivity_tree": {
         "completed": 30
       },
       "sensitivity_neural": {
+        "completed": 31
+      },
+      "sensitivity_prediction": {
+        "completed": 76,
         "running": 1
       }
     },
     "active": [
       {
-        "run_id": "sens_author_labels_az_eln_2023_erm_s17",
-        "pid": 414614,
+        "run_id": "sens_dd_original_predict_az_eln_2023_B_S_s17",
+        "pid": 596596,
         "process_identity_alive": true,
         "process_state": "running",
-        "cpu_seconds": 450.34000000000003,
-        "epochs_completed": 7
+        "cpu_seconds": 1.79
       }
     ],
     "controller": {
       "controller_pid": 712160,
       "controller_start_time": 1794280064.29,
-      "phase": "sensitivity_author_labels",
-      "utc": "2026-11-10T21:56:49.356310+00:00",
-      "worker_pid": 414587,
+      "phase": "sensitivity_dd_original",
+      "utc": "2026-11-11T02:39:36.809276+00:00",
+      "worker_pid": 589449,
       "command": [
         "/root/autodl-tmp/paper-academic-tailor-2/bh_source_robust_transfer/.venv/bin/python",
         "scripts/sensitivity_pipeline.py",
         "--kind",
-        "author_labels"
+        "dd_original"
       ],
       "process_identity_alive": true
     },
     "budget": {
-      "gpu_hours": 18.913603821680365,
-      "cpu_core_hours": 21.555960535833332,
+      "gpu_hours": 23.58715861654323,
+      "cpu_core_hours": 26.405481235833335,
       "active_cpu_threads": 1,
       "development_gpu_hours": 12.129947342723607,
       "feasibility_gpu_hours": 0.025113719089163673
@@ -153,11 +166,21 @@
           "completed": 1000,
           "requested": 1000
         }
+      },
+      "author_labels": {
+        "pair": {
+          "completed": 5000,
+          "requested": 5000
+        },
+        "pigeonhole": {
+          "completed": 1000,
+          "requested": 1000
+        }
       }
     },
     "frozen_artifact_mismatches": [],
     "unreadable_status_files": []
   },
   "prior_training_snapshot": "reports/history/COMPLETION_AUDIT_MAIN_TRAINING_20261110.json",
-  "outer_metrics_scope": "complete_primary_matrix; sensitivities not released"
+  "outer_metrics_scope": "primary_and_author_labels_complete"
 }

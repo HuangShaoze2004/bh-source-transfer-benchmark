@@ -228,3 +228,33 @@ def test_synthetic_end_to_end_report_and_standalone_figures(auditor, synthetic_p
     for filename in ("macro_auroc.png", "macro_auroc.pdf", "source_auroc_heatmap.png", "source_auroc_heatmap.pdf"):
         assert (synthetic_project/"reports/final"/filename).stat().st_size > 0
     assert auditor.read_json(synthetic_project/"reports/final/independent_audit.json")["status"] == "PASS"
+
+
+def test_common_summary_excludes_descriptive_source(auditor):
+    lock = {"folds": [{"source": "qualified_a", "eligible": True},
+                      {"source": "qualified_b", "eligible": True},
+                      {"source": "descriptive", "eligible": False}]}
+    records = []
+    for source, delta in [("qualified_a", .02), ("qualified_b", -.02), ("descriptive", .9)]:
+        for seed in [17, 42, 2026]:
+            records.append(dict(source=source, model="B_A_S", seed=seed,
+                                truth_regime="fixed_primary_truth", metric="auroc", paired_delta=delta))
+    result = auditor.common_row_summary(pd.DataFrame(records), lock, lock)
+    assert len(result) == 1
+    assert result.iloc[0].n_sources == 2
+    assert result.iloc[0].auroc == pytest.approx(0.)
+    assert result.attrs["qualified_sources"] == ["qualified_a", "qualified_b"]
+
+
+@pytest.mark.parametrize("missing_source", [False, True])
+def test_common_summary_retains_undefined_qualified_source(auditor, missing_source):
+    lock = {"folds": [{"source": "qualified_a", "eligible": True},
+                      {"source": "qualified_b", "eligible": True}]}
+    records = [dict(source="qualified_a", model="B", seed=17,
+                    truth_regime="fixed_primary_truth", metric="auroc", paired_delta=.1)]
+    if not missing_source:
+        records.append(dict(source="qualified_b", model="B", seed=17,
+                            truth_regime="fixed_primary_truth", metric="auroc", paired_delta=np.nan))
+    result = auditor.common_row_summary(pd.DataFrame(records), lock, lock)
+    assert result.iloc[0].n_sources == 2
+    assert pd.isna(result.iloc[0].auroc)

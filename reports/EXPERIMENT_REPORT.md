@@ -220,7 +220,30 @@ Tokenizer显式调整：`{"added_token_ids": [591, 592], "added_tokens": ["->", 
 
 ### author_labels
 
-状态：PENDING。未读取未完成的预测，也不将部分矩阵作为完成证据。
+| model | n_sources | auroc | auprc | brier | cal_brier | worst_source_auroc |
+|---|---|---|---|---|---|---|
+| R1_substitute | 4 | 0.5153 | 0.5297 | 0.2647 | 0.2647 | 0.3766 |
+| B | 4 | 0.5512 | 0.5568 | 0.3288 | 0.3288 | 0.4251 |
+| B_S | 4 | 0.5517 | 0.5578 | 0.3291 | 0.3291 | 0.4223 |
+| B_A | 4 | 0.5579 | 0.5525 | 0.3308 | 0.3308 | 0.4083 |
+| B_A_S | 4 | 0.5571 | 0.5532 | 0.3334 | 0.3334 | 0.4116 |
+
+共同测试行的点差为敏感性模型减主模型，使用原始概率。每个 truth_regime 下，两套模型均按同一套真值重算。表中先对 seed 平均，再对两份冻结方案均合格的来源等权平均。任一来源缺失或单类时保留 NA。主宏指标见主表。
+
+共同测试行汇总的合格来源为 AZ ELN 2023, JNJ HTE 2024, Merck 2025, Roche 2023。逐来源记录保存在 author_labels_paired_common_rows.csv。
+
+| model | truth_regime | n_sources | auprc | auroc | brier |
+|---|---|---|---|---|---|
+| B | fixed_primary_truth | 4 | -0.0010 | -0.0012 | 0.0010 |
+| B | native_sensitivity_truth | 4 | -0.0010 | -0.0012 | 0.0010 |
+| B_A | fixed_primary_truth | 4 | -0.0029 | 0.0001 | -0.0004 |
+| B_A | native_sensitivity_truth | 4 | -0.0029 | 0.0000 | -0.0004 |
+| B_A_S | fixed_primary_truth | 4 | -0.0021 | 0.0005 | -0.0003 |
+| B_A_S | native_sensitivity_truth | 4 | -0.0021 | 0.0005 | -0.0003 |
+| B_S | fixed_primary_truth | 4 | -0.0012 | -0.0016 | 0.0003 |
+| B_S | native_sensitivity_truth | 4 | -0.0012 | -0.0016 | 0.0003 |
+| R1_substitute | fixed_primary_truth | 4 | 0.0003 | 0.0003 | 0.0015 |
+| R1_substitute | native_sensitivity_truth | 4 | 0.0003 | 0.0003 | 0.0015 |
 
 ### dd_original
 
@@ -232,11 +255,13 @@ Dreher Doyle原版本缺少具体添加剂身份，仅作为条件不完整敏�
 
 实际训练审计：`{"status": "PASS", "formal_trajectories": 45, "matched_update_budgets": true, "resumable_states_verified": true, "all_swa_multiple_snapshots": true, "source_sha256": "5297bab9e3de4fbc6cb1089fa591126cd464a68f02f8e8330f95a1b3a10e9d0b"}`。逐轨迹更新数、样本曝光、SWA快照数及GroupDRO权重/有效样本量见final/training_budget_audit.csv与final/groupdro_trajectories.csv；权重图见final/groupdro_weight_trajectories.png。权重集中仅描述优化行为，不能证明未见来源泛化或反应机理。
 
-预算记录：`{"gpu_hours": 18.948371464572848, "cpu_core_hours": 21.597509205833337, "active_cpu_threads": 0, "development_gpu_hours": 12.129947342723607, "feasibility_gpu_hours": 0.025113719089163673}`。失败与重试累计；upper_bound标记保守收费，包括结束时刻不明的孤儿任务及协调器自身CPU用量预留；子训练任务单独计费。完整成功/失败账本见final/run_inventory.csv及../runs/ledger.jsonl。报告生成任务若仍在运行，其最终小额成本以随后完成的guard账本为准。
+预算记录：`{"gpu_hours": 23.52486860496923, "cpu_core_hours": 26.334230556944444, "active_cpu_threads": 1, "development_gpu_hours": 12.129947342723607, "feasibility_gpu_hours": 0.025113719089163673}`。失败与重试累计；upper_bound标记保守收费，包括结束时刻不明的孤儿任务及协调器自身CPU用量预留；子训练任务单独计费。完整成功/失败账本见final/run_inventory.csv及../runs/ledger.jsonl。报告生成任务若仍在运行，其最终小额成本以随后完成的guard账本为准。
 
 账本无失败或中断的任务记录；环境下载中断见 [DECISIONS](../DECISIONS.md)。
 
 CPU对照实际拟合证据：[30次主内层拟合审计](ALL_TREE_INNER_RUNTIME_AUDIT.json)、[45次主正式拟合审计](ALL_FORMAL_TREE_RUNTIME_AUDIT.json)、[30次敏感性RF拟合审计](ALL_SENSITIVITY_TREE_RUNTIME_AUDIT.json)。具体检查范围、训练分区、固定参数和已保存文件的核验记录见各审计报告；审计过程未读取外层预测或指标。
+
+author_labels 分支的全部神经训练状态检查见 [审计记录](AUTHOR_LABELS_NEURAL_RUNTIME_AUDIT.json)。
 
 独立审计PASS：逐条标签/来源/底物实体/底物对/条件ID与冻结records一致；锁定模型×seed×行矩阵完整；sklearn独立重建主表及逐来源逐seed指标，与原评价表在1e-10容差内一致。审计清单和源码hash见final/independent_audit.json。
 

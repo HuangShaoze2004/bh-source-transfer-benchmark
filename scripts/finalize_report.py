@@ -326,6 +326,25 @@ def common_row_comparison(main, alternative, kind, common_ids=None):
     return pd.DataFrame(results)
 
 
+def common_row_summary(comparison, main_lock, alternative_lock):
+    main_sources = {fold["source"] for fold in main_lock["folds"] if fold["eligible"]}
+    alternative_sources = {fold["source"] for fold in alternative_lock["folds"] if fold["eligible"]}
+    sources = sorted(main_sources & alternative_sources)
+    if comparison.empty or not sources:
+        return pd.DataFrame(columns=["model", "truth_regime", "n_sources"])
+    levels = ["source", "model", "truth_regime", "metric"]
+    per_source = comparison.groupby(levels).paired_delta.agg(lambda values: values.mean(skipna=False))
+    expected = pd.MultiIndex.from_product(
+        [sources, sorted(comparison.model.unique()), sorted(comparison.truth_regime.unique()),
+         sorted(comparison.metric.unique())], names=levels)
+    per_source = per_source.reindex(expected)
+    summary = per_source.groupby(level=["model", "truth_regime", "metric"]).agg(
+        lambda values: values.mean(skipna=False)).unstack("metric").reset_index()
+    summary.insert(2, "n_sources", len(sources))
+    summary.attrs["qualified_sources"] = sources
+    return summary
+
+
 def domain_analysis(main, out):
     path = main["project"]/"reports/domain/row_covariates.parquet"
     if not path.exists():
@@ -492,8 +511,9 @@ def finalize(project):
             comparison = common_row_comparison(bundle, alternative, kind, common)
             comparison.to_csv(out/f"{kind}_paired_common_rows.csv", index=False)
             sensitivity_states[kind] = "COMPLETE"
-            compact = comparison.groupby(["model", "truth_regime", "metric"]).paired_delta.agg(lambda values: values.mean(skipna=False)).unstack("metric").reset_index()
-            sensitivity_text.extend([f"### {kind}", "", markdown_table(alternative["macro"]), "", "共同测试行的来源等权、seed平均点差（敏感性减主模型；原始概率；来源集合由共同测试行确定，不替代主宏指标；任一来源单类时保留NA而不省略该来源）：", "", markdown_table(compact), ""])
+            compact = common_row_summary(comparison, bundle["lock"], alternative["lock"])
+            qualified_names = ", ".join(compact.attrs.get("qualified_sources", []))
+            sensitivity_text.extend([f"### {kind}", "", markdown_table(alternative["macro"]), "", "共同测试行的点差为敏感性模型减主模型，使用原始概率。每个 truth_regime 下，两套模型均按同一套真值重算。表中先对 seed 平均，再对两份冻结方案均合格的来源等权平均。任一来源缺失或单类时保留 NA。主宏指标见主表。", "", f"共同测试行汇总的合格来源为 {qualified_names}。逐来源记录保存在 {kind}_paired_common_rows.csv。", "", markdown_table(compact), ""])
         except PendingEvaluation:
             previous = read_json(alternative_root/"STATE.json", {})
             state = previous.get("status", "PENDING")
@@ -545,6 +565,7 @@ def finalize(project):
              ("账本无失败或中断的任务记录；环境下载中断见 [DECISIONS](../DECISIONS.md)。" if failures.empty else
               markdown_table(failures[[c for c in ("run_id", "stage", "status", "exit_code", "gpu_hours", "cpu_core_hours", "reason") if c in failures]])), "",
              "CPU对照实际拟合证据：[30次主内层拟合审计](ALL_TREE_INNER_RUNTIME_AUDIT.json)、[45次主正式拟合审计](ALL_FORMAL_TREE_RUNTIME_AUDIT.json)、[30次敏感性RF拟合审计](ALL_SENSITIVITY_TREE_RUNTIME_AUDIT.json)。具体检查范围、训练分区、固定参数和已保存文件的核验记录见各审计报告；审计过程未读取外层预测或指标。", "",
+             *[f"{kind} 分支的全部神经训练状态检查见 [审计记录]({kind.upper()}_NEURAL_RUNTIME_AUDIT.json)。" for kind in ("author_labels", "dd_original") if (project/f"reports/{kind.upper()}_NEURAL_RUNTIME_AUDIT.json").exists()], "",
              "独立审计PASS：逐条标签/来源/底物实体/底物对/条件ID与冻结records一致；锁定模型×seed×行矩阵完整；sklearn独立重建主表及逐来源逐seed指标，与原评价表在1e-10容差内一致。审计清单和源码hash见final/independent_audit.json。", "",
              "## 局限、文献差异与复现", "", "CAD、isolated yield、MisER与LCAP混合测量，统一10%阈值不消除测量差异；温度、时间、浓度与部分载量缺失。无标签预训练与测试结构的重叠不能排除。来源均衡可能解释部分收益，因此保留B_bal及B_bal_S。GroupDRO/SWA为成熟方法，注意力或特征归因不能证明机理。负结果如实交付，未达到门槛不强行宣称增量。", "",
              "原文与直接近例已包含多来源或双底物OOD研究，差异来自受控实验而非首创这些任务。详见 [文献差异](LITERATURE_DIFFERENCES.md) 与 [期刊范围及subscription非OA路径](JOURNAL_SCOPE.md)。Reaction Chemistry & Engineering与Chemical Papers是否接受由编辑和评审判断，本项目不投稿。", "",
