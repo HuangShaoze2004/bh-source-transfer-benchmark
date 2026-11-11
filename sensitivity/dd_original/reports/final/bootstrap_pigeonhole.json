@@ -1,0 +1,21 @@
+{
+  "signature": "ceb088df9dbe160c07d4fdedf2f82279b647a265ed17949f91b816198d30d071",
+  "scheme": "pigeonhole",
+  "completed": 1000,
+  "requested": 1000,
+  "bootstrap_seed": 1729,
+  "models": [
+    "R1_substitute",
+    "B",
+    "B_S",
+    "B_A",
+    "B_A_S"
+  ],
+  "sources": [
+    "AZ ELN 2023",
+    "JNJ HTE 2024",
+    "Merck 2025",
+    "Roche 2023"
+  ],
+  "rng": "SeedSequence([seed, scheme_index, replicate_index, source_index])"
+}

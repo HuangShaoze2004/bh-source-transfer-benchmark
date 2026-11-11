@@ -1,0 +1,80 @@
+{
+  "status": "PASS",
+  "predictions_sha256": "26fa5487d45ac043bfc07e43bee7c9b789eeafd4e6d72f6a7adb86dc3950078d",
+  "lock_sha256": "b7005aff7fa71ab452015047b8b3a0d0aa0efa718fcdb937915d1267f6576a84",
+  "auditor_sha256": "d5f0ccc5241c11b041a468a280e2fa00209b2a6aa331de0a2ad5ca2af69fc153",
+  "checked_rows": 387666,
+  "metric_backend": "sklearn; no bh_transfer.evaluate import",
+  "split_summary": [
+    {
+      "fold": "az_eln_2023",
+      "source": "AZ ELN 2023",
+      "eligible": true,
+      "test_rows": 607,
+      "test_pairs": 376,
+      "test_aryls": 230,
+      "test_amines": 207,
+      "inner_splits": 2
+    },
+    {
+      "fold": "dreher_2014",
+      "source": "Dreher 2014",
+      "eligible": false,
+      "test_rows": 0,
+      "test_pairs": 0,
+      "test_aryls": 0,
+      "test_amines": 0,
+      "inner_splits": 2
+    },
+    {
+      "fold": "dreher_2016",
+      "source": "Dreher 2016",
+      "eligible": false,
+      "test_rows": 0,
+      "test_pairs": 0,
+      "test_aryls": 0,
+      "test_amines": 0,
+      "inner_splits": 2
+    },
+    {
+      "fold": "hitea_2024",
+      "source": "HiTEA 2024",
+      "eligible": false,
+      "test_rows": 1387,
+      "test_pairs": 15,
+      "test_aryls": 14,
+      "test_amines": 13,
+      "inner_splits": 2
+    },
+    {
+      "fold": "jnj_hte_2024",
+      "source": "JNJ HTE 2024",
+      "eligible": true,
+      "test_rows": 8016,
+      "test_pairs": 546,
+      "test_aryls": 90,
+      "test_amines": 65,
+      "inner_splits": 2
+    },
+    {
+      "fold": "merck_2025",
+      "source": "Merck 2025",
+      "eligible": true,
+      "test_rows": 2668,
+      "test_pairs": 2668,
+      "test_aryls": 335,
+      "test_amines": 8,
+      "inner_splits": 2
+    },
+    {
+      "fold": "roche_2023",
+      "source": "Roche 2023",
+      "eligible": true,
+      "test_rows": 1680,
+      "test_pairs": 65,
+      "test_aryls": 28,
+      "test_amines": 18,
+      "inner_splits": 2
+    }
+  ]
+}

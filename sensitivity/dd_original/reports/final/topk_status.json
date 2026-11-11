@@ -1,0 +1,6 @@
+{
+  "status": "DESCRIPTIVE_ONLY",
+  "limitation": "Ranking of measured conditions only; no claims about unmeasured candidates",
+  "tie_policy": "condition_id lexical order",
+  "repeat_policy": "Exclude entire pair if any measured condition is repeated; report coverage loss"
+}

@@ -1,0 +1,71 @@
+{
+  "status": "COMPLETE",
+  "summary": [
+    {
+      "source": "AZ ELN 2023",
+      "n_rows": 607,
+      "n_pairs": 376,
+      "n_aryls": 230,
+      "n_amines": 207,
+      "aryl_similarity_mean": 0.3788746403971498,
+      "amine_similarity_mean": 0.3951604122306848,
+      "catalyst_exact_coverage": 0.0,
+      "base_exact_coverage": 0.9686985172981878,
+      "solvent_exact_coverage": 0.9637561779242174,
+      "positive_rate": 0.7693574958813838
+    },
+    {
+      "source": "HiTEA 2024",
+      "n_rows": 1387,
+      "n_pairs": 15,
+      "n_aryls": 14,
+      "n_amines": 13,
+      "aryl_similarity_mean": 0.3728731702416353,
+      "amine_similarity_mean": 0.5457608366913991,
+      "catalyst_exact_coverage": 0.03028118240807498,
+      "base_exact_coverage": 0.4260994953136265,
+      "solvent_exact_coverage": 0.8810382119682768,
+      "positive_rate": 0.13987022350396539
+    },
+    {
+      "source": "JNJ HTE 2024",
+      "n_rows": 8016,
+      "n_pairs": 546,
+      "n_aryls": 90,
+      "n_amines": 65,
+      "aryl_similarity_mean": 0.4271661834263708,
+      "amine_similarity_mean": 0.34190500303244353,
+      "catalyst_exact_coverage": 0.019461077844311378,
+      "base_exact_coverage": 0.8977045908183633,
+      "solvent_exact_coverage": 1.0,
+      "positive_rate": 0.3638972055888224
+    },
+    {
+      "source": "Merck 2025",
+      "n_rows": 2668,
+      "n_pairs": 2668,
+      "n_aryls": 335,
+      "n_amines": 8,
+      "aryl_similarity_mean": 0.40587648801546955,
+      "amine_similarity_mean": 0.42051704139943946,
+      "catalyst_exact_coverage": 0.0,
+      "base_exact_coverage": 0.0,
+      "solvent_exact_coverage": 1.0,
+      "positive_rate": 0.4047976011994003
+    },
+    {
+      "source": "Roche 2023",
+      "n_rows": 1680,
+      "n_pairs": 65,
+      "n_aryls": 28,
+      "n_amines": 18,
+      "aryl_similarity_mean": 0.4703968562823847,
+      "amine_similarity_mean": 0.43206632851374766,
+      "catalyst_exact_coverage": 0.0,
+      "base_exact_coverage": 1.0,
+      "solvent_exact_coverage": 1.0,
+      "positive_rate": 0.4488095238095238
+    }
+  ],
+  "interpretation": "Exploratory descriptive strata; exact chemical forms preserve charge/salts/coordination, not catalyst-class novelty; no mechanism claims"
+}

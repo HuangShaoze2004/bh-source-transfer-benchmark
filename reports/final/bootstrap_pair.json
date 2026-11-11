@@ -1,0 +1,25 @@
+{
+  "signature": "725bdd82d1be1770c002afbf3268d357dd34e366e13d9ee1b33920cb54a0d189",
+  "scheme": "pair",
+  "completed": 5000,
+  "requested": 5000,
+  "bootstrap_seed": 20261110,
+  "models": [
+    "R0_RF",
+    "R0_HGB",
+    "R1_substitute",
+    "B",
+    "B_S",
+    "B_bal",
+    "B_bal_S",
+    "B_A",
+    "B_A_S"
+  ],
+  "sources": [
+    "AZ ELN 2023",
+    "JNJ HTE 2024",
+    "Merck 2025",
+    "Roche 2023"
+  ],
+  "rng": "SeedSequence([seed, scheme_index, replicate_index, source_index])"
+}

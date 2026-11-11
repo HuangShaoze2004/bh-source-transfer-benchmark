@@ -1,40 +1,121 @@
 {
-  "checked_utc": "2026-11-11T02:39:44.741965+00:00",
-  "status": "INCOMPLETE",
-  "previous_turn_classification": "progress: full author-label training and evaluation independently checked, all common-row summaries corrected, DD process verified live",
-  "evidence": {
-    "raw_data_audit": {
-      "status": "verified",
+  "checked_utc": "2026-11-11T08:14:55.664699+00:00",
+  "status": "PASS",
+  "scientific_status": "NOT_READY",
+  "completion_claim_permitted": true,
+  "outcome": "Complete frozen experiments and negative-result delivery; increment criterion unmet",
+  "static_requirement_groups": {
+    "saved_user_request": {
+      "status": "PASS",
       "paths": [
-        "DATA_AUDIT.md",
-        "data/audit/summary.json"
+        "USER_REQUEST.md"
       ]
     },
-    "frozen_protocol": {
-      "status": "verified",
-      "sha256": "b7005aff7fa71ab452015047b8b3a0d0aa0efa718fcdb937915d1267f6576a84",
-      "all_artifact_hashes_match": true
+    "maintained_project_records": {
+      "status": "PASS",
+      "paths": [
+        "PLAN.md",
+        "STATE.json",
+        "DATA_AUDIT.md",
+        "EXPERIMENT_PROTOCOL.md",
+        "DECISIONS.md",
+        "runs/ledger.jsonl"
+      ]
     },
-    "pretrained_smoke_and_fit": {
-      "status": "verified",
-      "path": "artifacts/FEASIBILITY.json"
+    "isolated_environment": {
+      "status": "PASS",
+      "paths": [
+        ".venv/bin/python",
+        "requirements.lock.txt",
+        "pyproject.toml"
+      ]
     },
-    "correctness_tests": {
-      "status": "verified",
-      "original_suite_passed": 65,
-      "additional_training_audit_tests_passed": 6,
-      "changed_report_regression_tests_passed": 12
+    "immutable_data_provenance": {
+      "status": "PASS",
+      "paths": [
+        "data/raw/SOURCE_MANIFEST.json",
+        "data/raw/BH_HTE_Curated_Dataset_v20260219.csv",
+        "data/raw/zenodo_public_metadata.json"
+      ]
     },
-    "actual_training_state_audit": {
-      "status": "verified_all_45_main_formal_trajectories",
-      "path": "reports/ALL_FORMAL_NEURAL_RUNTIME_AUDIT.json",
-      "scope": "Saved IDs/configuration/budgets/source logs/optimizer and RNG fields/multiple SWA snapshots; no external generalization claim"
+    "field_units_missingness_duplicates": {
+      "status": "PASS",
+      "paths": [
+        "data/audit/fields.csv",
+        "data/audit/summary.json",
+        "data/audit/raw_duplicate_inputs.parquet",
+        "data/audit/duplicate_inputs.parquet",
+        "data/audit/raw_source_summary.csv",
+        "data/audit/source_summary.csv"
+      ]
     },
-    "nested_development": {
-      "status": "complete",
-      "completed_neural_trajectories": 120,
-      "completed_tree_fits": 30,
-      "selection_audits": [
+    "label_boundary_discrepancies": {
+      "status": "PASS",
+      "paths": [
+        "data/audit/label_disagreements.csv",
+        "data/audit/yield_exactly_10.csv"
+      ]
+    },
+    "quantum_feature_role_audit": {
+      "status": "PASS",
+      "paths": [
+        "data/audit/qm_role_consistency.csv",
+        "data/audit/original_qm.npz"
+      ]
+    },
+    "additive_recovery_bound": {
+      "status": "PASS",
+      "paths": [
+        "reports/ADDITIVE_RECOVERY.md",
+        "data/audit/additive_recovery/manifest.json",
+        "data/audit/excluded_rows.csv"
+      ]
+    },
+    "chemical_mapping_and_token_audit": {
+      "status": "PASS",
+      "paths": [
+        "data/audit/structure_mapping.parquet",
+        "data/audit/entity_rule_sensitivity.csv",
+        "data/audit/token_serialization_mapping.parquet",
+        "data/audit/token_audit.json"
+      ]
+    },
+    "fixed_features_and_nested_splits": {
+      "status": "PASS",
+      "paths": [
+        "data/processed/feature_manifest.json",
+        "data/processed/features.npz",
+        "data/processed/records.parquet",
+        "data/processed/splits.json",
+        "FINAL_EVAL_LOCK.json"
+      ]
+    },
+    "generic_checkpoint_and_tokenizer": {
+      "status": "PASS",
+      "paths": [
+        "weights/rxnfp/manifest.json",
+        "weights/rxnfp/tokenizer_extension_manifest.json",
+        "weights/rxnfp/pytorch_model.bin",
+        "weights/rxnfp/extended_vocab.txt"
+      ]
+    },
+    "fit_gradient_throughput_memory": {
+      "status": "PASS",
+      "paths": [
+        "artifacts/FEASIBILITY.json",
+        "artifacts/BUDGET_ESTIMATE.json"
+      ]
+    },
+    "groupdro_hand_and_runtime_checks": {
+      "status": "PASS",
+      "paths": [
+        "reports/GROUPDRO_RUNTIME_CHECK.json",
+        "reports/GROUPDRO_COMPLETED_TRAJECTORY_AUDIT.json"
+      ]
+    },
+    "all_inner_selection_audits": {
+      "status": "PASS",
+      "paths": [
         "reports/FIRST_FOLD_SELECTION_AUDIT.json",
         "reports/HITEA_SELECTION_AUDIT.json",
         "reports/JNJ_SELECTION_AUDIT.json",
@@ -42,60 +123,126 @@
         "reports/ROCHE_SELECTION_AUDIT.json"
       ]
     },
-    "formal_three_seed_comparison": {
-      "status": "training_complete_external_evaluation_pending",
-      "formal_neural_trajectories": 45,
-      "formal_tree_fits": 45,
+    "tree_model_audits": {
+      "status": "PASS",
+      "paths": [
+        "reports/ALL_TREE_INNER_RUNTIME_AUDIT.json",
+        "reports/ALL_FORMAL_TREE_RUNTIME_AUDIT.json",
+        "reports/ALL_SENSITIVITY_TREE_RUNTIME_AUDIT.json"
+      ]
+    },
+    "main_full_state_and_matched_budget_audit": {
+      "status": "PASS",
+      "paths": [
+        "reports/ALL_FORMAL_NEURAL_RUNTIME_AUDIT.json",
+        "reports/final/training_budget_audit.csv",
+        "reports/final/groupdro_trajectories.csv"
+      ]
+    },
+    "independent_prediction_and_metric_audit": {
+      "status": "PASS",
+      "paths": [
+        "reports/PRIMARY_EVALUATION_AUDIT.json",
+        "reports/COMMON_ROW_SUMMARY_AUDIT.json"
+      ]
+    },
+    "module_and_near_literature_and_journals": {
+      "status": "PASS",
+      "paths": [
+        "reports/LITERATURE_DIFFERENCES.md",
+        "reports/JOURNAL_SCOPE.md",
+        "third_party/METHOD_REFERENCE_MANIFEST.json"
+      ]
+    }
+  },
+  "evaluations": {
+    "primary": {
+      "status": "PASS",
+      "independently_reconstructed_rows": 387666,
+      "methods": 9,
       "seeds": [
         17,
         42,
         2026
       ],
-      "training_runtime_audit": "reports/ALL_FORMAL_NEURAL_RUNTIME_AUDIT.json",
-      "tree_runtime_audit": "reports/ALL_FORMAL_TREE_RUNTIME_AUDIT.json"
+      "eligible_sources": [
+        "AZ ELN 2023",
+        "JNJ HTE 2024",
+        "Merck 2025",
+        "Roche 2023"
+      ],
+      "pair_bootstrap": 5000,
+      "shared_substrate_bootstrap": 1000,
+      "predictions_sha256": "26fa5487d45ac043bfc07e43bee7c9b789eeafd4e6d72f6a7adb86dc3950078d",
+      "lock_sha256": "b7005aff7fa71ab452015047b8b3a0d0aa0efa718fcdb937915d1267f6576a84"
     },
-    "both_label_and_DD_sensitivities": {
-      "status": "author_labels_complete_DD_running",
-      "completed_rf_fits": 30,
-      "rf_runtime_audit": "reports/ALL_SENSITIVITY_TREE_RUNTIME_AUDIT.json",
-      "author_label_lock": "sensitivity/author_labels/FINAL_EVAL_LOCK.json",
-      "dd_lock": "sensitivity/dd_original/FINAL_EVAL_LOCK.json",
-      "live_neural_counts": {
-        "completed": 31
-      },
-      "author_labels_training_audit": "reports/AUTHOR_LABELS_NEURAL_RUNTIME_AUDIT.json",
-      "author_labels_metric_audit": "sensitivity/author_labels/reports/final/independent_audit.json"
-    },
-    "final_predictions_bootstrap_and_independent_metrics": {
-      "status": "primary_and_author_labels_complete_DD_pending",
-      "primary_rows": 387666,
-      "primary_files": 135,
-      "pair_replicates": 5000,
-      "pigeonhole_replicates": 1000,
-      "registered_contrasts": 20,
-      "audit": "reports/PRIMARY_EVALUATION_AUDIT.json",
-      "primary_increment_criterion_met": false,
-      "bootstrap_draws_independently_regenerated": false,
-      "author_labels_rows": 215370,
-      "common_row_summary_audit": "reports/COMMON_ROW_SUMMARY_AUDIT.json"
-    },
-    "final_report_and_scientific_readiness": {
-      "status": "stage_report_exists_DD_and_final_verification_pending",
-      "path": "reports/EXPERIMENT_REPORT.md",
-      "completion_claim_permitted": false
-    },
-    "common_summary_regression_tests": {
+    "author_labels": {
       "status": "PASS",
-      "passed": 15,
-      "run_id": "review_common_summary_regression_v1"
+      "independently_reconstructed_rows": 215370,
+      "methods": 5,
+      "seeds": [
+        17,
+        42,
+        2026
+      ],
+      "eligible_sources": [
+        "AZ ELN 2023",
+        "JNJ HTE 2024",
+        "Merck 2025",
+        "Roche 2023"
+      ],
+      "pair_bootstrap": 5000,
+      "shared_substrate_bootstrap": 1000,
+      "predictions_sha256": "f6ea8efe119295c2b2592b02d5427d3adee480733f2691053d988c23fba6989c",
+      "lock_sha256": "208273c7d487cbaae271a3f6d004f655b0a318a5554c637eee9106600fa8814f"
+    },
+    "dd_original": {
+      "status": "PASS",
+      "independently_reconstructed_rows": 211635,
+      "methods": 5,
+      "seeds": [
+        17,
+        42,
+        2026
+      ],
+      "eligible_sources": [
+        "AZ ELN 2023",
+        "JNJ HTE 2024",
+        "Merck 2025",
+        "Roche 2023"
+      ],
+      "pair_bootstrap": 5000,
+      "shared_substrate_bootstrap": 1000,
+      "predictions_sha256": "1e0de17e2c7a388401bc2ac63ebb3b9fdd8c0d014779f6c056357be6d4a6a5fc",
+      "lock_sha256": "3f2b9cd00f0cfeef381ce7669ac21542d7a15868a39bd3a873d0d4ec4f7b544b"
     }
   },
-  "completion_claim_permitted": false,
-  "prior_snapshot": "reports/history/COMPLETION_AUDIT_20261110T032319.json",
-  "prior_snapshot_sha256": "900040e9f8f8e3d3e8a812f9fdef2a53a8ff3e7212669293d49d8d9424bb7fd2",
-  "preparation_checks_originally_recorded_utc": "2026-11-10T03:23:19.879998+00:00",
+  "training": {
+    "inner_neural_trajectories": 120,
+    "formal_main_neural_trajectories": 45,
+    "formal_sensitivity_neural_trajectories": 60,
+    "inner_tree_fits": 30,
+    "formal_main_tree_fits": 45,
+    "formal_sensitivity_rf_fits": 30,
+    "saved_neural_runtime_audits": "PASS for all105 formal trajectories"
+  },
+  "regression_suite": {
+    "passed": 74,
+    "guard_run_id": "review_final_regression_v1",
+    "guard_status_sha256": "39d849a9451ed502507435f503473773b8b421e3a83552d08ac59266d3b3abea"
+  },
+  "common_summary_values_verified": 60,
+  "budget_snapshot": {
+    "gpu_hours": 29.039922166025885,
+    "cpu_core_hours": 32.02379874361111,
+    "active_cpu_threads": 1,
+    "development_gpu_hours": 12.129947342723607,
+    "feasibility_gpu_hours": 0.025113719089163673
+  },
+  "budget_final_authority": "runs/ledger.jsonl and runs/budget_totals.json after this guarded review exits",
+  "local_report_links": "PASS",
   "live_runtime_snapshot": {
-    "utc": "2026-11-11T02:39:44.693937+00:00",
+    "utc": "2026-11-11T08:14:55.383729+00:00",
     "counts": {
       "inner_tree": {
         "completed": 30
@@ -104,7 +251,8 @@
         "completed": 120
       },
       "other": {
-        "completed": 160
+        "completed": 168,
+        "running": 1
       },
       "formal_tree": {
         "completed": 45
@@ -113,45 +261,38 @@
         "completed": 45
       },
       "evaluation": {
-        "completed": 2
+        "completed": 3
       },
       "sensitivity_tree": {
         "completed": 30
       },
       "sensitivity_neural": {
-        "completed": 31
+        "completed": 60
       },
       "sensitivity_prediction": {
-        "completed": 76,
-        "running": 1
+        "completed": 150
       }
     },
     "active": [
       {
-        "run_id": "sens_dd_original_predict_az_eln_2023_B_S_s17",
-        "pid": 596596,
+        "run_id": "review_delivery_completion_v1",
+        "pid": 809464,
         "process_identity_alive": true,
-        "process_state": "running",
-        "cpu_seconds": 1.79
+        "process_state": "sleeping",
+        "cpu_seconds": 0.16
       }
     ],
     "controller": {
       "controller_pid": 712160,
       "controller_start_time": 1794280064.29,
-      "phase": "sensitivity_dd_original",
-      "utc": "2026-11-11T02:39:36.809276+00:00",
-      "worker_pid": 589449,
-      "command": [
-        "/root/autodl-tmp/paper-academic-tailor-2/bh_source_robust_transfer/.venv/bin/python",
-        "scripts/sensitivity_pipeline.py",
-        "--kind",
-        "dd_original"
-      ],
-      "process_identity_alive": true
+      "phase": "complete",
+      "utc": "2026-11-11T08:11:09.957670+00:00",
+      "scientific_status": "NOT_READY",
+      "process_identity_alive": false
     },
     "budget": {
-      "gpu_hours": 23.58715861654323,
-      "cpu_core_hours": 26.405481235833335,
+      "gpu_hours": 29.039922166025885,
+      "cpu_core_hours": 32.02379874361111,
       "active_cpu_threads": 1,
       "development_gpu_hours": 12.129947342723607,
       "feasibility_gpu_hours": 0.025113719089163673
@@ -176,11 +317,50 @@
           "completed": 1000,
           "requested": 1000
         }
+      },
+      "dd_original": {
+        "pair": {
+          "completed": 5000,
+          "requested": 5000
+        },
+        "pigeonhole": {
+          "completed": 1000,
+          "requested": 1000
+        }
       }
     },
     "frozen_artifact_mismatches": [],
     "unreadable_status_files": []
   },
-  "prior_training_snapshot": "reports/history/COMPLETION_AUDIT_MAIN_TRAINING_20261110.json",
-  "outer_metrics_scope": "primary_and_author_labels_complete"
+  "limitations": [
+    "R1_substitute uses product-free inputs and public RDKit descriptors because target-product permission and original QM provenance were unresolved",
+    "DD original has incomplete additive identities and changes source composition and update budgets",
+    "Unlabeled pretraining/test membership overlap is unresolved",
+    "AZ author-label repeated training shows a documented small numerical divergence in one GroupDRO seed",
+    "Common-row report aggregation previously included descriptive HiTEA and was corrected for all methods with old outputs retained",
+    "Bootstrap checkpoints and inference were checked; bootstrap draws were not independently regenerated"
+  ],
+  "delivery_file_hashes": {
+    "reports/EXPERIMENT_REPORT.md": "b26b81c2f778297f91e1e99e03ea05e3b239bfa23a8feb31d8562ed58773090e",
+    "reports/PRIMARY_FAILURE_ANALYSIS.md": "ae3d1ef0619906165ff0b896d9bee31e0e2f60cc199dd1e8ae2f94d4c60690b9",
+    "scripts/finalize_report.py": "d5f0ccc5241c11b041a468a280e2fa00209b2a6aa331de0a2ad5ca2af69fc153",
+    "reports/COMMON_ROW_SUMMARY_AUDIT.json": "114f1828b9c5b46b42d9bea089332c16c5bdca6a9ecfa4a8efb012636d8644fb",
+    "reports/DD_ORIGINAL_NEURAL_RUNTIME_AUDIT.json": "fb095cae00eef72e2671b6095f82f01f8c5f2f6b91628c009e6479d3f3f5ff13",
+    "reports/final/dd_training_budget_comparison.csv": "27421066fc71526e9b411c0827e407ae1d31fea87b831c7715c27ed2abdcac0f"
+  },
+  "final_budget": {
+    "gpu_hours": 29.039922166025885,
+    "cpu_core_hours": 32.023899308611114,
+    "active_cpu_threads": 0,
+    "development_gpu_hours": 12.129947342723607,
+    "feasibility_gpu_hours": 0.025113719089163673
+  },
+  "completion_guard_status_sha256": "1b1ff66983e2f0c17bde0edea57c391ffee3ab7ab6f5a8565ef52823bde8008d",
+  "state_reconciled_utc": "2026-11-11T08:16:26.972787+00:00",
+  "resources_at_delivery": {
+    "gpu_memory_used_mib": 1,
+    "gpu_utilization_percent": 0,
+    "gpu_temperature_celsius": 40,
+    "disk_free_gib_approx": 559
+  }
 }

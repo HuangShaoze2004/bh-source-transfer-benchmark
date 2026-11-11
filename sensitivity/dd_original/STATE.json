@@ -1,0 +1,22 @@
+{
+  "status": "COMPLETE",
+  "kind": "dd_original",
+  "coverage": {
+    "expected_prediction_files": 75,
+    "present_prediction_files": 75,
+    "missing_prediction_files": []
+  },
+  "budget": {
+    "gpu_hours": 29.039922166025885,
+    "cpu_core_hours": 31.998969121944445,
+    "active_cpu_threads": 0,
+    "development_gpu_hours": 12.129947342723607,
+    "feasibility_gpu_hours": 0.025113719089163673,
+    "sensitivity_gpu_hours": 10.25156329718315
+  },
+  "external_metrics_computed": true,
+  "independent_metric_audit": "PASS",
+  "independent_training_state_audit": "PASS",
+  "evaluation_complete_utc": "2026-11-11T08:16:26.972787+00:00",
+  "budget_snapshot_scope": "Cumulative project cost at this branch prediction completion"
+}

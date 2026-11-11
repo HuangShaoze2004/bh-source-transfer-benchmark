@@ -2,7 +2,7 @@
   "status": "PASS",
   "predictions_sha256": "f6ea8efe119295c2b2592b02d5427d3adee480733f2691053d988c23fba6989c",
   "lock_sha256": "208273c7d487cbaae271a3f6d004f655b0a318a5554c637eee9106600fa8814f",
-  "auditor_sha256": "97c66b863e5c7bebc6974d95c91533434aea0c8297add49f1353eb43f397a999",
+  "auditor_sha256": "d5f0ccc5241c11b041a468a280e2fa00209b2a6aa331de0a2ad5ca2af69fc153",
   "checked_rows": 215370,
   "metric_backend": "sklearn; no bh_transfer.evaluate import",
   "split_summary": [

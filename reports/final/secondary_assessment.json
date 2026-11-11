@@ -1,0 +1,20 @@
+[
+  {
+    "candidate": "B_A",
+    "preregistered": true,
+    "family": "all frozen contrasts, Holm corrected",
+    "meets_secondary_rule": false,
+    "minimum_source_delta": -0.05147699591063465,
+    "delta_vs_balanced_swa": 0.01931216112124734,
+    "interpretation": "Secondary evidence only; no post-test winner declared as independent primary confirmation"
+  },
+  {
+    "candidate": "B_S",
+    "preregistered": true,
+    "family": "all frozen contrasts, Holm corrected",
+    "meets_secondary_rule": false,
+    "minimum_source_delta": -0.030646888331412936,
+    "delta_vs_balanced_swa": 0.016232781183406875,
+    "interpretation": "Secondary evidence only; no post-test winner declared as independent primary confirmation"
+  }
+]

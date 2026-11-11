@@ -2,9 +2,7 @@
 
 本文件是计算实验记录与证据核验，不是论文；未投稿、不承诺录用。
 
-当前状态：**CONTINUE**。主候选固定为 `B_A_S`；接受规则结果 `INCREMENT_CRITERION_NOT_MET`；证据类别 `no_increment_criterion_met`。
-
-这是阶段报告；仍有实验或核验待完成。
+当前状态：**NOT_READY**。主候选固定为 `B_A_S`；接受规则结果 `INCREMENT_CRITERION_NOT_MET`；证据类别 `no_increment_criterion_met`。
 
 若仅secondary达标，明确表示主B_A_S确认未成功、预注册简化方案获得多重校正支持；这不改写主假设，不从外层结果追认新的独立确认。简化方案还必须在宏AUROC上不劣于B_bal_S。
 
@@ -247,21 +245,45 @@ Tokenizer显式调整：`{"added_token_ids": [591, 592], "added_tokens": ["->", 
 
 ### dd_original
 
-状态：PENDING。未读取未完成的预测，也不将部分矩阵作为完成证据。
+| model | n_sources | auroc | auprc | brier | cal_brier | worst_source_auroc |
+|---|---|---|---|---|---|---|
+| R1_substitute | 4 | 0.5084 | 0.5140 | 0.2613 | 0.2613 | 0.3664 |
+| B | 4 | 0.5521 | 0.5343 | 0.3367 | 0.3367 | 0.3976 |
+| B_S | 4 | 0.5568 | 0.5417 | 0.3283 | 0.3283 | 0.3957 |
+| B_A | 4 | 0.5513 | 0.5365 | 0.3438 | 0.3438 | 0.4112 |
+| B_A_S | 4 | 0.5553 | 0.5400 | 0.3410 | 0.3410 | 0.4145 |
 
-Dreher Doyle原版本缺少具体添加剂身份，仅作为条件不完整敏感性，不纳入主结论。其加入会改变严格测试集合；共同row_id配对结果使用固定主真值，不能把集合变化解释成训练改善。作者标签敏感性同时报告原生标签与固定主真值，标签标准变化和模型变化不能混为一谈。
+共同测试行的点差为敏感性模型减主模型，使用原始概率。每个 truth_regime 下，两套模型均按同一套真值重算。表中先对 seed 平均，再对两份冻结方案均合格的来源等权平均。任一来源缺失或单类时保留 NA。主宏指标见主表。
+
+共同测试行汇总的合格来源为 AZ ELN 2023, JNJ HTE 2024, Merck 2025, Roche 2023。逐来源记录保存在 dd_original_paired_common_rows.csv。
+
+| model | truth_regime | n_sources | auprc | auroc | brier |
+|---|---|---|---|---|---|
+| B | fixed_primary_truth | 4 | -0.0080 | -0.0028 | 0.0135 |
+| B | native_sensitivity_truth | 4 | -0.0080 | -0.0028 | 0.0135 |
+| B_A | fixed_primary_truth | 4 | -0.0046 | -0.0079 | 0.0172 |
+| B_A | native_sensitivity_truth | 4 | -0.0046 | -0.0079 | 0.0172 |
+| B_A_S | fixed_primary_truth | 4 | -0.0015 | -0.0034 | 0.0130 |
+| B_A_S | native_sensitivity_truth | 4 | -0.0015 | -0.0034 | 0.0130 |
+| B_S | fixed_primary_truth | 4 | -0.0010 | 0.0034 | 0.0035 |
+| B_S | native_sensitivity_truth | 4 | -0.0010 | 0.0034 | 0.0035 |
+| R1_substitute | fixed_primary_truth | 4 | 0.0033 | -0.0012 | -0.0009 |
+| R1_substitute | native_sensitivity_truth | 4 | 0.0033 | -0.0012 | -0.0009 |
+
+Dreher Doyle原版本缺少具体添加剂身份，作为条件不完整敏感性单列。其加入会改变严格测试集合，共同row_id配对结果使用固定主真值。增加训练来源还会改变每组8条构成的有效batch大小，以及固定10个epoch对应的更新次数。因此，共同行上的差异同时包含训练数据、分组构成和更新预算的变化。分支内各神经方法保持匹配的更新预算，具体次数见训练状态审计。作者标签敏感性同时报告原生标签与固定主真值。
 
 ## 运行成本、失败与独立核验
 
 实际训练审计：`{"status": "PASS", "formal_trajectories": 45, "matched_update_budgets": true, "resumable_states_verified": true, "all_swa_multiple_snapshots": true, "source_sha256": "5297bab9e3de4fbc6cb1089fa591126cd464a68f02f8e8330f95a1b3a10e9d0b"}`。逐轨迹更新数、样本曝光、SWA快照数及GroupDRO权重/有效样本量见final/training_budget_audit.csv与final/groupdro_trajectories.csv；权重图见final/groupdro_weight_trajectories.png。权重集中仅描述优化行为，不能证明未见来源泛化或反应机理。
 
-预算记录：`{"gpu_hours": 23.52486860496923, "cpu_core_hours": 26.334230556944444, "active_cpu_threads": 1, "development_gpu_hours": 12.129947342723607, "feasibility_gpu_hours": 0.025113719089163673}`。失败与重试累计；upper_bound标记保守收费，包括结束时刻不明的孤儿任务及协调器自身CPU用量预留；子训练任务单独计费。完整成功/失败账本见final/run_inventory.csv及../runs/ledger.jsonl。报告生成任务若仍在运行，其最终小额成本以随后完成的guard账本为准。
+预算记录：`{"gpu_hours": 29.039922166025885, "cpu_core_hours": 32.01536899166667, "active_cpu_threads": 0, "development_gpu_hours": 12.129947342723607, "feasibility_gpu_hours": 0.025113719089163673}`。失败与重试累计；upper_bound标记保守收费，包括结束时刻不明的孤儿任务及协调器自身CPU用量预留；子训练任务单独计费。完整成功/失败账本见final/run_inventory.csv及../runs/ledger.jsonl。报告生成任务若仍在运行，其最终小额成本以随后完成的guard账本为准。
 
 账本无失败或中断的任务记录；环境下载中断见 [DECISIONS](../DECISIONS.md)。
 
 CPU对照实际拟合证据：[30次主内层拟合审计](ALL_TREE_INNER_RUNTIME_AUDIT.json)、[45次主正式拟合审计](ALL_FORMAL_TREE_RUNTIME_AUDIT.json)、[30次敏感性RF拟合审计](ALL_SENSITIVITY_TREE_RUNTIME_AUDIT.json)。具体检查范围、训练分区、固定参数和已保存文件的核验记录见各审计报告；审计过程未读取外层预测或指标。
 
 author_labels 分支的全部神经训练状态检查见 [审计记录](AUTHOR_LABELS_NEURAL_RUNTIME_AUDIT.json)。
+dd_original 分支的全部神经训练状态检查见 [审计记录](DD_ORIGINAL_NEURAL_RUNTIME_AUDIT.json)。
 
 独立审计PASS：逐条标签/来源/底物实体/底物对/条件ID与冻结records一致；锁定模型×seed×行矩阵完整；sklearn独立重建主表及逐来源逐seed指标，与原评价表在1e-10容差内一致。审计清单和源码hash见final/independent_audit.json。
 
@@ -269,7 +291,7 @@ author_labels 分支的全部神经训练状态检查见 [审计记录](AUTHOR_L
 
 CAD、isolated yield、MisER与LCAP混合测量，统一10%阈值不消除测量差异；温度、时间、浓度与部分载量缺失。无标签预训练与测试结构的重叠不能排除。来源均衡可能解释部分收益，因此保留B_bal及B_bal_S。GroupDRO/SWA为成熟方法，注意力或特征归因不能证明机理。负结果如实交付，未达到门槛不强行宣称增量。
 
-原文与直接近例已包含多来源或双底物OOD研究，差异来自受控实验而非首创这些任务。详见 [文献差异](LITERATURE_DIFFERENCES.md) 与 [期刊范围及subscription非OA路径](JOURNAL_SCOPE.md)。Reaction Chemistry & Engineering与Chemical Papers是否接受由编辑和评审判断，本项目不投稿。
+原文与直接近例已包含多来源或双底物OOD研究。本项目检验受控实验增量。GroupDRO、SWA、RXNFP与产率微调原文的对应关系、公开实现版本和许可见 [文献差异及模块来源](LITERATURE_DIFFERENCES.md)。通用RXNFP原文记载Pistachio版本191118预训练数据，公开权重允许核验文件身份，逐条训练成员关系仍未解决。期刊范围及subscription非OA路径见 [期刊记录](JOURNAL_SCOPE.md)。Reaction Chemistry & Engineering与Chemical Papers是否接受由编辑和评审判断，本项目只完成实验交付。
 
 ```bash
 # 已冻结项目；先恢复/完成协调器，避免重复启动已运行任务

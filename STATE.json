@@ -1,6 +1,6 @@
 {
-  "status": "CONTINUE",
-  "phase": "locked_primary_pipeline_running",
+  "status": "NOT_READY",
+  "phase": "complete",
   "project": "bh_source_robust_transfer",
   "goal": "controlled cross-source, both-substrates-unseen C-N coupling feasibility prediction",
   "gpu_hours_limit": 160,
@@ -14,7 +14,7 @@
     42,
     2026
   ],
-  "outer_metrics_released": false,
+  "outer_metrics_released": true,
   "completed": [
     "read_only_environment_check",
     "startup_literature_and_code_review",
@@ -25,18 +25,17 @@
     "input_and_split_checks",
     "cpu_correctness_tests",
     "gpu_fit_and_throughput",
-    "final_protocol_lock"
+    "final_protocol_lock",
+    "complete_locked_nested_selection",
+    "formal_three_seed_matrix",
+    "author_label_and_DD_training_sensitivities",
+    "uniform_external_evaluation",
+    "paired_bootstrap_and_shared_substrate_sensitivity",
+    "independent_metric_and_training_state_audit",
+    "final_experiment_report",
+    "complete_delivery_audit"
   ],
-  "pending": [
-    "isolated_environment",
-    "data_audit",
-    "split_and_input_freeze",
-    "smoke_and_throughput",
-    "nested_selection",
-    "formal_runs",
-    "statistical_review",
-    "experiment_report"
-  ],
+  "pending": [],
   "budget_accounting": "append-only runs/ledger.jsonl; elapsed GPU job time and measured process CPU time include failures; setup is separately accounted",
   "limitations": [
     "Target-product permission not established",
@@ -51,8 +50,142 @@
   "controller": {
     "controller_pid": 712160,
     "controller_start_time": 1794280064.29,
-    "phase": "locked_primary_pipeline_running",
-    "utc": "2026-11-10T03:16:45.020740+00:00",
-    "worker_pid": 706992
-  }
+    "phase": "complete",
+    "utc": "2026-11-11T08:11:09.957670+00:00",
+    "scientific_status": "NOT_READY"
+  },
+  "training_auditor": {
+    "implementation": "scripts/audit_training.py",
+    "tests_passed": 6,
+    "report_regressions_passed": 15,
+    "real_internal_state_check": "PASS",
+    "formal_coverage": "PASS for all105 formal neural trajectories",
+    "full_suite_passed": 74
+  },
+  "outer_metrics_scope": "complete_primary_author_labels_and_dd_original_matrices",
+  "primary_evaluation": {
+    "status": "EVALUATION_COMPLETE",
+    "independent_audit": "PASS",
+    "audit_path": "reports/PRIMARY_EVALUATION_AUDIT.json",
+    "observed_complete_utc": "2026-11-10T21:56:51.467604+00:00",
+    "primary_increment_criterion_met": false,
+    "remaining_work": []
+  },
+  "finalization_reason": "All frozen experiments and required independent verification complete; the increment criteria were unmet",
+  "last_report_utc": "2026-11-11T08:11:07.544791+00:00",
+  "independent_audit": {
+    "status": "PASS",
+    "predictions_sha256": "26fa5487d45ac043bfc07e43bee7c9b789eeafd4e6d72f6a7adb86dc3950078d",
+    "lock_sha256": "b7005aff7fa71ab452015047b8b3a0d0aa0efa718fcdb937915d1267f6576a84",
+    "auditor_sha256": "d5f0ccc5241c11b041a468a280e2fa00209b2a6aa331de0a2ad5ca2af69fc153",
+    "checked_rows": 387666,
+    "metric_backend": "sklearn; no bh_transfer.evaluate import",
+    "split_summary": [
+      {
+        "fold": "az_eln_2023",
+        "source": "AZ ELN 2023",
+        "eligible": true,
+        "test_rows": 607,
+        "test_pairs": 376,
+        "test_aryls": 230,
+        "test_amines": 207,
+        "inner_splits": 2
+      },
+      {
+        "fold": "dreher_2014",
+        "source": "Dreher 2014",
+        "eligible": false,
+        "test_rows": 0,
+        "test_pairs": 0,
+        "test_aryls": 0,
+        "test_amines": 0,
+        "inner_splits": 2
+      },
+      {
+        "fold": "dreher_2016",
+        "source": "Dreher 2016",
+        "eligible": false,
+        "test_rows": 0,
+        "test_pairs": 0,
+        "test_aryls": 0,
+        "test_amines": 0,
+        "inner_splits": 2
+      },
+      {
+        "fold": "hitea_2024",
+        "source": "HiTEA 2024",
+        "eligible": false,
+        "test_rows": 1387,
+        "test_pairs": 15,
+        "test_aryls": 14,
+        "test_amines": 13,
+        "inner_splits": 2
+      },
+      {
+        "fold": "jnj_hte_2024",
+        "source": "JNJ HTE 2024",
+        "eligible": true,
+        "test_rows": 8016,
+        "test_pairs": 546,
+        "test_aryls": 90,
+        "test_amines": 65,
+        "inner_splits": 2
+      },
+      {
+        "fold": "merck_2025",
+        "source": "Merck 2025",
+        "eligible": true,
+        "test_rows": 2668,
+        "test_pairs": 2668,
+        "test_aryls": 335,
+        "test_amines": 8,
+        "inner_splits": 2
+      },
+      {
+        "fold": "roche_2023",
+        "source": "Roche 2023",
+        "eligible": true,
+        "test_rows": 1680,
+        "test_pairs": 65,
+        "test_aryls": 28,
+        "test_amines": 18,
+        "inner_splits": 2
+      }
+    ]
+  },
+  "author_labels_evaluation": {
+    "status": "EVALUATION_COMPLETE",
+    "training_audit": "PASS",
+    "metric_audit": "PASS",
+    "checked_rows": 215370,
+    "observed_complete_utc": "2026-11-11T08:16:26.972787+00:00",
+    "summary_sources": [
+      "AZ ELN 2023",
+      "JNJ HTE 2024",
+      "Merck 2025",
+      "Roche 2023"
+    ]
+  },
+  "completed_utc": "2026-11-11T08:16:26.972787+00:00",
+  "budget": {
+    "gpu_hours": 29.039922166025885,
+    "cpu_core_hours": 32.023899308611114,
+    "active_cpu_threads": 0,
+    "development_gpu_hours": 12.129947342723607,
+    "feasibility_gpu_hours": 0.025113719089163673
+  },
+  "dd_original_evaluation": {
+    "status": "EVALUATION_COMPLETE",
+    "training_audit": "PASS",
+    "metric_audit": "PASS",
+    "checked_rows": 211635,
+    "observed_complete_utc": "2026-11-11T08:16:26.972787+00:00",
+    "summary_sources": [
+      "AZ ELN 2023",
+      "JNJ HTE 2024",
+      "Merck 2025",
+      "Roche 2023"
+    ]
+  },
+  "completion_audit": "reports/COMPLETION_AUDIT.json"
 }

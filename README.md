@@ -4,6 +4,12 @@ Controlled experiments for `Yield >= 10` feasibility prediction on held-out sour
 
 Read `USER_REQUEST.md`, `DATA_AUDIT.md`, `EXPERIMENT_PROTOCOL.md`, `DECISIONS.md`, `STATE.json` and `FINAL_EVAL_LOCK.json` before interpreting results. Source-wise macro AUROC is the primary metric. The source labels are available only for grouping/sampling; they are never predictive features.
 
+## Completed experiment
+
+Scientific status is `NOT_READY`. The complete frozen three-seed comparison and both sensitivities finished, with independent metric reconstruction covering 814,671 prediction rows. The candidate B_A_S reached macro AUROC 0.5593 and B reached 0.5583. The paired difference interval crosses zero and the predefined 0.02 increment criterion was unmet.
+
+The [experiment report](reports/EXPERIMENT_REPORT.md), [failure analysis](reports/PRIMARY_FAILURE_ANALYSIS.md) and [completion audit](reports/COMPLETION_AUDIT.json) contain the results, limits and verification records. All 105 formal neural saved-state audits and 74 tests passed. Final recorded cost is 29.04 GPU hours and 32.02 CPU core hours. Predictions, checkpoints, fixed mappings and splits remain in this project. Reproduction and resumption commands follow below.
+
 ## Environment and provenance
 
 Use Python3.12 in a new local `.venv`. Exact distributions are in `requirements.lock.txt`; PyTorch is2.8.0+cu128. For a clean machine, use the official CUDA12.8 PyTorch wheel index in addition to PyPI when installing this lock. The current environment contains independent copies of the already installed PyTorch distribution/runtime and pinned packages installed from the public Tsinghua mirror; it does not inherit another project's site-packages. Bootstrap details are saved in `artifacts/environment_bootstrap.json`.

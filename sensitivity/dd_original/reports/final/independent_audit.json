@@ -1,0 +1,90 @@
+{
+  "status": "PASS",
+  "predictions_sha256": "1e0de17e2c7a388401bc2ac63ebb3b9fdd8c0d014779f6c056357be6d4a6a5fc",
+  "lock_sha256": "3f2b9cd00f0cfeef381ce7669ac21542d7a15868a39bd3a873d0d4ec4f7b544b",
+  "auditor_sha256": "d5f0ccc5241c11b041a468a280e2fa00209b2a6aa331de0a2ad5ca2af69fc153",
+  "checked_rows": 211635,
+  "metric_backend": "sklearn; no bh_transfer.evaluate import",
+  "split_summary": [
+    {
+      "fold": "az_eln_2023",
+      "source": "AZ ELN 2023",
+      "eligible": true,
+      "test_rows": 604,
+      "test_pairs": 373,
+      "test_aryls": 228,
+      "test_amines": 207,
+      "inner_splits": 2
+    },
+    {
+      "fold": "dreher_2014",
+      "source": "Dreher 2014",
+      "eligible": false,
+      "test_rows": 0,
+      "test_pairs": 0,
+      "test_aryls": 0,
+      "test_amines": 0,
+      "inner_splits": 2
+    },
+    {
+      "fold": "dreher_2016",
+      "source": "Dreher 2016",
+      "eligible": false,
+      "test_rows": 0,
+      "test_pairs": 0,
+      "test_aryls": 0,
+      "test_amines": 0,
+      "inner_splits": 2
+    },
+    {
+      "fold": "dreher_doyle_2018",
+      "source": "Dreher Doyle 2018",
+      "eligible": false,
+      "test_rows": 0,
+      "test_pairs": 0,
+      "test_aryls": 0,
+      "test_amines": 0,
+      "inner_splits": 2
+    },
+    {
+      "fold": "hitea_2024",
+      "source": "HiTEA 2024",
+      "eligible": false,
+      "test_rows": 1381,
+      "test_pairs": 14,
+      "test_aryls": 13,
+      "test_amines": 12,
+      "inner_splits": 2
+    },
+    {
+      "fold": "jnj_hte_2024",
+      "source": "JNJ HTE 2024",
+      "eligible": true,
+      "test_rows": 7896,
+      "test_pairs": 522,
+      "test_aryls": 89,
+      "test_amines": 65,
+      "inner_splits": 2
+    },
+    {
+      "fold": "merck_2025",
+      "source": "Merck 2025",
+      "eligible": true,
+      "test_rows": 2668,
+      "test_pairs": 2668,
+      "test_aryls": 335,
+      "test_amines": 8,
+      "inner_splits": 2
+    },
+    {
+      "fold": "roche_2023",
+      "source": "Roche 2023",
+      "eligible": true,
+      "test_rows": 1560,
+      "test_pairs": 60,
+      "test_aryls": 27,
+      "test_amines": 17,
+      "inner_splits": 2
+    }
+  ]
+}

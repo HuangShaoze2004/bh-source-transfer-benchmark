@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "formal_trajectories": 45,
+  "matched_update_budgets": true,
+  "resumable_states_verified": true,
+  "all_swa_multiple_snapshots": true,
+  "source_sha256": "5297bab9e3de4fbc6cb1089fa591126cd464a68f02f8e8330f95a1b3a10e9d0b"
+}

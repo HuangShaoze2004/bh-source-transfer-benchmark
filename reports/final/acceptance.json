@@ -1,0 +1,59 @@
+{
+  "status": "INCREMENT_CRITERION_NOT_MET",
+  "candidate": "B_A_S",
+  "comparator_set": [
+    "B",
+    "B_bal",
+    "R0_RF",
+    "R0_HGB",
+    "R1_substitute"
+  ],
+  "strongest_observed_comparator": "B",
+  "delta_auroc": 0.001045085165827575,
+  "bootstrap_vs_max_comparator": {
+    "low": -0.01266033758943054,
+    "high": 0.015264845157835338,
+    "valid_replicates": 5000,
+    "invalid_fraction": 0.0
+  },
+  "min_source_delta_vs_max_comparator": -0.048636741125867855,
+  "source_deltas": {
+    "AZ ELN 2023": 0.030595493015193265,
+    "JNJ HTE 2024": -0.048636741125867855,
+    "Merck 2025": 0.018327658052678997,
+    "Roche 2023": -0.0355815301354141
+  },
+  "combination_contrasts": [
+    {
+      "comparator": "B_A",
+      "delta": -0.0009315203937364513,
+      "low": -0.003317552986986849,
+      "high": 0.0012942492848156343,
+      "valid_replicates": 5000,
+      "invalid_fraction": 0.0
+    },
+    {
+      "comparator": "B_S",
+      "delta": 0.002147859544104014,
+      "low": -0.012269970691785675,
+      "high": 0.017214129932947655,
+      "valid_replicates": 5000,
+      "invalid_fraction": 0.0
+    },
+    {
+      "comparator": "B_bal_S",
+      "delta": 0.01838064072751089,
+      "low": 0.00958917432614812,
+      "high": 0.027600129978278473,
+      "valid_replicates": 5000,
+      "invalid_fraction": 0.0
+    }
+  ],
+  "criteria": {
+    "min_macro_delta": 0.02,
+    "max_source_regression": 0.03,
+    "ci_low_above": 0,
+    "max_invalid_bootstrap_fraction": 0.05
+  },
+  "limitation": "Evidence conditional on these sources and fitted seeds; not a publication-readiness verdict"
+}

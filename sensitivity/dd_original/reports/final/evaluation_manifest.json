@@ -1,0 +1,32 @@
+{
+  "status": "EVALUATION_COMPLETE",
+  "signature": "ceb088df9dbe160c07d4fdedf2f82279b647a265ed17949f91b816198d30d071",
+  "prediction_sha256": "1e0de17e2c7a388401bc2ac63ebb3b9fdd8c0d014779f6c056357be6d4a6a5fc",
+  "lock_sha256": "3f2b9cd00f0cfeef381ce7669ac21542d7a15868a39bd3a873d0d4ec4f7b544b",
+  "evaluator_sha256": "13a48c63681b2b1c282bac609d32175bd483e3e5d69c3499e1ee72e73d2adcaf",
+  "models": [
+    "R1_substitute",
+    "B",
+    "B_S",
+    "B_A",
+    "B_A_S"
+  ],
+  "seeds": [
+    17,
+    42,
+    2026
+  ],
+  "eligible_sources": [
+    "AZ ELN 2023",
+    "JNJ HTE 2024",
+    "Merck 2025",
+    "Roche 2023"
+  ],
+  "acceptance": {
+    "status": "NOT_ASSESSED",
+    "reason": "No primary candidate/comparator set frozen in lock"
+  },
+  "inference": "Equal fixed-source macro, seedwise metrics averaged; pair-cluster paired bootstrap conditional on fitted runs",
+  "auprc_definition": "Non-interpolated average precision, weighted for bootstrap",
+  "calibration": "Ranking uses raw probabilities; calibration is auxiliary Brier/reliability only"
+}
