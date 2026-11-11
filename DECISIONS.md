@@ -62,3 +62,10 @@
 - Corrected the reporting aggregation to use the intersection of the two frozen eligible-source lists. It averages seeds within each source, then weights those sources equally. Missing or single-class eligible-source values propagate as NA. The summary now states its source count and source names. The paired CSV retains the per-source descriptive records.
 - Saved the affected report, paired table, reporting source and status snapshot under `reports/history/` before the correction. The author-label stage report is regenerated for every affected model and both truth regimes. DD reporting will use the same corrected function after its full matrix completes.
 - Added regression cases for descriptive-source exclusion and missing or undefined eligible sources. The independent reporting suite passed all15 tests. Training specifications, prediction files and frozen metric definitions retain their recorded hashes.
+
+## Delivery provenance reconciliation, 2026-11-11
+
+- Rechecked the GroupDRO and SWA original articles, the RXNFP public original source, and the official yield fine-tuning reference. Added the component-to-implementation comparison to `reports/LITERATURE_DIFFERENCES.md`. The original RXNFP Methods identify Pistachio version 191118 and a 2.6-million-reaction dataset. Exact checkpoint training membership remains unverifiable from the available metadata.
+- Saved pinned MIT reference files for GroupDRO and `rxn_yields`, with individual hashes in `third_party/METHOD_REFERENCE_MANIFEST.json`. The guarded reference/source checks are recorded in the central ledger.
+- Re-read the Zenodo public JSON-LD. Its explicit CC BY 4.0 license resolves the earlier startup note about missing human-readable license information. Saved the metadata and response hash in `data/raw/zenodo_public_metadata.json`.
+- Expanded the final report's DD sensitivity interpretation. Adding a source changes effective batch size and the update count under the frozen epoch rule. Common-row comparisons fix evaluation coverage while retaining these training-budget and composition differences. The report will show the audited update counts.

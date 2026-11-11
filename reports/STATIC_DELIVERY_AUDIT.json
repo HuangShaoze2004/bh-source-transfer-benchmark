@@ -1,0 +1,179 @@
+{
+  "checked_utc": "2026-11-11T07:13:32.611018+00:00",
+  "status": "PASS",
+  "scope": "Static provenance and completed-stage evidence; DD runtime/evaluation and final report remain pending",
+  "requirements": {
+    "saved_user_request": {
+      "status": "PASS",
+      "paths": [
+        "USER_REQUEST.md"
+      ]
+    },
+    "maintained_project_records": {
+      "status": "PASS",
+      "paths": [
+        "PLAN.md",
+        "STATE.json",
+        "DATA_AUDIT.md",
+        "EXPERIMENT_PROTOCOL.md",
+        "DECISIONS.md",
+        "runs/ledger.jsonl"
+      ]
+    },
+    "isolated_environment": {
+      "status": "PASS",
+      "paths": [
+        ".venv/bin/python",
+        "requirements.lock.txt",
+        "pyproject.toml"
+      ]
+    },
+    "immutable_data_provenance": {
+      "status": "PASS",
+      "paths": [
+        "data/raw/SOURCE_MANIFEST.json",
+        "data/raw/BH_HTE_Curated_Dataset_v20260219.csv",
+        "data/raw/zenodo_public_metadata.json"
+      ]
+    },
+    "field_units_missingness_duplicates": {
+      "status": "PASS",
+      "paths": [
+        "data/audit/fields.csv",
+        "data/audit/summary.json",
+        "data/audit/raw_duplicate_inputs.parquet",
+        "data/audit/duplicate_inputs.parquet",
+        "data/audit/raw_source_summary.csv",
+        "data/audit/source_summary.csv"
+      ]
+    },
+    "label_boundary_discrepancies": {
+      "status": "PASS",
+      "paths": [
+        "data/audit/label_disagreements.csv",
+        "data/audit/yield_exactly_10.csv"
+      ]
+    },
+    "quantum_feature_role_audit": {
+      "status": "PASS",
+      "paths": [
+        "data/audit/qm_role_consistency.csv",
+        "data/audit/original_qm.npz"
+      ]
+    },
+    "additive_recovery_bound": {
+      "status": "PASS",
+      "paths": [
+        "reports/ADDITIVE_RECOVERY.md",
+        "data/audit/additive_recovery/manifest.json",
+        "data/audit/excluded_rows.csv"
+      ]
+    },
+    "chemical_mapping_and_token_audit": {
+      "status": "PASS",
+      "paths": [
+        "data/audit/structure_mapping.parquet",
+        "data/audit/entity_rule_sensitivity.csv",
+        "data/audit/token_serialization_mapping.parquet",
+        "data/audit/token_audit.json"
+      ]
+    },
+    "fixed_features_and_nested_splits": {
+      "status": "PASS",
+      "paths": [
+        "data/processed/feature_manifest.json",
+        "data/processed/features.npz",
+        "data/processed/records.parquet",
+        "data/processed/splits.json",
+        "FINAL_EVAL_LOCK.json"
+      ]
+    },
+    "generic_checkpoint_and_tokenizer": {
+      "status": "PASS",
+      "paths": [
+        "weights/rxnfp/manifest.json",
+        "weights/rxnfp/tokenizer_extension_manifest.json",
+        "weights/rxnfp/pytorch_model.bin",
+        "weights/rxnfp/extended_vocab.txt"
+      ]
+    },
+    "fit_gradient_throughput_memory": {
+      "status": "PASS",
+      "paths": [
+        "artifacts/FEASIBILITY.json",
+        "artifacts/BUDGET_ESTIMATE.json"
+      ]
+    },
+    "groupdro_hand_and_runtime_checks": {
+      "status": "PASS",
+      "paths": [
+        "reports/GROUPDRO_RUNTIME_CHECK.json",
+        "reports/GROUPDRO_COMPLETED_TRAJECTORY_AUDIT.json"
+      ]
+    },
+    "all_inner_selection_audits": {
+      "status": "PASS",
+      "paths": [
+        "reports/FIRST_FOLD_SELECTION_AUDIT.json",
+        "reports/HITEA_SELECTION_AUDIT.json",
+        "reports/JNJ_SELECTION_AUDIT.json",
+        "reports/MERCK_SELECTION_AUDIT.json",
+        "reports/ROCHE_SELECTION_AUDIT.json"
+      ]
+    },
+    "tree_model_audits": {
+      "status": "PASS",
+      "paths": [
+        "reports/ALL_TREE_INNER_RUNTIME_AUDIT.json",
+        "reports/ALL_FORMAL_TREE_RUNTIME_AUDIT.json",
+        "reports/ALL_SENSITIVITY_TREE_RUNTIME_AUDIT.json"
+      ]
+    },
+    "main_full_state_and_matched_budget_audit": {
+      "status": "PASS",
+      "paths": [
+        "reports/ALL_FORMAL_NEURAL_RUNTIME_AUDIT.json",
+        "reports/final/training_budget_audit.csv",
+        "reports/final/groupdro_trajectories.csv"
+      ]
+    },
+    "independent_prediction_and_metric_audit": {
+      "status": "PASS",
+      "paths": [
+        "reports/PRIMARY_EVALUATION_AUDIT.json",
+        "reports/COMMON_ROW_SUMMARY_AUDIT.json"
+      ]
+    },
+    "module_and_near_literature_and_journals": {
+      "status": "PASS",
+      "paths": [
+        "reports/LITERATURE_DIFFERENCES.md",
+        "reports/JOURNAL_SCOPE.md",
+        "third_party/METHOD_REFERENCE_MANIFEST.json"
+      ]
+    }
+  },
+  "verified_manifest_files": [
+    "data/raw/BH_HTE_Curated_Dataset_v20260219.csv",
+    "third_party/bh-hte-ood/README.md",
+    "third_party/bh-hte-ood/LICENSE.txt",
+    "third_party/bh-hte-ood/Production Model.ipynb",
+    "third_party/bh-hte-ood/Reagent Recommender.ipynb",
+    "third_party/bh-hte-ood/Data Sources Benchmark.ipynb",
+    "third_party/bh-hte-ood/utils/drfp_cluster.py",
+    "third_party/bh-hte-ood/utils/ml_train.py",
+    "third_party/bh-hte-ood/data/reagent_dictionary.csv",
+    "weights/rxnfp/pytorch_model.bin",
+    "weights/rxnfp/config.json",
+    "weights/rxnfp/vocab.txt",
+    "third_party/rxnfp/LICENSE",
+    "third_party/rxnfp/tokenization.py",
+    "third_party/group_DRO/README.md",
+    "third_party/group_DRO/LICENSE",
+    "third_party/group_DRO/loss.py",
+    "third_party/rxn_yields/README.md",
+    "third_party/rxn_yields/LICENSE"
+  ],
+  "main_lock_sha256": "b7005aff7fa71ab452015047b8b3a0d0aa0efa718fcdb937915d1267f6576a84",
+  "completion_claim_permitted": false
+}

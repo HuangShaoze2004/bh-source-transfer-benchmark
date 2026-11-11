@@ -1,0 +1,48 @@
+{
+  "checked_utc": "2026-11-11T07:05:22.401947+00:00",
+  "purpose": "Method reference and license snapshots",
+  "rxnfp_original_source_check": {
+    "url": "https://arxiv.org/src/2012.06051v1",
+    "archive_sha256": "031b2e54ebf000eee4dae390b4802013dd54ecb331e08547ac66c731a356f275",
+    "read_member": "ms.tex",
+    "guard_run_id": "review_rxnfp_original_provenance_v1",
+    "distribution": "Bibliographic record and paraphrase in reports/LITERATURE_DIFFERENCES.md"
+  },
+  "files": [
+    {
+      "path": "third_party/group_DRO/README.md",
+      "url": "https://raw.githubusercontent.com/kohpangwei/group_DRO/cbbc1c5b06844e46b87e264326b56056d2a437d1/README.md",
+      "commit": "cbbc1c5b06844e46b87e264326b56056d2a437d1",
+      "sha256": "99840dcf648e4e642ae0538bcd26635e734a3678b03f117024a59e14a4847e93",
+      "bytes": 9813
+    },
+    {
+      "path": "third_party/group_DRO/LICENSE",
+      "url": "https://raw.githubusercontent.com/kohpangwei/group_DRO/cbbc1c5b06844e46b87e264326b56056d2a437d1/LICENSE",
+      "commit": "cbbc1c5b06844e46b87e264326b56056d2a437d1",
+      "sha256": "38fa8076706fbc935204984b5485927e6e68be0cca3f468e35b846e9a1a53079",
+      "bytes": 1068
+    },
+    {
+      "path": "third_party/group_DRO/loss.py",
+      "url": "https://raw.githubusercontent.com/kohpangwei/group_DRO/cbbc1c5b06844e46b87e264326b56056d2a437d1/loss.py",
+      "commit": "cbbc1c5b06844e46b87e264326b56056d2a437d1",
+      "sha256": "ca6f012de93791118479a89ddc9c23695ddf53ae75bd8bf8076b5841e1bcbc80",
+      "bytes": 8669
+    },
+    {
+      "path": "third_party/rxn_yields/README.md",
+      "url": "https://raw.githubusercontent.com/rxn4chemistry/rxn_yields/d9e6b87ce1b881978490d68bfc00021e3b48127a/README.md",
+      "commit": "d9e6b87ce1b881978490d68bfc00021e3b48127a",
+      "sha256": "a5d0ea23bce6bcd91dc68ea6ee2e6931b24d7cdfd8d1157e47424c521884df7c",
+      "bytes": 13562
+    },
+    {
+      "path": "third_party/rxn_yields/LICENSE",
+      "url": "https://raw.githubusercontent.com/rxn4chemistry/rxn_yields/d9e6b87ce1b881978490d68bfc00021e3b48127a/LICENSE",
+      "commit": "d9e6b87ce1b881978490d68bfc00021e3b48127a",
+      "sha256": "4cd19ee3f984c4cf21234b36d941f80fe7cbac61b4a104a558813cd3948857ce",
+      "bytes": 1078
+    }
+  ]
+}
