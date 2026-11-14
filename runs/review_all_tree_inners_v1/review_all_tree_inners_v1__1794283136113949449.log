@@ -1,0 +1,1 @@
+{"status": "PASS", "checked_utc": "2026-11-10T03:59:02.160621+00:00", "scope": "all locked inner tree controls; no external metrics", "runs_verified": 30, "checks": ["exact locked train and validation IDs", "completed successful guard state", "validation row order and finite bounded probabilities", "model dimensionality and pinned estimator parameters", "one CPU worker per fit"]}

@@ -1,0 +1,12 @@
+{
+  "attempt_id": "dev_az_eln_2023_dro_g3_i1__1794289525292419673",
+  "run_id": "dev_az_eln_2023_dro_g3_i1",
+  "observed_unix": 1794289921.1758082,
+  "wall_seconds": 395.8833720460534,
+  "gpu_seconds": 395.8833720460534,
+  "cpu_seconds": 404.788073,
+  "pid": 812132,
+  "process_start_ticks": 4994792167,
+  "boot_id": "a8ea9ed8-f60b-41e7-9887-40c805bd8203",
+  "status": "completed"
+}

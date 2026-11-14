@@ -1,0 +1,25 @@
+{
+  "job_identity": "04a2832ebbb4f6b3e8708487945e7fcb35a47aa5bc6a29048515aa95d96ad9eb",
+  "identity_inputs": {
+    "schema_version": 1,
+    "spec_sha256": "474dec1347d734fda9b0636d7d61a74869983b3f9ced5bfa6f53a3e4f5eca659",
+    "artifacts": {
+      "data/processed/records.parquet": "8afd733c6ed6c44e2046926f4ea25270cae0605502715a94fca26f91cc8dec93",
+      "data/processed/features.npz": "b9071319b578f7acc6f22901ddee1f6148cc95ccf68646e52ec853d249d98fd4",
+      "src/bh_transfer/neural.py": "626fd8bc7d9a8a495859679124633f2fe86e5ab2b4cec625ee8d0f41722a9cd9",
+      "src/bh_transfer/tokenizer.py": "a33f5b4838bad11170c94915d6bb2b5092fb3b3ac466894b79bfa7a7f0acf435",
+      "src/bh_transfer/tabular.py": "0b143a5a4b3c2d15c66a8b8e90d11ce36bccb3d85dec37bb2766a4d6c76f23d3",
+      "weights/rxnfp/manifest.json": "6fedd44427e29e49cd0f89e4be2a0346ad2b7dc45779fab241bcb362d56037cc",
+      "weights/rxnfp/tokenizer_extension_manifest.json": "1bb30463bd8232b8e5bbd34d759ce7fa05a47a996ba20a1ebb7f69a652f46520",
+      "weights/rxnfp/pytorch_model.bin": "50a6ed263d33ae759affa82c1e85554cc5ea9f56145f5c7fb39b6c25d4356437",
+      "weights/rxnfp/config.json": "024d89cb6056e146e066ebbcd9d565d6968d53e82953570a8b110b26495d7d4b",
+      "weights/rxnfp/vocab.txt": "399868a653e85549ce150af4a1f6cd2776240c6a3d951ced2120565f00f027fd",
+      "weights/rxnfp/extended_vocab.txt": "b7c0c14a53d991b68091e910b3e5b147a8e8290cf754f9afc703e64c0d13f0f7"
+    },
+    "evaluation_lock_sha256": "3f2b9cd00f0cfeef381ce7669ac21542d7a15868a39bd3a873d0d4ec4f7b544b",
+    "checkpoint_sha256": "22b4dac547b518520c267fc442c3cca7a63a7e9955ff20874f9cdf24e2cd63a4",
+    "job_script_sha256": "48870633e34b7ee046f88368f3a3d6dea8918db2aaf3653ef7eaa57ea6da5b92"
+  },
+  "prediction_sha256": "ce72db8950eb49ed3e49d7cc520836d0eb8601dd54a882c1276d2a0e3c30c540",
+  "n_rows": 1381
+}

@@ -1,0 +1,12 @@
+{
+  "attempt_id": "predict_jnj_hte_2024_R1_substitute_s2026__1794337405030560376",
+  "run_id": "predict_jnj_hte_2024_R1_substitute_s2026",
+  "observed_unix": 1794337409.133808,
+  "wall_seconds": 4.103232532739639,
+  "gpu_seconds": 0,
+  "cpu_seconds": 2.921175,
+  "pid": 310646,
+  "process_start_ticks": 4999580141,
+  "boot_id": "a8ea9ed8-f60b-41e7-9887-40c805bd8203",
+  "status": "completed"
+}

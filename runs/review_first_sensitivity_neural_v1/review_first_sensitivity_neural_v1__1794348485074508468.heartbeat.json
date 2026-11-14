@@ -1,0 +1,12 @@
+{
+  "attempt_id": "review_first_sensitivity_neural_v1__1794348485074508468",
+  "run_id": "review_first_sensitivity_neural_v1",
+  "observed_unix": 1794348489.205711,
+  "wall_seconds": 4.1311866119503975,
+  "gpu_seconds": 0,
+  "cpu_seconds": 2.827926,
+  "pid": 426542,
+  "process_start_ticks": 5000688145,
+  "boot_id": "a8ea9ed8-f60b-41e7-9887-40c805bd8203",
+  "status": "completed"
+}

@@ -1,0 +1,12 @@
+{
+  "attempt_id": "dev_merck_2025_erm_g2_i0__1794310048804353008",
+  "run_id": "dev_merck_2025_erm_g2_i0",
+  "observed_unix": 1794310272.6719983,
+  "wall_seconds": 223.86762987077236,
+  "gpu_seconds": 223.86762987077236,
+  "cpu_seconds": 229.324543,
+  "pid": 26059,
+  "process_start_ticks": 4996844518,
+  "boot_id": "a8ea9ed8-f60b-41e7-9887-40c805bd8203",
+  "status": "completed"
+}

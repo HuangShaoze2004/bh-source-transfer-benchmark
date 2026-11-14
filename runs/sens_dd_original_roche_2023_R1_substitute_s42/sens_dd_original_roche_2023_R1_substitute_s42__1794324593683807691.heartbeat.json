@@ -1,0 +1,12 @@
+{
+  "attempt_id": "sens_dd_original_roche_2023_R1_substitute_s42__1794324593683807691",
+  "run_id": "sens_dd_original_roche_2023_R1_substitute_s42",
+  "observed_unix": 1794324643.7723858,
+  "wall_seconds": 50.08856236189604,
+  "gpu_seconds": 0,
+  "cpu_seconds": 50.848911,
+  "pid": 176738,
+  "process_start_ticks": 4998299006,
+  "boot_id": "a8ea9ed8-f60b-41e7-9887-40c805bd8203",
+  "status": "completed"
+}

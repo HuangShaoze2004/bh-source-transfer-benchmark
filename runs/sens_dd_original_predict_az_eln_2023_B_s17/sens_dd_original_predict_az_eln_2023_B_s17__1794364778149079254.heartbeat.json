@@ -1,0 +1,12 @@
+{
+  "attempt_id": "sens_dd_original_predict_az_eln_2023_B_s17__1794364778149079254",
+  "run_id": "sens_dd_original_predict_az_eln_2023_B_s17",
+  "observed_unix": 1794364782.2811942,
+  "wall_seconds": 4.132098972797394,
+  "gpu_seconds": 4.132098972797394,
+  "cpu_seconds": 3.374831,
+  "pid": 596536,
+  "process_start_ticks": 5002317453,
+  "boot_id": "a8ea9ed8-f60b-41e7-9887-40c805bd8203",
+  "status": "completed"
+}

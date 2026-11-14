@@ -1,0 +1,12 @@
+{
+  "attempt_id": "formal_jnj_hte_2024_R0_RF_s42__1794283429153629174",
+  "run_id": "formal_jnj_hte_2024_R0_RF_s42",
+  "observed_unix": 1794283443.644972,
+  "wall_seconds": 14.491327084600925,
+  "gpu_seconds": 0,
+  "cpu_seconds": 13.885781000000001,
+  "pid": 747613,
+  "process_start_ticks": 4994182553,
+  "boot_id": "a8ea9ed8-f60b-41e7-9887-40c805bd8203",
+  "status": "completed"
+}

@@ -1,5 +1,9 @@
 # BH source robust transfer
 
+The GitHub repository is `HuangShaoze2004/bh-source-transfer-benchmark`.
+For another computer, follow [REPRODUCING.md](REPRODUCING.md) to verify data,
+reconstruct all tables, restore every checkpoint and replay saved jobs.
+
 Controlled experiments for `Yield >= 10` feasibility prediction on held-out sources whose aryl and amine substrates are each unseen. This repository contains experiments and an experiment report, not a manuscript or submission.
 
 Read `USER_REQUEST.md`, `DATA_AUDIT.md`, `EXPERIMENT_PROTOCOL.md`, `DECISIONS.md`, `STATE.json` and `FINAL_EVAL_LOCK.json` before interpreting results. Source-wise macro AUROC is the primary metric. The source labels are available only for grouping/sampling; they are never predictive features.

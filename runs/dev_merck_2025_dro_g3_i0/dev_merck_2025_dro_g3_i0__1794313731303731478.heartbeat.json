@@ -1,0 +1,12 @@
+{
+  "attempt_id": "dev_merck_2025_dro_g3_i0__1794313731303731478",
+  "run_id": "dev_merck_2025_dro_g3_i0",
+  "observed_unix": 1794314010.8498428,
+  "wall_seconds": 279.54609487205744,
+  "gpu_seconds": 279.54609487205744,
+  "cpu_seconds": 286.182077,
+  "pid": 64078,
+  "process_start_ticks": 4997212768,
+  "boot_id": "a8ea9ed8-f60b-41e7-9887-40c805bd8203",
+  "status": "completed"
+}

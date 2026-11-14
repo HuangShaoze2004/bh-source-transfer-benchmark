@@ -1,0 +1,12 @@
+{
+  "attempt_id": "review_delivery_static_requirements_v1__1794381212430525514",
+  "run_id": "review_delivery_static_requirements_v1",
+  "observed_unix": 1794381214.5154495,
+  "wall_seconds": 2.084908090531826,
+  "gpu_seconds": 0,
+  "cpu_seconds": 0.26534499999999994,
+  "pid": 770336,
+  "process_start_ticks": 5003960881,
+  "boot_id": "a8ea9ed8-f60b-41e7-9887-40c805bd8203",
+  "status": "completed"
+}

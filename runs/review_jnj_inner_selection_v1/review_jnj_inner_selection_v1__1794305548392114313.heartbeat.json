@@ -1,0 +1,12 @@
+{
+  "attempt_id": "review_jnj_inner_selection_v1__1794305548392114313",
+  "run_id": "review_jnj_inner_selection_v1",
+  "observed_unix": 1794305558.667784,
+  "wall_seconds": 10.275654800236225,
+  "gpu_seconds": 0,
+  "cpu_seconds": 8.932637000000001,
+  "pid": 978688,
+  "process_start_ticks": 4996394477,
+  "boot_id": "a8ea9ed8-f60b-41e7-9887-40c805bd8203",
+  "status": "completed"
+}

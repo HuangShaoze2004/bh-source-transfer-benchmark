@@ -1,0 +1,60 @@
+{
+  "event": "finished",
+  "run_id": "predict_roche_2023_B_S_s42",
+  "attempt_id": "predict_roche_2023_B_S_s42__1794344453319714739",
+  "stage": "formal",
+  "gpu": true,
+  "threads": 1,
+  "cpu_slots": [
+    0
+  ],
+  "cpus": [
+    0
+  ],
+  "pid": 384193,
+  "process_start_ticks": 5000284970,
+  "boot_id": "a8ea9ed8-f60b-41e7-9887-40c805bd8203",
+  "launcher_pid": 384188,
+  "launcher_start_ticks": 5000284953,
+  "start_unix": 1794344453.3197286,
+  "command": [
+    "/root/autodl-tmp/paper-academic-tailor-2/bh_source_robust_transfer/.venv/bin/python",
+    "scripts/predict_job.py",
+    "--spec",
+    "/root/autodl-tmp/paper-academic-tailor-2/bh_source_robust_transfer/runs/specs/predict_roche_2023_B_S_s42.json"
+  ],
+  "command_hash": "a1f1022b9a88ff6a15f59e0947574b97c28d7faf1a2424c38b2b108f1b696366",
+  "execution_identity": "7fe1480d2f5b53a4a9a3b0c2529413e88eb673555a164f42b6d5266be0918ca7",
+  "identity_components": {
+    "schema_version": 1,
+    "command": [
+      "/root/autodl-tmp/paper-academic-tailor-2/bh_source_robust_transfer/.venv/bin/python",
+      "scripts/predict_job.py",
+      "--spec",
+      "/root/autodl-tmp/paper-academic-tailor-2/bh_source_robust_transfer/runs/specs/predict_roche_2023_B_S_s42.json"
+    ],
+    "project_scripts": {
+      "scripts/predict_job.py": "48870633e34b7ee046f88368f3a3d6dea8918db2aaf3653ef7eaa57ea6da5b92"
+    },
+    "spec_json": {
+      "runs/specs/predict_roche_2023_B_S_s42.json": "25a63ec1876c8fd0c5f91df97a5a096cf1a6a926f84fd4669ca1b576173d7609"
+    },
+    "implementation_modules": {
+      "src/bh_transfer/__init__.py": "cc722a39a1c088e8d7e06db83dbcf662a4d5c01731651f85f90a2e4b0ace1cab",
+      "src/bh_transfer/data.py": "6f4a6732ea5c7917d4d35e218a2baa678f786ac9abc6c0103cd0caddb0984784",
+      "src/bh_transfer/evaluate.py": "13a48c63681b2b1c282bac609d32175bd483e3e5d69c3499e1ee72e73d2adcaf",
+      "src/bh_transfer/neural.py": "626fd8bc7d9a8a495859679124633f2fe86e5ab2b4cec625ee8d0f41722a9cd9",
+      "src/bh_transfer/tabular.py": "0b143a5a4b3c2d15c66a8b8e90d11ce36bccb3d85dec37bb2766a4d6c76f23d3",
+      "src/bh_transfer/tokenizer.py": "a33f5b4838bad11170c94915d6bb2b5092fb3b3ac466894b79bfa7a7f0acf435"
+    },
+    "final_eval_lock_sha256": "b7005aff7fa71ab452015047b8b3a0d0aa0efa718fcdb937915d1267f6576a84"
+  },
+  "log": "runs/predict_roche_2023_B_S_s42/predict_roche_2023_B_S_s42__1794344453319714739.log",
+  "status": "completed",
+  "exit_code": 0,
+  "wall_seconds": 4.109997384250164,
+  "gpu_seconds": 4.109997384250164,
+  "cpu_seconds": 3.564329,
+  "reason": null,
+  "cost_quality": "measured"
+}

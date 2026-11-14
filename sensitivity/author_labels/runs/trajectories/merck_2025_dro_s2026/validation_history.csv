@@ -1,0 +1,11 @@
+step,candidate,n,log_loss,brier,auroc,auprc,pooled_auroc,source_macro_auroc,source_metrics
+396,ordinary,0,,,,,,,{}
+792,ordinary,0,,,,,,,{}
+1188,ordinary,0,,,,,,,{}
+1584,ordinary,0,,,,,,,{}
+1980,ordinary,0,,,,,,,{}
+2376,ordinary,0,,,,,,,{}
+2772,ordinary,0,,,,,,,{}
+3168,ordinary,0,,,,,,,{}
+3564,ordinary,0,,,,,,,{}
+3960,ordinary,0,,,,,,,{}

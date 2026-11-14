@@ -1,0 +1,12 @@
+{
+  "attempt_id": "review_dd_original_neural_runtime_v1__1794384559481856169",
+  "run_id": "review_dd_original_neural_runtime_v1",
+  "observed_unix": 1794384575.995497,
+  "wall_seconds": 16.51362567394972,
+  "gpu_seconds": 0,
+  "cpu_seconds": 15.240777999999999,
+  "pid": 805452,
+  "process_start_ticks": 5004295586,
+  "boot_id": "a8ea9ed8-f60b-41e7-9887-40c805bd8203",
+  "status": "completed"
+}

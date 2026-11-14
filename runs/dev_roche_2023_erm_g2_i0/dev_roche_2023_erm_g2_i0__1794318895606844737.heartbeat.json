@@ -1,0 +1,12 @@
+{
+  "attempt_id": "dev_roche_2023_erm_g2_i0__1794318895606844737",
+  "run_id": "dev_roche_2023_erm_g2_i0",
+  "observed_unix": 1794319302.4954064,
+  "wall_seconds": 406.88854487240314,
+  "gpu_seconds": 406.88854487240314,
+  "cpu_seconds": 416.292738,
+  "pid": 117479,
+  "process_start_ticks": 4997729199,
+  "boot_id": "a8ea9ed8-f60b-41e7-9887-40c805bd8203",
+  "status": "completed"
+}

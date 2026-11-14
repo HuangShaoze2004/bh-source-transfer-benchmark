@@ -1,0 +1,12 @@
+{
+  "kind": "author_labels",
+  "root": "/root/autodl-tmp/paper-academic-tailor-2/bh_source_robust_transfer/sensitivity/author_labels",
+  "rows": 23185,
+  "eligible_sources": [
+    "AZ ELN 2023",
+    "JNJ HTE 2024",
+    "Merck 2025",
+    "Roche 2023"
+  ],
+  "main_artifacts_unchanged": true
+}

@@ -1,0 +1,12 @@
+{
+  "attempt_id": "review_first_completed_groupdro_v1__1794281842276357087",
+  "run_id": "review_first_completed_groupdro_v1",
+  "observed_unix": 1794281846.3754122,
+  "wall_seconds": 4.099038653075695,
+  "gpu_seconds": 0,
+  "cpu_seconds": 3.0131979999999996,
+  "pid": 730830,
+  "process_start_ticks": 4994023866,
+  "boot_id": "a8ea9ed8-f60b-41e7-9887-40c805bd8203",
+  "status": "completed"
+}

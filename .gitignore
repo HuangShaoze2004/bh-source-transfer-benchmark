@@ -1,4 +1,16 @@
 .venv/
+.cache/
+.publication/
+reproduction/
+release/*.tar.zst
+release/*.partial
+release/*.tar.zst.json
+release/downloads/
+release/git-paths.nul
+release/inventory.partial.json
+release/publication_events.jsonl
+release/UPLOAD_RECEIPT.json
+release/packaging_cost.json
 cache/
 data/raw/
 data/processed/

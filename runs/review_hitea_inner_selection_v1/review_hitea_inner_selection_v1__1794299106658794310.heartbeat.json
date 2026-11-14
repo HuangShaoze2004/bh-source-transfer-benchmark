@@ -1,0 +1,12 @@
+{
+  "attempt_id": "review_hitea_inner_selection_v1__1794299106658794310",
+  "run_id": "review_hitea_inner_selection_v1",
+  "observed_unix": 1794299116.941375,
+  "wall_seconds": 10.282565005123615,
+  "gpu_seconds": 0,
+  "cpu_seconds": 9.647546000000002,
+  "pid": 911672,
+  "process_start_ticks": 4995750304,
+  "boot_id": "a8ea9ed8-f60b-41e7-9887-40c805bd8203",
+  "status": "completed"
+}

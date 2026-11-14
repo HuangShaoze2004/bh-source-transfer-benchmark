@@ -1,0 +1,5825 @@
+{
+  "full_reaction": {
+    "n_rows": 23185,
+    "n_valid": 22465,
+    "n_invalid": 720,
+    "max_tokens": 277,
+    "failures": [
+      {
+        "row_id": 0,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 1,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 2,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 3,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 4,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 5,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 6,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 7,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 8,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 9,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 10,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 11,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 12,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 13,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 14,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 15,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 16,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 17,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 18,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 19,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 20,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 21,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 22,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 23,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 24,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 25,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 26,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 27,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 28,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 29,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 30,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 31,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 32,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 33,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 34,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 35,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 36,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 37,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 38,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 39,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 40,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 41,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 42,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 43,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 44,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 45,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 46,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 47,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 48,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 49,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 50,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 51,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 52,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 53,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 54,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 55,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 56,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 57,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 58,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 59,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 60,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 61,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 62,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 63,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 64,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 65,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 66,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 67,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 68,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 69,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 70,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 71,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 72,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 73,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 74,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 75,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 76,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 77,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 78,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 79,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 80,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 81,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 82,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 83,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 90,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 91,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 92,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 93,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 94,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 95,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 96,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 97,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 98,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 99,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 100,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 101,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 102,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 103,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 104,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 105,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 106,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 107,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 108,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 109,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 110,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 111,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 112,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 113,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 114,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 115,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 116,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 117,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 118,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 119,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 120,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 121,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 122,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 123,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 124,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 125,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 126,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 127,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 128,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 129,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 130,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 131,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 132,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 133,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 134,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 135,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 136,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 137,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 138,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 139,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 140,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 141,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 142,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 143,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 144,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 145,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 146,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 147,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 148,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 149,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 150,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 151,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 152,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 153,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 154,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 155,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 156,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 157,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 158,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 159,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 160,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 161,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 162,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 163,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 164,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 165,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 166,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 167,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 168,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 169,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 170,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 171,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 172,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 173,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 174,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 175,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 176,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 177,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 178,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 179,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 186,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 187,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 188,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 189,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 190,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 191,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 192,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 193,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 194,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 195,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 196,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 197,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 198,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 199,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 200,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 201,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 202,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 203,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 204,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 205,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 206,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 207,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 208,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 209,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 210,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 211,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 212,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 213,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 214,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 215,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 216,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 217,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 218,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 219,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 220,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 221,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 222,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 223,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 224,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 225,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 226,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 227,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 228,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 229,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 230,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 231,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 232,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 233,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 234,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 235,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 236,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 237,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 238,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 239,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 240,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 241,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 242,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 243,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 244,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 245,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 246,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 247,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 248,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 249,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 250,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 251,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 252,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 253,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 254,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 255,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 256,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 257,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 258,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 259,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 260,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 261,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 262,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 263,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 264,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 265,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 266,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 267,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 268,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 269,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 270,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 271,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 272,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 273,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 274,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 275,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 282,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 283,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 284,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 285,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 286,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 287,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 288,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 289,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 290,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 291,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 292,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 293,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 294,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 295,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 296,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 297,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 298,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 299,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 300,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 301,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 302,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 303,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 304,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 305,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 306,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 307,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 308,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 309,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 310,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 311,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 312,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 313,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 314,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 315,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 316,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 317,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 318,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 319,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 320,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 321,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 322,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 323,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 324,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 325,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 326,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 327,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 328,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 329,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 330,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 331,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 332,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 333,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 334,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 335,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 336,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 337,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 338,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 339,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 340,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 341,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 342,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 343,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 344,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 345,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 346,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 347,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 348,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 349,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 350,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 351,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 352,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 353,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 354,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 355,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 356,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 357,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 358,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 359,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 360,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 361,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 362,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 363,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 364,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 365,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 366,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 367,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 368,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 369,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 370,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 371,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 378,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 379,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 380,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 381,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 382,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 383,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 384,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 385,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 386,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 387,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 388,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 389,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 390,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 391,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 392,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 393,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 394,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 395,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 396,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 397,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 398,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 399,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 400,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 401,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 402,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 403,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 404,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 405,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 406,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 407,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 408,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 409,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 410,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 411,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 412,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 413,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 414,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 415,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 416,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 417,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 418,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 419,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 420,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 421,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 422,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 423,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 424,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 425,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 426,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 427,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 428,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 429,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 430,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 431,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 432,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 433,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 434,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 435,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 436,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 437,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 438,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 439,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 440,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 441,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 442,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 443,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 444,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 445,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 446,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 447,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 448,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 449,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 450,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 451,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 452,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 453,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 454,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 455,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 456,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 457,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 458,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 459,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 460,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 461,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 462,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 463,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 464,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 465,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 466,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 467,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 474,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 475,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 476,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 477,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 478,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 479,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 480,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 481,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 482,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 483,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 484,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 485,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 486,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 487,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 488,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 489,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 490,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 491,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 492,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 493,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 494,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 495,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 496,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 497,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 498,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 499,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 500,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 501,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 502,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 503,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 504,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 505,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 506,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 507,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 508,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 509,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 510,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 511,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 512,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 513,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 514,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 515,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 516,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 517,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 518,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 519,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 520,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 521,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 522,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 523,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 524,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 525,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 526,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 527,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 528,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 529,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 530,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 531,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 532,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 533,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 534,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 535,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 536,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 537,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 538,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 539,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 540,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 541,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 542,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 543,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 544,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 545,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 546,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 547,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 548,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 549,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 550,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 551,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 552,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 553,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 554,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 555,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 556,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 557,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 558,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 559,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 560,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 561,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 562,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 563,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 570,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 571,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 572,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 573,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 574,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 575,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 576,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 577,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 578,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 579,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 580,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 581,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 582,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 583,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 584,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 585,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 586,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 587,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 588,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 589,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 590,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 591,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 592,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 593,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 594,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 595,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 596,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 597,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 598,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 599,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 600,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 601,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 602,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 603,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 604,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 605,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 606,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 607,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 608,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 609,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 610,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 611,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 612,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 613,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 614,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 615,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 616,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 617,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 618,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 619,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 620,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 621,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 622,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 623,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 624,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 625,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 626,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 627,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 628,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 629,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 630,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 631,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 632,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 633,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 634,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 635,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 636,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 637,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 638,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 639,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 640,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 641,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 642,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 643,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 644,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 645,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 646,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 647,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 648,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 649,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 650,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 651,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 652,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 653,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 654,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 655,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 656,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 657,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 658,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 659,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 666,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 667,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 668,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 669,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 670,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 671,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 672,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 673,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 674,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 675,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 676,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 677,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 678,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 679,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 680,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 681,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 682,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 683,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 684,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 685,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 686,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 687,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 688,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 689,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 690,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 691,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 692,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 693,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 694,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 695,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 696,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 697,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 698,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 699,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 700,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 701,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 702,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 703,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 704,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 705,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 706,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 707,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 708,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 709,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 710,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 711,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 712,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 713,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 714,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 715,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 716,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 717,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 718,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 719,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 720,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 721,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 722,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 723,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 724,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 725,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 726,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 727,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 728,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 729,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 730,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 731,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 732,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 733,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 734,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 735,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 736,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 737,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 738,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 739,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 740,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 741,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 742,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 743,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 744,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 745,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 746,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 747,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 748,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 749,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 750,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 751,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 752,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 753,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 754,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 755,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 762,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 763,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 764,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 765,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 766,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      },
+      {
+        "row_id": 767,
+        "reason": "Regex leaves unmatched characters in reaction SMILES"
+      }
+    ],
+    "length_distribution_including_unrepresentable": {
+      "0": 80.0,
+      "25": 140.0,
+      "50": 157.0,
+      "75": 177.0,
+      "90": 198.0,
+      "95": 215.0,
+      "99": 240.0,
+      "100": 277.0
+    },
+    "overlength_row_ids": []
+  },
+  "roles": {
+    "aryl": {
+      "n_rows": 23185,
+      "n_valid": 23185,
+      "n_invalid": 0,
+      "max_tokens": 71,
+      "failures": [],
+      "known_empty_rows": 0
+    },
+    "amine": {
+      "n_rows": 23185,
+      "n_valid": 23185,
+      "n_invalid": 0,
+      "max_tokens": 69,
+      "failures": [],
+      "known_empty_rows": 0
+    },
+    "catalyst": {
+      "n_rows": 23185,
+      "n_valid": 22465,
+      "n_invalid": 720,
+      "max_tokens": 205,
+      "failures": [
+        {
+          "row_id": 0,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 1,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 2,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 3,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 4,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 5,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 6,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 7,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 8,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 9,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 10,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 11,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 12,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 13,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 14,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 15,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 16,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 17,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 18,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 19,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 20,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 21,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 22,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 23,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 24,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 25,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 26,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 27,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 28,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 29,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 30,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 31,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 32,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 33,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 34,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 35,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 36,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 37,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 38,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 39,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 40,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 41,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 42,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 43,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 44,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 45,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 46,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 47,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 48,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 49,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 50,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 51,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 52,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 53,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 54,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 55,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 56,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 57,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 58,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 59,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 60,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 61,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 62,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 63,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 64,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 65,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 66,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 67,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 68,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 69,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 70,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 71,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 72,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 73,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 74,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 75,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 76,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 77,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 78,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 79,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 80,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 81,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 82,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 83,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 90,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 91,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 92,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 93,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 94,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 95,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 96,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 97,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 98,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 99,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 100,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 101,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 102,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 103,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 104,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 105,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 106,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 107,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 108,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 109,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 110,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 111,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 112,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 113,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 114,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 115,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 116,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 117,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 118,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 119,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 120,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 121,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 122,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 123,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 124,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 125,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 126,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 127,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 128,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 129,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 130,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 131,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 132,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 133,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 134,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 135,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 136,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 137,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 138,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 139,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 140,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 141,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 142,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 143,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 144,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 145,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 146,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 147,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 148,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 149,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 150,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 151,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 152,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 153,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 154,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 155,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 156,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 157,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 158,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 159,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 160,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 161,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 162,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 163,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 164,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 165,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 166,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 167,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 168,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 169,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 170,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 171,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 172,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 173,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 174,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 175,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 176,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 177,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 178,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 179,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 186,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 187,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 188,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 189,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 190,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 191,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 192,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 193,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 194,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 195,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 196,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 197,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 198,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 199,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 200,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 201,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 202,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 203,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 204,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 205,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 206,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 207,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 208,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 209,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 210,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 211,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 212,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 213,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 214,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 215,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 216,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 217,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 218,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 219,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 220,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 221,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 222,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 223,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 224,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 225,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 226,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 227,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 228,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 229,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 230,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 231,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 232,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 233,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 234,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 235,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 236,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 237,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 238,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 239,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 240,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 241,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 242,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 243,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 244,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 245,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 246,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 247,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 248,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 249,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 250,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 251,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 252,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 253,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 254,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 255,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 256,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 257,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 258,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 259,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 260,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 261,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 262,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 263,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 264,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 265,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 266,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 267,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 268,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 269,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 270,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 271,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 272,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 273,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 274,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 275,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 282,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 283,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 284,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 285,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 286,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 287,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 288,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 289,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 290,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 291,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 292,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 293,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 294,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 295,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 296,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 297,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 298,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 299,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 300,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 301,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 302,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 303,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 304,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 305,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 306,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 307,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 308,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 309,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 310,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 311,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 312,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 313,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 314,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 315,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 316,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 317,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 318,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 319,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 320,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 321,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 322,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 323,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 324,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 325,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 326,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 327,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 328,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 329,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 330,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 331,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 332,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 333,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 334,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 335,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 336,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 337,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 338,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 339,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 340,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 341,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 342,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 343,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 344,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 345,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 346,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 347,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 348,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 349,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 350,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 351,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 352,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 353,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 354,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 355,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 356,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 357,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 358,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 359,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 360,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 361,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 362,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 363,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 364,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 365,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 366,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 367,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 368,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 369,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 370,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 371,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 378,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 379,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 380,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 381,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 382,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 383,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 384,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 385,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 386,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 387,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 388,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 389,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 390,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 391,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 392,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 393,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 394,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 395,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 396,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 397,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 398,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 399,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 400,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 401,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 402,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 403,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 404,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 405,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 406,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 407,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 408,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 409,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 410,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 411,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 412,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 413,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 414,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 415,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 416,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 417,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 418,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 419,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 420,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 421,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 422,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 423,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 424,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 425,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 426,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 427,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 428,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 429,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 430,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 431,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 432,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 433,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 434,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 435,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 436,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 437,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 438,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 439,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 440,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 441,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 442,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 443,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 444,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 445,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 446,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 447,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 448,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 449,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 450,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 451,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 452,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 453,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 454,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 455,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 456,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 457,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 458,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 459,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 460,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 461,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 462,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 463,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 464,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 465,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 466,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 467,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 474,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 475,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 476,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 477,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 478,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 479,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 480,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 481,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 482,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 483,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 484,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 485,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 486,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 487,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 488,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 489,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 490,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 491,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 492,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 493,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 494,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 495,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 496,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 497,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 498,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 499,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 500,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 501,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 502,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 503,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 504,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 505,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 506,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 507,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 508,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 509,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 510,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 511,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 512,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 513,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 514,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 515,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 516,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 517,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 518,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 519,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 520,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 521,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 522,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 523,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 524,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 525,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 526,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 527,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 528,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 529,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 530,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 531,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 532,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 533,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 534,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 535,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 536,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 537,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 538,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 539,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 540,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 541,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 542,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 543,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 544,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 545,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 546,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 547,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 548,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 549,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 550,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 551,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 552,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 553,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 554,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 555,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 556,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 557,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 558,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 559,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 560,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 561,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 562,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 563,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 570,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 571,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 572,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 573,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 574,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 575,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 576,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 577,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 578,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 579,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 580,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 581,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 582,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 583,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 584,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 585,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 586,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 587,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 588,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 589,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 590,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 591,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 592,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 593,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 594,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 595,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 596,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 597,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 598,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 599,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 600,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 601,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 602,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 603,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 604,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 605,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 606,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 607,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 608,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 609,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 610,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 611,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 612,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 613,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 614,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 615,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 616,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 617,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 618,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 619,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 620,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 621,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 622,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 623,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 624,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 625,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 626,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 627,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 628,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 629,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 630,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 631,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 632,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 633,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 634,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 635,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 636,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 637,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 638,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 639,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 640,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 641,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 642,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 643,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 644,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 645,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 646,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 647,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 648,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 649,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 650,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 651,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 652,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 653,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 654,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 655,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 656,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 657,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 658,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 659,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 666,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 667,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 668,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 669,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 670,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 671,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 672,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 673,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 674,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 675,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 676,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 677,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 678,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 679,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 680,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 681,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 682,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 683,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 684,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 685,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 686,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 687,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 688,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 689,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 690,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 691,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 692,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 693,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 694,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 695,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 696,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 697,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 698,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 699,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 700,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 701,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 702,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 703,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 704,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 705,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 706,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 707,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 708,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 709,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 710,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 711,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 712,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 713,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 714,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 715,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 716,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 717,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 718,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 719,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 720,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 721,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 722,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 723,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 724,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 725,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 726,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 727,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 728,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 729,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 730,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 731,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 732,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 733,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 734,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 735,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 736,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 737,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 738,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 739,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 740,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 741,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 742,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 743,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 744,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 745,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 746,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 747,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 748,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 749,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 750,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 751,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 752,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 753,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 754,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 755,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 762,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 763,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 764,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 765,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 766,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        },
+        {
+          "row_id": 767,
+          "reason": "Regex leaves unmatched characters in reaction SMILES"
+        }
+      ],
+      "known_empty_rows": 0
+    },
+    "base": {
+      "n_rows": 23185,
+      "n_valid": 23185,
+      "n_invalid": 0,
+      "max_tokens": 83,
+      "failures": [],
+      "known_empty_rows": 0
+    },
+    "solvent": {
+      "n_rows": 23185,
+      "n_valid": 23185,
+      "n_invalid": 0,
+      "max_tokens": 20,
+      "failures": [],
+      "known_empty_rows": 0
+    }
+  },
+  "vocab_sha256": "399868a653e85549ce150af4a1f6cd2776240c6a3d951ced2120565f00f027fd"
+}

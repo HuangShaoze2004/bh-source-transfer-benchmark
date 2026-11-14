@@ -1,0 +1,12 @@
+{
+  "attempt_id": "formal_merck_2025_erm_s17__1794337409372498658",
+  "run_id": "formal_merck_2025_erm_s17",
+  "observed_unix": 1794337890.7834969,
+  "wall_seconds": 481.4109824448824,
+  "gpu_seconds": 481.4109824448824,
+  "cpu_seconds": 493.61478800000003,
+  "pid": 310698,
+  "process_start_ticks": 4999580575,
+  "boot_id": "a8ea9ed8-f60b-41e7-9887-40c805bd8203",
+  "status": "completed"
+}

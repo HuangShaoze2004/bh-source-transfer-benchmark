@@ -1,0 +1,60 @@
+{
+  "event": "finished",
+  "run_id": "sens_dd_original_az_eln_2023_erm_s2026",
+  "attempt_id": "sens_dd_original_az_eln_2023_erm_s2026__1794367233462773449",
+  "stage": "sensitivity",
+  "gpu": true,
+  "threads": 1,
+  "cpu_slots": [
+    0
+  ],
+  "cpus": [
+    0
+  ],
+  "pid": 622158,
+  "process_start_ticks": 5002562984,
+  "boot_id": "a8ea9ed8-f60b-41e7-9887-40c805bd8203",
+  "launcher_pid": 622155,
+  "launcher_start_ticks": 5002562962,
+  "start_unix": 1794367233.4627903,
+  "command": [
+    "/root/autodl-tmp/paper-academic-tailor-2/bh_source_robust_transfer/.venv/bin/python",
+    "/root/autodl-tmp/paper-academic-tailor-2/bh_source_robust_transfer/scripts/run_neural_job.py",
+    "--spec",
+    "/root/autodl-tmp/paper-academic-tailor-2/bh_source_robust_transfer/sensitivity/dd_original/runs/specs/sens_dd_original_az_eln_2023_erm_s2026.json"
+  ],
+  "command_hash": "943b7002e23545c58d6b822e6d2ced158510bb5a96d2b41aa4b0f36d73ed1ad1",
+  "execution_identity": "e0e6dfacd8c5ca1c5ab72429ce51de55f32d6b4485595ea4d8235e588d01301a",
+  "identity_components": {
+    "schema_version": 1,
+    "command": [
+      "/root/autodl-tmp/paper-academic-tailor-2/bh_source_robust_transfer/.venv/bin/python",
+      "/root/autodl-tmp/paper-academic-tailor-2/bh_source_robust_transfer/scripts/run_neural_job.py",
+      "--spec",
+      "/root/autodl-tmp/paper-academic-tailor-2/bh_source_robust_transfer/sensitivity/dd_original/runs/specs/sens_dd_original_az_eln_2023_erm_s2026.json"
+    ],
+    "project_scripts": {
+      "scripts/run_neural_job.py": "c6e9e4ade7d6045f273eedbf992b72879e5a91b2e73d60117aa8e42fa7572add"
+    },
+    "spec_json": {
+      "sensitivity/dd_original/runs/specs/sens_dd_original_az_eln_2023_erm_s2026.json": "584136a867f488696a5d0723b349c57e5655b33c764d1e5492843fd22f7f6a47"
+    },
+    "implementation_modules": {
+      "src/bh_transfer/__init__.py": "cc722a39a1c088e8d7e06db83dbcf662a4d5c01731651f85f90a2e4b0ace1cab",
+      "src/bh_transfer/data.py": "6f4a6732ea5c7917d4d35e218a2baa678f786ac9abc6c0103cd0caddb0984784",
+      "src/bh_transfer/evaluate.py": "13a48c63681b2b1c282bac609d32175bd483e3e5d69c3499e1ee72e73d2adcaf",
+      "src/bh_transfer/neural.py": "626fd8bc7d9a8a495859679124633f2fe86e5ab2b4cec625ee8d0f41722a9cd9",
+      "src/bh_transfer/tabular.py": "0b143a5a4b3c2d15c66a8b8e90d11ce36bccb3d85dec37bb2766a4d6c76f23d3",
+      "src/bh_transfer/tokenizer.py": "a33f5b4838bad11170c94915d6bb2b5092fb3b3ac466894b79bfa7a7f0acf435"
+    },
+    "final_eval_lock_sha256": "b7005aff7fa71ab452015047b8b3a0d0aa0efa718fcdb937915d1267f6576a84"
+  },
+  "log": "runs/sens_dd_original_az_eln_2023_erm_s2026/sens_dd_original_az_eln_2023_erm_s2026__1794367233462773449.log",
+  "status": "completed",
+  "exit_code": 0,
+  "wall_seconds": 675.8206418156624,
+  "gpu_seconds": 675.8206418156624,
+  "cpu_seconds": 694.7556800000001,
+  "reason": null,
+  "cost_quality": "measured"
+}

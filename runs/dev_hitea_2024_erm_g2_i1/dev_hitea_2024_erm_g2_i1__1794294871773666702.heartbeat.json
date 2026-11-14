@@ -1,0 +1,12 @@
+{
+  "attempt_id": "dev_hitea_2024_erm_g2_i1__1794294871773666702",
+  "run_id": "dev_hitea_2024_erm_g2_i1",
+  "observed_unix": 1794295134.585095,
+  "wall_seconds": 262.8114118501544,
+  "gpu_seconds": 262.8114118501544,
+  "cpu_seconds": 268.9486,
+  "pid": 867627,
+  "process_start_ticks": 4995326815,
+  "boot_id": "a8ea9ed8-f60b-41e7-9887-40c805bd8203",
+  "status": "completed"
+}

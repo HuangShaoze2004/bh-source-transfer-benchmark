@@ -1,0 +1,151 @@
+pair bootstrap 100/5000
+pair bootstrap 200/5000
+pair bootstrap 300/5000
+pair bootstrap 400/5000
+pair bootstrap 500/5000
+pair bootstrap 600/5000
+pair bootstrap 700/5000
+pair bootstrap 800/5000
+pair bootstrap 900/5000
+pair bootstrap 1000/5000
+pair bootstrap 1100/5000
+pair bootstrap 1200/5000
+pair bootstrap 1300/5000
+pair bootstrap 1400/5000
+pair bootstrap 1500/5000
+pair bootstrap 1600/5000
+pair bootstrap 1700/5000
+pair bootstrap 1800/5000
+pair bootstrap 1900/5000
+pair bootstrap 2000/5000
+pair bootstrap 2100/5000
+pair bootstrap 2200/5000
+pair bootstrap 2300/5000
+pair bootstrap 2400/5000
+pair bootstrap 2500/5000
+pair bootstrap 2600/5000
+pair bootstrap 2700/5000
+pair bootstrap 2800/5000
+pair bootstrap 2900/5000
+pair bootstrap 3000/5000
+pair bootstrap 3100/5000
+pair bootstrap 3200/5000
+pair bootstrap 3300/5000
+pair bootstrap 3400/5000
+pair bootstrap 3500/5000
+pair bootstrap 3600/5000
+pair bootstrap 3700/5000
+pair bootstrap 3800/5000
+pair bootstrap 3900/5000
+pair bootstrap 4000/5000
+pair bootstrap 4100/5000
+pair bootstrap 4200/5000
+pair bootstrap 4300/5000
+pair bootstrap 4400/5000
+pair bootstrap 4500/5000
+pair bootstrap 4600/5000
+pair bootstrap 4700/5000
+pair bootstrap 4800/5000
+pair bootstrap 4900/5000
+pair bootstrap 5000/5000
+pigeonhole bootstrap 100/1000
+pigeonhole bootstrap 200/1000
+pigeonhole bootstrap 300/1000
+pigeonhole bootstrap 400/1000
+pigeonhole bootstrap 500/1000
+pigeonhole bootstrap 600/1000
+pigeonhole bootstrap 700/1000
+pigeonhole bootstrap 800/1000
+pigeonhole bootstrap 900/1000
+pigeonhole bootstrap 1000/1000
+{
+  "status": "EVALUATION_COMPLETE",
+  "signature": "725bdd82d1be1770c002afbf3268d357dd34e366e13d9ee1b33920cb54a0d189",
+  "prediction_sha256": "26fa5487d45ac043bfc07e43bee7c9b789eeafd4e6d72f6a7adb86dc3950078d",
+  "lock_sha256": "b7005aff7fa71ab452015047b8b3a0d0aa0efa718fcdb937915d1267f6576a84",
+  "evaluator_sha256": "13a48c63681b2b1c282bac609d32175bd483e3e5d69c3499e1ee72e73d2adcaf",
+  "models": [
+    "R0_RF",
+    "R0_HGB",
+    "R1_substitute",
+    "B",
+    "B_S",
+    "B_bal",
+    "B_bal_S",
+    "B_A",
+    "B_A_S"
+  ],
+  "seeds": [
+    17,
+    42,
+    2026
+  ],
+  "eligible_sources": [
+    "AZ ELN 2023",
+    "JNJ HTE 2024",
+    "Merck 2025",
+    "Roche 2023"
+  ],
+  "acceptance": {
+    "status": "INCREMENT_CRITERION_NOT_MET",
+    "candidate": "B_A_S",
+    "comparator_set": [
+      "B",
+      "B_bal",
+      "R0_RF",
+      "R0_HGB",
+      "R1_substitute"
+    ],
+    "strongest_observed_comparator": "B",
+    "delta_auroc": 0.001045085165827575,
+    "bootstrap_vs_max_comparator": {
+      "low": -0.01266033758943054,
+      "high": 0.015264845157835338,
+      "valid_replicates": 5000,
+      "invalid_fraction": 0.0
+    },
+    "min_source_delta_vs_max_comparator": -0.048636741125867855,
+    "source_deltas": {
+      "AZ ELN 2023": 0.030595493015193265,
+      "JNJ HTE 2024": -0.048636741125867855,
+      "Merck 2025": 0.018327658052678997,
+      "Roche 2023": -0.0355815301354141
+    },
+    "combination_contrasts": [
+      {
+        "comparator": "B_A",
+        "delta": -0.0009315203937364513,
+        "low": -0.003317552986986849,
+        "high": 0.0012942492848156343,
+        "valid_replicates": 5000,
+        "invalid_fraction": 0.0
+      },
+      {
+        "comparator": "B_S",
+        "delta": 0.002147859544104014,
+        "low": -0.012269970691785675,
+        "high": 0.017214129932947655,
+        "valid_replicates": 5000,
+        "invalid_fraction": 0.0
+      },
+      {
+        "comparator": "B_bal_S",
+        "delta": 0.01838064072751089,
+        "low": 0.00958917432614812,
+        "high": 0.027600129978278473,
+        "valid_replicates": 5000,
+        "invalid_fraction": 0.0
+      }
+    ],
+    "criteria": {
+      "min_macro_delta": 0.02,
+      "max_source_regression": 0.03,
+      "ci_low_above": 0,
+      "max_invalid_bootstrap_fraction": 0.05
+    },
+    "limitation": "Evidence conditional on these sources and fitted seeds; not a publication-readiness verdict"
+  },
+  "inference": "Equal fixed-source macro, seedwise metrics averaged; pair-cluster paired bootstrap conditional on fitted runs",
+  "auprc_definition": "Non-interpolated average precision, weighted for bootstrap",
+  "calibration": "Ranking uses raw probabilities; calibration is auxiliary Brier/reliability only"
+}

@@ -1,0 +1,12 @@
+{
+  "attempt_id": "dev_roche_2023_bal_g3_i0__1794321681361314316",
+  "run_id": "dev_roche_2023_bal_g3_i0",
+  "observed_unix": 1794322090.3407657,
+  "wall_seconds": 408.9794347733259,
+  "gpu_seconds": 408.9794347733259,
+  "cpu_seconds": 419.34650200000004,
+  "pid": 146325,
+  "process_start_ticks": 4998007774,
+  "boot_id": "a8ea9ed8-f60b-41e7-9887-40c805bd8203",
+  "status": "completed"
+}

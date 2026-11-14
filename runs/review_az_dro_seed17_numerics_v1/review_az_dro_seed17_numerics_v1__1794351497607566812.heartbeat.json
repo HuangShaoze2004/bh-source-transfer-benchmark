@@ -1,0 +1,12 @@
+{
+  "attempt_id": "review_az_dro_seed17_numerics_v1__1794351497607566812",
+  "run_id": "review_az_dro_seed17_numerics_v1",
+  "observed_unix": 1794351501.7449336,
+  "wall_seconds": 4.1373506262898445,
+  "gpu_seconds": 0,
+  "cpu_seconds": 2.662497,
+  "pid": 458511,
+  "process_start_ticks": 5000989399,
+  "boot_id": "a8ea9ed8-f60b-41e7-9887-40c805bd8203",
+  "status": "completed"
+}

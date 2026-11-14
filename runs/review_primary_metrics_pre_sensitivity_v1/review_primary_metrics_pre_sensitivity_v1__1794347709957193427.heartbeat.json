@@ -1,0 +1,12 @@
+{
+  "attempt_id": "review_primary_metrics_pre_sensitivity_v1__1794347709957193427",
+  "run_id": "review_primary_metrics_pre_sensitivity_v1",
+  "observed_unix": 1794347716.1531923,
+  "wall_seconds": 6.195983976125717,
+  "gpu_seconds": 0,
+  "cpu_seconds": 5.001328000000001,
+  "pid": 418321,
+  "process_start_ticks": 5000610634,
+  "boot_id": "a8ea9ed8-f60b-41e7-9887-40c805bd8203",
+  "status": "completed"
+}

@@ -1,0 +1,12 @@
+{
+  "attempt_id": "dev_az_eln_2023_bal_g2_i0__1794285554381785521",
+  "run_id": "dev_az_eln_2023_bal_g2_i0",
+  "observed_unix": 1794286031.2487082,
+  "wall_seconds": 476.8669054582715,
+  "gpu_seconds": 476.8669054582715,
+  "cpu_seconds": 488.373507,
+  "pid": 769875,
+  "process_start_ticks": 4994395076,
+  "boot_id": "a8ea9ed8-f60b-41e7-9887-40c805bd8203",
+  "status": "completed"
+}

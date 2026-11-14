@@ -1,0 +1,187 @@
+{
+  "raw_rows": 27497,
+  "main_rows": 23185,
+  "excluded_counts": {
+    "unresolved_additive_identity": 4312
+  },
+  "raw_sources": {
+    "JNJ HTE 2024": 11328,
+    "Dreher Doyle 2018": 4312,
+    "Merck 2025": 4204,
+    "Roche 2023": 3359,
+    "HiTEA 2024": 2632,
+    "Dreher 2014": 768,
+    "AZ ELN 2023": 750,
+    "Dreher 2016": 144
+  },
+  "label_disagreements": 28,
+  "at_exactly_10": 155,
+  "qm_shape": [
+    27497,
+    50
+  ],
+  "qm_nonfinite": 0,
+  "qm_role_consistency": [
+    {
+      "role": "aryl",
+      "start": 0,
+      "end": 7,
+      "entities": 852,
+      "inconsistent_entities": 0
+    },
+    {
+      "role": "amine",
+      "start": 7,
+      "end": 14,
+      "entities": 701,
+      "inconsistent_entities": 0
+    },
+    {
+      "role": "catalyst",
+      "start": 14,
+      "end": 21,
+      "entities": 169,
+      "inconsistent_entities": 0
+    },
+    {
+      "role": "base",
+      "start": 21,
+      "end": 28,
+      "entities": 67,
+      "inconsistent_entities": 0
+    },
+    {
+      "role": "solvent",
+      "start": 28,
+      "end": 35,
+      "entities": 19,
+      "inconsistent_entities": 0
+    },
+    {
+      "role": "product",
+      "start": 35,
+      "end": 42,
+      "entities": 5777,
+      "inconsistent_entities": 0
+    }
+  ],
+  "qm_42_50_additive_columns": [
+    "Additive_present",
+    "Additive_aromatic_rings",
+    "Additive_heteroatom_count",
+    "Additive_coordination_flag",
+    "Additive_steric_bulk_flag",
+    "Additive_pi_rich_flag",
+    "Additive_Pd_poisoning",
+    "Additive_competes_with_amine"
+  ],
+  "qm_additive_tail_mismatch_rows": 0,
+  "truncated_drfp": {
+    "DRFP": 27497,
+    "DRFP_subst_prod": 27497
+  },
+  "duplicate_groups": 581,
+  "extra_duplicate_rows": 796,
+  "conflicting_groups": 60,
+  "raw_duplicate_groups": 761,
+  "raw_conflicting_groups": 201,
+  "eligible_sources": [
+    "AZ ELN 2023",
+    "JNJ HTE 2024",
+    "Merck 2025",
+    "Roche 2023"
+  ],
+  "splits": {
+    "az_eln_2023": {
+      "source": "AZ ELN 2023",
+      "eligible": true,
+      "rows": 607,
+      "pairs": 376,
+      "positive_rows": 467,
+      "negative_rows": 140,
+      "positive_pairs": 299,
+      "negative_pairs": 99,
+      "aryls": 230,
+      "amines": 207,
+      "positive_rate": 0.7693574958813838
+    },
+    "dreher_2014": {
+      "source": "Dreher 2014",
+      "eligible": false,
+      "rows": 0,
+      "pairs": 0,
+      "positive_rows": 0,
+      "negative_rows": 0,
+      "positive_pairs": 0,
+      "negative_pairs": 0,
+      "aryls": 0,
+      "amines": 0,
+      "positive_rate": null
+    },
+    "dreher_2016": {
+      "source": "Dreher 2016",
+      "eligible": false,
+      "rows": 0,
+      "pairs": 0,
+      "positive_rows": 0,
+      "negative_rows": 0,
+      "positive_pairs": 0,
+      "negative_pairs": 0,
+      "aryls": 0,
+      "amines": 0,
+      "positive_rate": null
+    },
+    "hitea_2024": {
+      "source": "HiTEA 2024",
+      "eligible": false,
+      "rows": 1387,
+      "pairs": 15,
+      "positive_rows": 194,
+      "negative_rows": 1193,
+      "positive_pairs": 11,
+      "negative_pairs": 12,
+      "aryls": 14,
+      "amines": 13,
+      "positive_rate": 0.13987022350396539
+    },
+    "jnj_hte_2024": {
+      "source": "JNJ HTE 2024",
+      "eligible": true,
+      "rows": 8016,
+      "pairs": 546,
+      "positive_rows": 2917,
+      "negative_rows": 5099,
+      "positive_pairs": 519,
+      "negative_pairs": 309,
+      "aryls": 90,
+      "amines": 65,
+      "positive_rate": 0.3638972055888224
+    },
+    "merck_2025": {
+      "source": "Merck 2025",
+      "eligible": true,
+      "rows": 2668,
+      "pairs": 2668,
+      "positive_rows": 1080,
+      "negative_rows": 1588,
+      "positive_pairs": 1080,
+      "negative_pairs": 1588,
+      "aryls": 335,
+      "amines": 8,
+      "positive_rate": 0.4047976011994003
+    },
+    "roche_2023": {
+      "source": "Roche 2023",
+      "eligible": true,
+      "rows": 1680,
+      "pairs": 65,
+      "positive_rows": 754,
+      "negative_rows": 926,
+      "positive_pairs": 55,
+      "negative_pairs": 61,
+      "aryls": 28,
+      "amines": 18,
+      "positive_rate": 0.4488095238095238
+    }
+  }
+}

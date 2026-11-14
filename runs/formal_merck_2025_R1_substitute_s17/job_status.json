@@ -1,0 +1,60 @@
+{
+  "event": "finished",
+  "run_id": "formal_merck_2025_R1_substitute_s17",
+  "attempt_id": "formal_merck_2025_R1_substitute_s17__1794283677242195059",
+  "stage": "formal",
+  "gpu": false,
+  "threads": 1,
+  "cpu_slots": [
+    1
+  ],
+  "cpus": [
+    1
+  ],
+  "pid": 750212,
+  "process_start_ticks": 4994207362,
+  "boot_id": "a8ea9ed8-f60b-41e7-9887-40c805bd8203",
+  "launcher_pid": 750211,
+  "launcher_start_ticks": 4994207352,
+  "start_unix": 1794283677.2422085,
+  "command": [
+    "/root/autodl-tmp/paper-academic-tailor-2/bh_source_robust_transfer/.venv/bin/python",
+    "scripts/run_tabular_job.py",
+    "--spec",
+    "/root/autodl-tmp/paper-academic-tailor-2/bh_source_robust_transfer/runs/specs/formal_merck_2025_R1_substitute_s17.json"
+  ],
+  "command_hash": "2427f7c409e8c22e21e1da052a5aeae71de1a1f60c15b595b738d88153b9a39d",
+  "execution_identity": "7fb70f215e85f5e6bf49a90f5a498933861c26517714d63f3319ecd5406267a8",
+  "identity_components": {
+    "schema_version": 1,
+    "command": [
+      "/root/autodl-tmp/paper-academic-tailor-2/bh_source_robust_transfer/.venv/bin/python",
+      "scripts/run_tabular_job.py",
+      "--spec",
+      "/root/autodl-tmp/paper-academic-tailor-2/bh_source_robust_transfer/runs/specs/formal_merck_2025_R1_substitute_s17.json"
+    ],
+    "project_scripts": {
+      "scripts/run_tabular_job.py": "af8ec8555066435da73745c5e44daf61440738e38acf8beee1ab746985ff144e"
+    },
+    "spec_json": {
+      "runs/specs/formal_merck_2025_R1_substitute_s17.json": "bc29767deed7b79ad59cea7d8a315543226da542194d6db3b5cf48d2f92b1aae"
+    },
+    "implementation_modules": {
+      "src/bh_transfer/__init__.py": "cc722a39a1c088e8d7e06db83dbcf662a4d5c01731651f85f90a2e4b0ace1cab",
+      "src/bh_transfer/data.py": "6f4a6732ea5c7917d4d35e218a2baa678f786ac9abc6c0103cd0caddb0984784",
+      "src/bh_transfer/evaluate.py": "13a48c63681b2b1c282bac609d32175bd483e3e5d69c3499e1ee72e73d2adcaf",
+      "src/bh_transfer/neural.py": "626fd8bc7d9a8a495859679124633f2fe86e5ab2b4cec625ee8d0f41722a9cd9",
+      "src/bh_transfer/tabular.py": "0b143a5a4b3c2d15c66a8b8e90d11ce36bccb3d85dec37bb2766a4d6c76f23d3",
+      "src/bh_transfer/tokenizer.py": "a33f5b4838bad11170c94915d6bb2b5092fb3b3ac466894b79bfa7a7f0acf435"
+    },
+    "final_eval_lock_sha256": "b7005aff7fa71ab452015047b8b3a0d0aa0efa718fcdb937915d1267f6576a84"
+  },
+  "log": "runs/formal_merck_2025_R1_substitute_s17/formal_merck_2025_R1_substitute_s17__1794283677242195059.log",
+  "status": "completed",
+  "exit_code": 0,
+  "wall_seconds": 34.98825438320637,
+  "gpu_seconds": 0,
+  "cpu_seconds": 35.719821,
+  "reason": null,
+  "cost_quality": "measured"
+}

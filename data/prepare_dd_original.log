@@ -1,0 +1,16 @@
+[10:57:14] WARNING: not removing hydrogen atom without neighbors
+[10:57:15] Can't kekulize mol.  Unkekulized atoms: 2 6
+[10:57:17] Can't kekulize mol.  Unkekulized atoms: 4 8
+[10:57:17] Can't kekulize mol.  Unkekulized atoms: 3 7
+{
+  "kind": "dd_original",
+  "root": "/root/autodl-tmp/paper-academic-tailor-2/bh_source_robust_transfer/sensitivity/dd_original",
+  "rows": 27497,
+  "eligible_sources": [
+    "AZ ELN 2023",
+    "JNJ HTE 2024",
+    "Merck 2025",
+    "Roche 2023"
+  ],
+  "main_artifacts_unchanged": true
+}

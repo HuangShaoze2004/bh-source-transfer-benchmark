@@ -1,0 +1,12 @@
+{
+  "attempt_id": "sens_dd_original_merck_2025_dro_s2026__1794379487419458226",
+  "run_id": "sens_dd_original_merck_2025_dro_s2026",
+  "observed_unix": 1794380246.793286,
+  "wall_seconds": 759.3738122805953,
+  "gpu_seconds": 759.3738122805953,
+  "cpu_seconds": 782.6176889999999,
+  "pid": 752002,
+  "process_start_ticks": 5003788380,
+  "boot_id": "a8ea9ed8-f60b-41e7-9887-40c805bd8203",
+  "status": "completed"
+}

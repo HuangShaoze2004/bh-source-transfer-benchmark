@@ -1,0 +1,12 @@
+{
+  "attempt_id": "dev_hitea_2024_dro_g2_i0__1794295824910262671",
+  "run_id": "dev_hitea_2024_dro_g2_i0",
+  "observed_unix": 1794296371.1313744,
+  "wall_seconds": 546.2210952416062,
+  "gpu_seconds": 546.2210952416062,
+  "cpu_seconds": 558.954876,
+  "pid": 877471,
+  "process_start_ticks": 4995422129,
+  "boot_id": "a8ea9ed8-f60b-41e7-9887-40c805bd8203",
+  "status": "completed"
+}

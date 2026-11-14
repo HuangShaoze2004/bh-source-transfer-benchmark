@@ -1,0 +1,13 @@
+{
+  "expected_prediction_files": 75,
+  "present_prediction_files": 75,
+  "missing_prediction_files": [],
+  "complete": true,
+  "rows": 215370,
+  "files": 75,
+  "lock_sha256": "208273c7d487cbaae271a3f6d004f655b0a318a5554c637eee9106600fa8814f",
+  "predictions_sha256": "f6ea8efe119295c2b2592b02d5427d3adee480733f2691053d988c23fba6989c",
+  "truth_and_chemistry_verified": true,
+  "raw_scores_only": true,
+  "external_metrics_computed": false
+}

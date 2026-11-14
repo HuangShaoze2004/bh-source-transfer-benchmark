@@ -1,0 +1,142 @@
+{
+  "repository_commit": "57e15fdb7f7483c6bf3a601df69f6ac9e5af6965",
+  "files": [
+    {
+      "path": "data_table.csv",
+      "url": "https://raw.githubusercontent.com/doylelab/rxnpredict/57e15fdb7f7483c6bf3a601df69f6ac9e5af6965/data_table.csv",
+      "bytes": 1246868,
+      "sha256": "fe310b50897e97578078558909efc2edaa7b98ad8939b1caad740a718398ed62"
+    },
+    {
+      "path": "build_table.py",
+      "url": "https://raw.githubusercontent.com/doylelab/rxnpredict/57e15fdb7f7483c6bf3a601df69f6ac9e5af6965/build_table.py",
+      "bytes": 7547,
+      "sha256": "07ebce688b21274ecd88c155c05ef760f59d789321bd3db9405c2cfed75cbded"
+    },
+    {
+      "path": "main.py",
+      "url": "https://raw.githubusercontent.com/doylelab/rxnpredict/57e15fdb7f7483c6bf3a601df69f6ac9e5af6965/main.py",
+      "bytes": 7769,
+      "sha256": "71c937c46f4a20e105c144813d725386e6ec527bf6dc12b72da4e96551974d74"
+    },
+    {
+      "path": "smiles/additive-list.csv",
+      "url": "https://raw.githubusercontent.com/doylelab/rxnpredict/57e15fdb7f7483c6bf3a601df69f6ac9e5af6965/smiles/additive-list.csv",
+      "bytes": 1208,
+      "sha256": "07cd359d5cd4100e9ae57e366af76bd57b754163295795346b32af3c8fc21bf8"
+    },
+    {
+      "path": "layout/Table_S1.csv",
+      "url": "https://raw.githubusercontent.com/doylelab/rxnpredict/57e15fdb7f7483c6bf3a601df69f6ac9e5af6965/layout/Table_S1.csv",
+      "bytes": 766,
+      "sha256": "6a447b0a914d6c2564f678e77c3d9ab5951b1c832f414f788b8a968ace7bd5b2"
+    },
+    {
+      "path": "layout/Table_S2.csv",
+      "url": "https://raw.githubusercontent.com/doylelab/rxnpredict/57e15fdb7f7483c6bf3a601df69f6ac9e5af6965/layout/Table_S2.csv",
+      "bytes": 557,
+      "sha256": "6c8d2e47c46288d836e0d0ad7965360efbcdec0268c5ac788156ce351197f291"
+    },
+    {
+      "path": "LICENSE.txt",
+      "url": "https://raw.githubusercontent.com/doylelab/rxnpredict/57e15fdb7f7483c6bf3a601df69f6ac9e5af6965/LICENSE.txt",
+      "bytes": 1134,
+      "sha256": "0bb1b3bc29bf8fa4f5a2063a3d6bbaec6d2e849d86efef855c765382cb0d427d"
+    }
+  ],
+  "summary": {
+    "original_rows": 4599,
+    "curated_dd_rows": 4312,
+    "original_unique_plate_row_col": 4599,
+    "original_additives_nonempty": 23,
+    "original_identifier_columns": [
+      "plate",
+      "row",
+      "col",
+      "additive_number",
+      "additive",
+      "additive_smiles"
+    ],
+    "curated_missing_columns": [
+      "plate",
+      "row",
+      "col",
+      "additive_number",
+      "additive",
+      "additive_smiles"
+    ],
+    "curated_serial_index_is_global_range": true,
+    "curated_additive_flag_patterns": 9,
+    "original_headers": [
+      "plate",
+      "row",
+      "col",
+      "base",
+      "base_cas_number",
+      "base_smiles",
+      "ligand",
+      "ligand_cas_number",
+      "ligand_smiles",
+      "aryl_halide_number",
+      "aryl_halide",
+      "aryl_halide_smiles",
+      "additive_number",
+      "additive",
+      "additive_smiles",
+      "product_smiles",
+      "yield"
+    ],
+    "curated_headers": [
+      "",
+      "Source",
+      "Aryl SMILES",
+      "Amine SMILES",
+      "Catalyst Name",
+      "Catalyst SMILES",
+      "Base SMILES",
+      "Base Name",
+      "Solvent Name",
+      "Solvent SMILES",
+      "Product SMILES",
+      "DRFP",
+      "DRFP_subst_prod",
+      "QM",
+      "Yield",
+      "labels",
+      "iteration_0 cluster",
+      "iteration_0 train_test",
+      "iteration_1 cluster",
+      "iteration_1 train_test",
+      "iteration_2 cluster",
+      "iteration_2 train_test",
+      "iteration_3 cluster",
+      "iteration_3 train_test",
+      "iteration_4 cluster",
+      "iteration_4 train_test",
+      "iteration_5 cluster",
+      "iteration_5 train_test",
+      "iteration_6 cluster",
+      "iteration_6 train_test",
+      "iteration_7 cluster",
+      "iteration_7 train_test",
+      "iteration_8 cluster",
+      "iteration_8 train_test",
+      "iteration_9 cluster",
+      "iteration_9 train_test",
+      "Additive_present",
+      "Additive_aromatic_rings",
+      "Additive_heteroatom_count",
+      "Additive_coordination_flag",
+      "Additive_steric_bulk_flag",
+      "Additive_pi_rich_flag",
+      "Additive_Pd_poisoning",
+      "Additive_competes_with_amine"
+    ],
+    "outcomes_used_to_map": false,
+    "mapping_recovered": false,
+    "curated_condition_plus_flag_groups": 1620,
+    "ambiguous_condition_plus_flag_groups": 897,
+    "max_rows_per_condition_flag_group": 7,
+    "checked_at_utc": "2026-11-10T02:57:13.430103+00:00"
+  }
+}

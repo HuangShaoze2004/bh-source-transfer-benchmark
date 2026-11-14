@@ -1,0 +1,12 @@
+{
+  "attempt_id": "formal_roche_2023_bal_s2026__1794346148948997928",
+  "run_id": "formal_roche_2023_bal_s2026",
+  "observed_unix": 1794346654.114052,
+  "wall_seconds": 505.1650378257036,
+  "gpu_seconds": 505.1650378257036,
+  "cpu_seconds": 518.330457,
+  "pid": 401802,
+  "process_start_ticks": 5000454533,
+  "boot_id": "a8ea9ed8-f60b-41e7-9887-40c805bd8203",
+  "status": "completed"
+}

@@ -1,0 +1,12 @@
+{
+  "attempt_id": "sens_dd_original_predict_merck_2025_B_S_s2026__1794379482805888399",
+  "run_id": "sens_dd_original_predict_merck_2025_B_S_s2026",
+  "observed_unix": 1794379486.9327965,
+  "wall_seconds": 4.126890182495117,
+  "gpu_seconds": 4.126890182495117,
+  "cpu_seconds": 3.820386999999999,
+  "pid": 751951,
+  "process_start_ticks": 5003787919,
+  "boot_id": "a8ea9ed8-f60b-41e7-9887-40c805bd8203",
+  "status": "completed"
+}

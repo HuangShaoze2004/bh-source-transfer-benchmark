@@ -1,0 +1,12 @@
+{
+  "attempt_id": "sens_dd_original_predict_roche_2023_B_A_S_s2026__1794384530626480123",
+  "run_id": "sens_dd_original_predict_roche_2023_B_A_S_s2026",
+  "observed_unix": 1794384534.7549205,
+  "wall_seconds": 4.1284239590168,
+  "gpu_seconds": 4.1284239590168,
+  "cpu_seconds": 3.5124250000000004,
+  "pid": 805141,
+  "process_start_ticks": 5004292701,
+  "boot_id": "a8ea9ed8-f60b-41e7-9887-40c805bd8203",
+  "status": "completed"
+}

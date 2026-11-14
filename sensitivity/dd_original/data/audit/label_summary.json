@@ -1,0 +1,122 @@
+{
+  "az_eln_2023": {
+    "source": "AZ ELN 2023",
+    "eligibility_frozen_in_split": true,
+    "current_labels": {
+      "rows": 604,
+      "pairs": 373,
+      "positive_rows": 465,
+      "negative_rows": 139,
+      "positive_pairs": 297,
+      "negative_pairs": 98,
+      "aryls": 228,
+      "amines": 207,
+      "positive_rate": 0.7698675496688742
+    }
+  },
+  "dreher_2014": {
+    "source": "Dreher 2014",
+    "eligibility_frozen_in_split": false,
+    "current_labels": {
+      "rows": 0,
+      "pairs": 0,
+      "positive_rows": 0,
+      "negative_rows": 0,
+      "positive_pairs": 0,
+      "negative_pairs": 0,
+      "aryls": 0,
+      "amines": 0,
+      "positive_rate": null
+    }
+  },
+  "dreher_2016": {
+    "source": "Dreher 2016",
+    "eligibility_frozen_in_split": false,
+    "current_labels": {
+      "rows": 0,
+      "pairs": 0,
+      "positive_rows": 0,
+      "negative_rows": 0,
+      "positive_pairs": 0,
+      "negative_pairs": 0,
+      "aryls": 0,
+      "amines": 0,
+      "positive_rate": null
+    }
+  },
+  "dreher_doyle_2018": {
+    "source": "Dreher Doyle 2018",
+    "eligibility_frozen_in_split": false,
+    "current_labels": {
+      "rows": 0,
+      "pairs": 0,
+      "positive_rows": 0,
+      "negative_rows": 0,
+      "positive_pairs": 0,
+      "negative_pairs": 0,
+      "aryls": 0,
+      "amines": 0,
+      "positive_rate": null
+    }
+  },
+  "hitea_2024": {
+    "source": "HiTEA 2024",
+    "eligibility_frozen_in_split": false,
+    "current_labels": {
+      "rows": 1381,
+      "pairs": 14,
+      "positive_rows": 188,
+      "negative_rows": 1193,
+      "positive_pairs": 10,
+      "negative_pairs": 12,
+      "aryls": 13,
+      "amines": 12,
+      "positive_rate": 0.13613323678493844
+    }
+  },
+  "jnj_hte_2024": {
+    "source": "JNJ HTE 2024",
+    "eligibility_frozen_in_split": true,
+    "current_labels": {
+      "rows": 7896,
+      "pairs": 522,
+      "positive_rows": 2797,
+      "negative_rows": 5099,
+      "positive_pairs": 495,
+      "negative_pairs": 309,
+      "aryls": 89,
+      "amines": 65,
+      "positive_rate": 0.35422998986828774
+    }
+  },
+  "merck_2025": {
+    "source": "Merck 2025",
+    "eligibility_frozen_in_split": true,
+    "current_labels": {
+      "rows": 2668,
+      "pairs": 2668,
+      "positive_rows": 1080,
+      "negative_rows": 1588,
+      "positive_pairs": 1080,
+      "negative_pairs": 1588,
+      "aryls": 335,
+      "amines": 8,
+      "positive_rate": 0.4047976011994003
+    }
+  },
+  "roche_2023": {
+    "source": "Roche 2023",
+    "eligibility_frozen_in_split": true,
+    "current_labels": {
+      "rows": 1560,
+      "pairs": 60,
+      "positive_rows": 663,
+      "negative_rows": 897,
+      "positive_pairs": 50,
+      "negative_pairs": 57,
+      "aryls": 27,
+      "amines": 17,
+      "positive_rate": 0.425
+    }
+  }
+}

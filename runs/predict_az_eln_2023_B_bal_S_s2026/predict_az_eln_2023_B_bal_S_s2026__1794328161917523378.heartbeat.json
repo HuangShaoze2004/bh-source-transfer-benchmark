@@ -1,0 +1,12 @@
+{
+  "attempt_id": "predict_az_eln_2023_B_bal_S_s2026__1794328161917523378",
+  "run_id": "predict_az_eln_2023_B_bal_S_s2026",
+  "observed_unix": 1794328166.0184064,
+  "wall_seconds": 4.1008670553565025,
+  "gpu_seconds": 4.1008670553565025,
+  "cpu_seconds": 3.3737259999999996,
+  "pid": 213913,
+  "process_start_ticks": 4998655830,
+  "boot_id": "a8ea9ed8-f60b-41e7-9887-40c805bd8203",
+  "status": "completed"
+}

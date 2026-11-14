@@ -1,0 +1,60 @@
+{
+  "event": "finished",
+  "run_id": "dev_az_eln_2023_R0_RF_i1",
+  "attempt_id": "dev_az_eln_2023_R0_RF_i1__1794282120142160241",
+  "stage": "development",
+  "gpu": false,
+  "threads": 1,
+  "cpu_slots": [
+    1
+  ],
+  "cpus": [
+    1
+  ],
+  "pid": 733715,
+  "process_start_ticks": 4994051652,
+  "boot_id": "a8ea9ed8-f60b-41e7-9887-40c805bd8203",
+  "launcher_pid": 733713,
+  "launcher_start_ticks": 4994051643,
+  "start_unix": 1794282120.1421738,
+  "command": [
+    "/root/autodl-tmp/paper-academic-tailor-2/bh_source_robust_transfer/.venv/bin/python",
+    "scripts/run_tabular_job.py",
+    "--spec",
+    "/root/autodl-tmp/paper-academic-tailor-2/bh_source_robust_transfer/runs/specs/dev_az_eln_2023_R0_RF_i1.json"
+  ],
+  "command_hash": "af0cfe73a9196dfae4566f3b0c1c37627e9c3cd2f233e9e1435a1d576cf92d73",
+  "execution_identity": "d11b8c4a9f91cf7a8740561abca5d456f67c3167795d2436a07fd0d3544a12da",
+  "identity_components": {
+    "schema_version": 1,
+    "command": [
+      "/root/autodl-tmp/paper-academic-tailor-2/bh_source_robust_transfer/.venv/bin/python",
+      "scripts/run_tabular_job.py",
+      "--spec",
+      "/root/autodl-tmp/paper-academic-tailor-2/bh_source_robust_transfer/runs/specs/dev_az_eln_2023_R0_RF_i1.json"
+    ],
+    "project_scripts": {
+      "scripts/run_tabular_job.py": "af8ec8555066435da73745c5e44daf61440738e38acf8beee1ab746985ff144e"
+    },
+    "spec_json": {
+      "runs/specs/dev_az_eln_2023_R0_RF_i1.json": "b6b364c120158311bd6c5ae5e4b1a64ded716b894577843705eea3b4bb86aa11"
+    },
+    "implementation_modules": {
+      "src/bh_transfer/__init__.py": "cc722a39a1c088e8d7e06db83dbcf662a4d5c01731651f85f90a2e4b0ace1cab",
+      "src/bh_transfer/data.py": "6f4a6732ea5c7917d4d35e218a2baa678f786ac9abc6c0103cd0caddb0984784",
+      "src/bh_transfer/evaluate.py": "13a48c63681b2b1c282bac609d32175bd483e3e5d69c3499e1ee72e73d2adcaf",
+      "src/bh_transfer/neural.py": "626fd8bc7d9a8a495859679124633f2fe86e5ab2b4cec625ee8d0f41722a9cd9",
+      "src/bh_transfer/tabular.py": "0b143a5a4b3c2d15c66a8b8e90d11ce36bccb3d85dec37bb2766a4d6c76f23d3",
+      "src/bh_transfer/tokenizer.py": "a33f5b4838bad11170c94915d6bb2b5092fb3b3ac466894b79bfa7a7f0acf435"
+    },
+    "final_eval_lock_sha256": "b7005aff7fa71ab452015047b8b3a0d0aa0efa718fcdb937915d1267f6576a84"
+  },
+  "log": "runs/dev_az_eln_2023_R0_RF_i1/dev_az_eln_2023_R0_RF_i1__1794282120142160241.log",
+  "status": "completed",
+  "exit_code": 0,
+  "wall_seconds": 14.36524610221386,
+  "gpu_seconds": 0,
+  "cpu_seconds": 13.231868,
+  "reason": null,
+  "cost_quality": "measured"
+}

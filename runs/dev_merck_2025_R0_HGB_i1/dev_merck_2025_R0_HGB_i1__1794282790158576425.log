@@ -1,0 +1,8 @@
+{
+  "model": "R0_HGB",
+  "seed": 42,
+  "checkpoint": "/root/autodl-tmp/paper-academic-tailor-2/bh_source_robust_transfer/runs/tabular/dev_merck_2025_R0_HGB_i1/model.pkl",
+  "elapsed_seconds": 58.105355739593506,
+  "label": "y",
+  "identity": "35bf344b4073323b76eaa5362340bf25cf7472a86b39071c368cd94479d53102"
+}

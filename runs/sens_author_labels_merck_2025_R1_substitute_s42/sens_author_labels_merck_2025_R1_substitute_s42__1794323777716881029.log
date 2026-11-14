@@ -1,0 +1,8 @@
+{
+  "model": "R1_substitute",
+  "seed": 42,
+  "checkpoint": "/root/autodl-tmp/paper-academic-tailor-2/bh_source_robust_transfer/sensitivity/author_labels/runs/tabular/merck_2025_R1_substitute_s42/model.pkl",
+  "elapsed_seconds": 33.05183410644531,
+  "label": "y",
+  "identity": "107a97f4f7abb2a4a24a30180678e10c9df4d15431e28b2b61f620a9037a3baf"
+}

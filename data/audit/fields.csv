@@ -1,0 +1,45 @@
+field,dtype,missing_or_empty,unique_values
+Unnamed: 0,int64,0,27497
+Source,object,0,8
+Aryl SMILES,object,0,852
+Amine SMILES,object,0,701
+Catalyst Name,object,0,109
+Catalyst SMILES,object,0,169
+Base SMILES,object,0,67
+Base Name,object,0,66
+Solvent Name,object,0,18
+Solvent SMILES,object,0,19
+Product SMILES,object,0,5777
+DRFP,object,0,24
+DRFP_subst_prod,object,0,10
+QM,object,0,23838
+Yield,float64,0,7670
+labels,int64,0,2
+iteration_0 cluster,int64,0,12
+iteration_0 train_test,object,0,4
+iteration_1 cluster,int64,0,12
+iteration_1 train_test,object,0,4
+iteration_2 cluster,int64,0,12
+iteration_2 train_test,object,0,4
+iteration_3 cluster,int64,0,12
+iteration_3 train_test,object,0,4
+iteration_4 cluster,int64,0,12
+iteration_4 train_test,object,0,4
+iteration_5 cluster,int64,0,12
+iteration_5 train_test,object,0,4
+iteration_6 cluster,int64,0,12
+iteration_6 train_test,object,0,4
+iteration_7 cluster,int64,0,12
+iteration_7 train_test,object,0,4
+iteration_8 cluster,int64,0,12
+iteration_8 train_test,object,0,4
+iteration_9 cluster,int64,0,12
+iteration_9 train_test,object,0,4
+Additive_present,int64,0,2
+Additive_aromatic_rings,int64,0,4
+Additive_heteroatom_count,int64,0,5
+Additive_coordination_flag,int64,0,2
+Additive_steric_bulk_flag,int64,0,2
+Additive_pi_rich_flag,int64,0,2
+Additive_Pd_poisoning,int64,0,1
+Additive_competes_with_amine,int64,0,1

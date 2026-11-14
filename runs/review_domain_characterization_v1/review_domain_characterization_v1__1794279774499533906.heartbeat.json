@@ -1,0 +1,12 @@
+{
+  "attempt_id": "review_domain_characterization_v1__1794279774499533906",
+  "run_id": "review_domain_characterization_v1",
+  "observed_unix": 1794279776.5528502,
+  "wall_seconds": 2.0533018559217453,
+  "gpu_seconds": 0,
+  "cpu_seconds": 1.6718520000000001,
+  "pid": 709085,
+  "process_start_ticks": 4993817088,
+  "boot_id": "a8ea9ed8-f60b-41e7-9887-40c805bd8203",
+  "status": "completed"
+}

@@ -1,0 +1,8 @@
+{
+  "model": "R0_RF",
+  "seed": 2026,
+  "checkpoint": "/root/autodl-tmp/paper-academic-tailor-2/bh_source_robust_transfer/runs/tabular/formal_jnj_hte_2024_R0_RF_s2026/model.pkl",
+  "elapsed_seconds": 11.951484680175781,
+  "label": "y",
+  "identity": "00e9944a84452a1172324a1a8ab21d6f72e84f65cc4acc8f5ba3c59cd3c356c1"
+}

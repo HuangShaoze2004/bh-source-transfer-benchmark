@@ -1,0 +1,535 @@
+{
+  "kind": "dd_original",
+  "main_artifacts_unchanged": true,
+  "primary_hashes_before": {
+    "records.parquet": "9c11cb4c36c2ac65f098f9aacfc2a8e9e2e75356be93e5f2d8271b83b936e212",
+    "features.npz": "9659800e3b890e81669c969a7332b53550155ff4048bb2f566afa2a24fc90296",
+    "splits.json": "5219bf35b711b5bd1fc7b73f0532b03dab206f367dd149d1ec2932084e67b0a3",
+    "feature_manifest.json": "1debbb2b78fda57f3f91b9186a94c74ce6515969f32d1df7512c41e7b3124b65"
+  },
+  "primary_hashes_after": {
+    "records.parquet": "9c11cb4c36c2ac65f098f9aacfc2a8e9e2e75356be93e5f2d8271b83b936e212",
+    "features.npz": "9659800e3b890e81669c969a7332b53550155ff4048bb2f566afa2a24fc90296",
+    "splits.json": "5219bf35b711b5bd1fc7b73f0532b03dab206f367dd149d1ec2932084e67b0a3",
+    "feature_manifest.json": "1debbb2b78fda57f3f91b9186a94c74ce6515969f32d1df7512c41e7b3124b65"
+  },
+  "primary_independent_split_audit": {
+    "passed": true,
+    "checks": [
+      {
+        "fold": "az_eln_2023",
+        "partition": "outer",
+        "left_rows": 22435,
+        "right_rows": 607,
+        "rows": 0,
+        "entities": 0,
+        "pairs": 0,
+        "duplicate_inputs": 0
+      },
+      {
+        "fold": "az_eln_2023",
+        "partition": "inner:Merck 2025",
+        "left_rows": 18231,
+        "right_rows": 2684,
+        "rows": 0,
+        "entities": 0,
+        "pairs": 0,
+        "duplicate_inputs": 0
+      },
+      {
+        "fold": "az_eln_2023",
+        "partition": "inner:JNJ HTE 2024",
+        "left_rows": 11107,
+        "right_rows": 8448,
+        "rows": 0,
+        "entities": 0,
+        "pairs": 0,
+        "duplicate_inputs": 0
+      },
+      {
+        "fold": "dreher_2014",
+        "partition": "outer",
+        "left_rows": 22417,
+        "right_rows": 0,
+        "rows": 0,
+        "entities": 0,
+        "pairs": 0,
+        "duplicate_inputs": 0
+      },
+      {
+        "fold": "dreher_2014",
+        "partition": "inner:Merck 2025",
+        "left_rows": 18213,
+        "right_rows": 2668,
+        "rows": 0,
+        "entities": 0,
+        "pairs": 0,
+        "duplicate_inputs": 0
+      },
+      {
+        "fold": "dreher_2014",
+        "partition": "inner:JNJ HTE 2024",
+        "left_rows": 11089,
+        "right_rows": 8016,
+        "rows": 0,
+        "entities": 0,
+        "pairs": 0,
+        "duplicate_inputs": 0
+      },
+      {
+        "fold": "dreher_2016",
+        "partition": "outer",
+        "left_rows": 23041,
+        "right_rows": 0,
+        "rows": 0,
+        "entities": 0,
+        "pairs": 0,
+        "duplicate_inputs": 0
+      },
+      {
+        "fold": "dreher_2016",
+        "partition": "inner:Merck 2025",
+        "left_rows": 18837,
+        "right_rows": 3402,
+        "rows": 0,
+        "entities": 0,
+        "pairs": 0,
+        "duplicate_inputs": 0
+      },
+      {
+        "fold": "dreher_2016",
+        "partition": "inner:JNJ HTE 2024",
+        "left_rows": 11713,
+        "right_rows": 8376,
+        "rows": 0,
+        "entities": 0,
+        "pairs": 0,
+        "duplicate_inputs": 0
+      },
+      {
+        "fold": "hitea_2024",
+        "partition": "outer",
+        "left_rows": 20553,
+        "right_rows": 1387,
+        "rows": 0,
+        "entities": 0,
+        "pairs": 0,
+        "duplicate_inputs": 0
+      },
+      {
+        "fold": "hitea_2024",
+        "partition": "inner:Merck 2025",
+        "left_rows": 16349,
+        "right_rows": 2668,
+        "rows": 0,
+        "entities": 0,
+        "pairs": 0,
+        "duplicate_inputs": 0
+      },
+      {
+        "fold": "hitea_2024",
+        "partition": "inner:JNJ HTE 2024",
+        "left_rows": 9225,
+        "right_rows": 8016,
+        "rows": 0,
+        "entities": 0,
+        "pairs": 0,
+        "duplicate_inputs": 0
+      },
+      {
+        "fold": "jnj_hte_2024",
+        "partition": "outer",
+        "left_rows": 11857,
+        "right_rows": 8016,
+        "rows": 0,
+        "entities": 0,
+        "pairs": 0,
+        "duplicate_inputs": 0
+      },
+      {
+        "fold": "jnj_hte_2024",
+        "partition": "inner:Merck 2025",
+        "left_rows": 7653,
+        "right_rows": 2700,
+        "rows": 0,
+        "entities": 0,
+        "pairs": 0,
+        "duplicate_inputs": 0
+      },
+      {
+        "fold": "jnj_hte_2024",
+        "partition": "inner:AZ ELN 2023",
+        "left_rows": 11107,
+        "right_rows": 614,
+        "rows": 0,
+        "entities": 0,
+        "pairs": 0,
+        "duplicate_inputs": 0
+      },
+      {
+        "fold": "merck_2025",
+        "partition": "outer",
+        "left_rows": 18981,
+        "right_rows": 2668,
+        "rows": 0,
+        "entities": 0,
+        "pairs": 0,
+        "duplicate_inputs": 0
+      },
+      {
+        "fold": "merck_2025",
+        "partition": "inner:JNJ HTE 2024",
+        "left_rows": 7653,
+        "right_rows": 8640,
+        "rows": 0,
+        "entities": 0,
+        "pairs": 0,
+        "duplicate_inputs": 0
+      },
+      {
+        "fold": "merck_2025",
+        "partition": "inner:AZ ELN 2023",
+        "left_rows": 18231,
+        "right_rows": 610,
+        "rows": 0,
+        "entities": 0,
+        "pairs": 0,
+        "duplicate_inputs": 0
+      },
+      {
+        "fold": "roche_2023",
+        "partition": "outer",
+        "left_rows": 19826,
+        "right_rows": 1680,
+        "rows": 0,
+        "entities": 0,
+        "pairs": 0,
+        "duplicate_inputs": 0
+      },
+      {
+        "fold": "roche_2023",
+        "partition": "inner:Merck 2025",
+        "left_rows": 15622,
+        "right_rows": 2668,
+        "rows": 0,
+        "entities": 0,
+        "pairs": 0,
+        "duplicate_inputs": 0
+      },
+      {
+        "fold": "roche_2023",
+        "partition": "inner:JNJ HTE 2024",
+        "left_rows": 8498,
+        "right_rows": 8136,
+        "rows": 0,
+        "entities": 0,
+        "pairs": 0,
+        "duplicate_inputs": 0
+      }
+    ],
+    "implementation": "independent set-based membership and overlap checks"
+  },
+  "sensitivity_independent_split_audit": {
+    "passed": true,
+    "checks": [
+      {
+        "fold": "az_eln_2023",
+        "partition": "outer",
+        "left_rows": 26747,
+        "right_rows": 604,
+        "rows": 0,
+        "entities": 0,
+        "pairs": 0,
+        "duplicate_inputs": 0
+      },
+      {
+        "fold": "az_eln_2023",
+        "partition": "inner:Merck 2025",
+        "left_rows": 22543,
+        "right_rows": 2676,
+        "rows": 0,
+        "entities": 0,
+        "pairs": 0,
+        "duplicate_inputs": 0
+      },
+      {
+        "fold": "az_eln_2023",
+        "partition": "inner:JNJ HTE 2024",
+        "left_rows": 15419,
+        "right_rows": 8328,
+        "rows": 0,
+        "entities": 0,
+        "pairs": 0,
+        "duplicate_inputs": 0
+      },
+      {
+        "fold": "dreher_2014",
+        "partition": "outer",
+        "left_rows": 26729,
+        "right_rows": 0,
+        "rows": 0,
+        "entities": 0,
+        "pairs": 0,
+        "duplicate_inputs": 0
+      },
+      {
+        "fold": "dreher_2014",
+        "partition": "inner:Merck 2025",
+        "left_rows": 22525,
+        "right_rows": 2668,
+        "rows": 0,
+        "entities": 0,
+        "pairs": 0,
+        "duplicate_inputs": 0
+      },
+      {
+        "fold": "dreher_2014",
+        "partition": "inner:JNJ HTE 2024",
+        "left_rows": 15401,
+        "right_rows": 7896,
+        "rows": 0,
+        "entities": 0,
+        "pairs": 0,
+        "duplicate_inputs": 0
+      },
+      {
+        "fold": "dreher_2016",
+        "partition": "outer",
+        "left_rows": 27353,
+        "right_rows": 0,
+        "rows": 0,
+        "entities": 0,
+        "pairs": 0,
+        "duplicate_inputs": 0
+      },
+      {
+        "fold": "dreher_2016",
+        "partition": "inner:Merck 2025",
+        "left_rows": 23149,
+        "right_rows": 3402,
+        "rows": 0,
+        "entities": 0,
+        "pairs": 0,
+        "duplicate_inputs": 0
+      },
+      {
+        "fold": "dreher_2016",
+        "partition": "inner:JNJ HTE 2024",
+        "left_rows": 16025,
+        "right_rows": 8256,
+        "rows": 0,
+        "entities": 0,
+        "pairs": 0,
+        "duplicate_inputs": 0
+      },
+      {
+        "fold": "dreher_doyle_2018",
+        "partition": "outer",
+        "left_rows": 23185,
+        "right_rows": 0,
+        "rows": 0,
+        "entities": 0,
+        "pairs": 0,
+        "duplicate_inputs": 0
+      },
+      {
+        "fold": "dreher_doyle_2018",
+        "partition": "inner:Merck 2025",
+        "left_rows": 18981,
+        "right_rows": 2668,
+        "rows": 0,
+        "entities": 0,
+        "pairs": 0,
+        "duplicate_inputs": 0
+      },
+      {
+        "fold": "dreher_doyle_2018",
+        "partition": "inner:JNJ HTE 2024",
+        "left_rows": 11857,
+        "right_rows": 8016,
+        "rows": 0,
+        "entities": 0,
+        "pairs": 0,
+        "duplicate_inputs": 0
+      },
+      {
+        "fold": "hitea_2024",
+        "partition": "outer",
+        "left_rows": 24865,
+        "right_rows": 1381,
+        "rows": 0,
+        "entities": 0,
+        "pairs": 0,
+        "duplicate_inputs": 0
+      },
+      {
+        "fold": "hitea_2024",
+        "partition": "inner:Merck 2025",
+        "left_rows": 20661,
+        "right_rows": 2668,
+        "rows": 0,
+        "entities": 0,
+        "pairs": 0,
+        "duplicate_inputs": 0
+      },
+      {
+        "fold": "hitea_2024",
+        "partition": "inner:JNJ HTE 2024",
+        "left_rows": 13537,
+        "right_rows": 7896,
+        "rows": 0,
+        "entities": 0,
+        "pairs": 0,
+        "duplicate_inputs": 0
+      },
+      {
+        "fold": "jnj_hte_2024",
+        "partition": "outer",
+        "left_rows": 16169,
+        "right_rows": 7896,
+        "rows": 0,
+        "entities": 0,
+        "pairs": 0,
+        "duplicate_inputs": 0
+      },
+      {
+        "fold": "jnj_hte_2024",
+        "partition": "inner:Merck 2025",
+        "left_rows": 11965,
+        "right_rows": 2700,
+        "rows": 0,
+        "entities": 0,
+        "pairs": 0,
+        "duplicate_inputs": 0
+      },
+      {
+        "fold": "jnj_hte_2024",
+        "partition": "inner:AZ ELN 2023",
+        "left_rows": 15419,
+        "right_rows": 611,
+        "rows": 0,
+        "entities": 0,
+        "pairs": 0,
+        "duplicate_inputs": 0
+      },
+      {
+        "fold": "merck_2025",
+        "partition": "outer",
+        "left_rows": 23293,
+        "right_rows": 2668,
+        "rows": 0,
+        "entities": 0,
+        "pairs": 0,
+        "duplicate_inputs": 0
+      },
+      {
+        "fold": "merck_2025",
+        "partition": "inner:JNJ HTE 2024",
+        "left_rows": 11965,
+        "right_rows": 8520,
+        "rows": 0,
+        "entities": 0,
+        "pairs": 0,
+        "duplicate_inputs": 0
+      },
+      {
+        "fold": "merck_2025",
+        "partition": "inner:AZ ELN 2023",
+        "left_rows": 22543,
+        "right_rows": 606,
+        "rows": 0,
+        "entities": 0,
+        "pairs": 0,
+        "duplicate_inputs": 0
+      },
+      {
+        "fold": "roche_2023",
+        "partition": "outer",
+        "left_rows": 24138,
+        "right_rows": 1560,
+        "rows": 0,
+        "entities": 0,
+        "pairs": 0,
+        "duplicate_inputs": 0
+      },
+      {
+        "fold": "roche_2023",
+        "partition": "inner:Merck 2025",
+        "left_rows": 19934,
+        "right_rows": 2668,
+        "rows": 0,
+        "entities": 0,
+        "pairs": 0,
+        "duplicate_inputs": 0
+      },
+      {
+        "fold": "roche_2023",
+        "partition": "inner:JNJ HTE 2024",
+        "left_rows": 12810,
+        "right_rows": 8016,
+        "rows": 0,
+        "entities": 0,
+        "pairs": 0,
+        "duplicate_inputs": 0
+      }
+    ],
+    "implementation": "independent set-based membership and overlap checks"
+  },
+  "row_count": 27497,
+  "feature_manifest": {
+    "product_input_allowed": false,
+    "original_qm_used": false,
+    "descriptor_names": [
+      "catalyst.MolWt",
+      "catalyst.MolLogP",
+      "catalyst.TPSA",
+      "catalyst.HBD",
+      "catalyst.HBA",
+      "catalyst.RotatableBonds",
+      "catalyst.FormalCharge",
+      "base.MolWt",
+      "base.MolLogP",
+      "base.TPSA",
+      "base.HBD",
+      "base.HBA",
+      "base.RotatableBonds",
+      "base.FormalCharge",
+      "solvent.MolWt",
+      "solvent.MolLogP",
+      "solvent.TPSA",
+      "solvent.HBD",
+      "solvent.HBA",
+      "solvent.RotatableBonds",
+      "solvent.FormalCharge"
+    ],
+    "r0": "standard DRFP, radius=3, 2048 bits, all five roles, empty products",
+    "r1_substitute": "author Morgan radius=3 OR substrate bits, empty product side, plus public RDKit21 reagent descriptors",
+    "neural_descriptors": "same RDKit21 for every neural comparison",
+    "rdkit_version": "2025.03.6",
+    "records_sha256": "8afd733c6ed6c44e2046926f4ea25270cae0605502715a94fca26f91cc8dec93",
+    "features_sha256": "b9071319b578f7acc6f22901ddee1f6148cc95ccf68646e52ec853d249d98fd4",
+    "splits_sha256": "66783683c3d0486d2468409adbf2f05ec97e23ca82aff130986660bea69a79c9",
+    "label_policy": "Yield >= 10, including exactly 10",
+    "source_inclusion": "all original eight sources; 27497 original rows",
+    "split_policy": "recomputed strict LOSO with identical normalization/qualification/inner-source rules",
+    "unresolved_additive_rows": 4312,
+    "additive_identity_restored": false,
+    "additive_flags_used_as_features": false,
+    "warning": "Sensitivity only: Dreher Doyle additive identities remain missing; no additive was inferred or fabricated. These incomplete inputs cannot validate a chemically complete additive-aware predictor.",
+    "sensitivity_kind": "dd_original",
+    "primary_artifact_hashes": {
+      "records.parquet": "9c11cb4c36c2ac65f098f9aacfc2a8e9e2e75356be93e5f2d8271b83b936e212",
+      "features.npz": "9659800e3b890e81669c969a7332b53550155ff4048bb2f566afa2a24fc90296",
+      "splits.json": "5219bf35b711b5bd1fc7b73f0532b03dab206f367dd149d1ec2932084e67b0a3",
+      "feature_manifest.json": "1debbb2b78fda57f3f91b9186a94c74ce6515969f32d1df7512c41e7b3124b65"
+    },
+    "parent_project": "/root/autodl-tmp/paper-academic-tailor-2/bh_source_robust_transfer",
+    "source_commit": "3a44e398d9fed3f08cf396f1153be2960193f581",
+    "source_csv_sha256": "247473787c33fb22ee48a4177593188f2a2c6ef140756566fe4610fee89ba333",
+    "row_count": 27497,
+    "labels_sha256": "dbad816b7f66f3636568769d843a7ca00dfaff0dad1149a1716ac759fdd7b392",
+    "author_labels_sha256": "36e0914b295bba3398b94eb88ccdbeff8417e494256c82d8436f19c0c69d737e",
+    "tokenizer_version": "rxnfp_dative_v1",
+    "effective_vocab_sha256": "b7c0c14a53d991b68091e910b3e5b147a8e8290cf754f9afc703e64c0d13f0f7"
+  }
+}

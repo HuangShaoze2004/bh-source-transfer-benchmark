@@ -1,0 +1,12 @@
+{
+  "attempt_id": "dev_roche_2023_R0_HGB_i1__1794282985261535839",
+  "run_id": "dev_roche_2023_R0_HGB_i1",
+  "observed_unix": 1794283026.4778607,
+  "wall_seconds": 41.21631007641554,
+  "gpu_seconds": 0,
+  "cpu_seconds": 40.590997,
+  "pid": 742858,
+  "process_start_ticks": 4994138164,
+  "boot_id": "a8ea9ed8-f60b-41e7-9887-40c805bd8203",
+  "status": "completed"
+}

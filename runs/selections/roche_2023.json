@@ -1,0 +1,119 @@
+{
+  "lock_sha256": "b7005aff7fa71ab452015047b8b3a0d0aa0efa718fcdb937915d1267f6576a84",
+  "choices": {
+    "erm": {
+      "config": {
+        "epochs": 10,
+        "batch_per_group": 8,
+        "microbatch_size": 8,
+        "device": "cuda",
+        "dro_eta": 0.01,
+        "dropout": 0.1,
+        "grad_clip": 1.0,
+        "eval_batch_size": 32,
+        "checkpoint_every_steps": 100,
+        "amp": true,
+        "swa_start_fractions": [
+          0.5,
+          0.75
+        ],
+        "lr": 3e-05,
+        "weight_decay": 0.1,
+        "objective": "erm",
+        "ordinary_fraction": 0.55
+      },
+      "grid_index": 3,
+      "swa_candidate": "swa_075",
+      "temperatures": {
+        "B": 8.276025786384803,
+        "B_S": 12.352749425398388
+      },
+      "inner_valid": true,
+      "common_completed_grids": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    "bal": {
+      "config": {
+        "epochs": 10,
+        "batch_per_group": 8,
+        "microbatch_size": 8,
+        "device": "cuda",
+        "dro_eta": 0.01,
+        "dropout": 0.1,
+        "grad_clip": 1.0,
+        "eval_batch_size": 32,
+        "checkpoint_every_steps": 100,
+        "amp": true,
+        "swa_start_fractions": [
+          0.5,
+          0.75
+        ],
+        "lr": 3e-05,
+        "weight_decay": 0.01,
+        "objective": "bal",
+        "ordinary_fraction": 0.7
+      },
+      "grid_index": 2,
+      "swa_candidate": "swa_075",
+      "temperatures": {
+        "B_bal": 18.975202094008203,
+        "B_bal_S": 20.085459350418493
+      },
+      "inner_valid": true,
+      "common_completed_grids": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    "dro": {
+      "config": {
+        "epochs": 10,
+        "batch_per_group": 8,
+        "microbatch_size": 8,
+        "device": "cuda",
+        "dro_eta": 0.01,
+        "dropout": 0.1,
+        "grad_clip": 1.0,
+        "eval_batch_size": 32,
+        "checkpoint_every_steps": 100,
+        "amp": true,
+        "swa_start_fractions": [
+          0.5,
+          0.75
+        ],
+        "lr": 3e-05,
+        "weight_decay": 0.1,
+        "objective": "dro",
+        "ordinary_fraction": 0.6000000000000001
+      },
+      "grid_index": 3,
+      "swa_candidate": "swa_075",
+      "temperatures": {
+        "B_A": 12.761825919356529,
+        "B_A_S": 15.188700879595181
+      },
+      "inner_valid": true,
+      "common_completed_grids": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    "R0_RF": {
+      "temperature": 2.5830815383431998
+    },
+    "R0_HGB": {
+      "temperature": 7.760687649525091
+    },
+    "R1_substitute": {
+      "temperature": 20.085416064128232
+    }
+  }
+}

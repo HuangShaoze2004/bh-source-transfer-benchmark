@@ -1,0 +1,12 @@
+{
+  "attempt_id": "review_stage_report_author_labels_v2__1794364572382764140",
+  "run_id": "review_stage_report_author_labels_v2",
+  "observed_unix": 1794364597.7363973,
+  "wall_seconds": 25.35361746698618,
+  "gpu_seconds": 0,
+  "cpu_seconds": 26.080119999999997,
+  "pid": 594410,
+  "process_start_ticks": 5002296876,
+  "boot_id": "a8ea9ed8-f60b-41e7-9887-40c805bd8203",
+  "status": "completed"
+}

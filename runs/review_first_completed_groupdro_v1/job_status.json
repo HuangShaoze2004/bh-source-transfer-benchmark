@@ -1,0 +1,54 @@
+{
+  "event": "finished",
+  "run_id": "review_first_completed_groupdro_v1",
+  "attempt_id": "review_first_completed_groupdro_v1__1794281842276357087",
+  "stage": "review",
+  "gpu": false,
+  "threads": 1,
+  "cpu_slots": [
+    1
+  ],
+  "cpus": [
+    1
+  ],
+  "pid": 730830,
+  "process_start_ticks": 4994023866,
+  "boot_id": "a8ea9ed8-f60b-41e7-9887-40c805bd8203",
+  "launcher_pid": 730820,
+  "launcher_start_ticks": 4994023857,
+  "start_unix": 1794281842.276371,
+  "command": [
+    "/root/autodl-tmp/paper-academic-tailor-2/bh_source_robust_transfer/.venv/bin/python",
+    "-c",
+    "import importlib.util,json,hashlib,datetime\nfrom pathlib import Path\nimport numpy as np,pandas as pd\nspec=importlib.util.spec_from_file_location(\"training_auditor\",\"scripts/audit_training.py\")\naudit=importlib.util.module_from_spec(spec);spec.loader.exec_module(audit)\ndirectory=Path(\"runs/trajectories/dev_az_eln_2023_dro_g0_i0\")\nsummary,history=audit.inspect_run(directory)\nloss=history.pivot(index=\"step\",columns=\"source\",values=\"group_loss\").sort_index()\nweights=history.pivot(index=\"step\",columns=\"source\",values=\"weight\").reindex(columns=loss.columns)\nz=.01*loss.cumsum().to_numpy();z-=z.max(axis=1,keepdims=True)\nexpected=np.exp(z);expected/=expected.sum(axis=1,keepdims=True)\nerror=float(np.max(np.abs(expected-weights.to_numpy())))\nassert np.isfinite(loss.to_numpy()).all()\nassert error<1e-4,error\nreport={\"status\":\"PASS\",\"scope\":\"full completed internal GPU GroupDRO trajectory; no external performance\", \"checked_utc\":datetime.datetime.now(datetime.timezone.utc).isoformat(),\"run_id\":directory.name,\"steps_checked\":len(loss),\"max_independent_weight_recurrence_error\":error,\"training_state_audit\":summary,\"last_checkpoint_sha256\":hashlib.sha256((directory/\"last.pt\").read_bytes()).hexdigest()}\nPath(\"reports/GROUPDRO_COMPLETED_TRAJECTORY_AUDIT.json\").write_text(json.dumps(report,indent=2))\nprint(json.dumps(report,indent=2))\n"
+  ],
+  "command_hash": "ed789f2a0851c2226d2de8739b6286514faa305735f00771981dc73a16962433",
+  "execution_identity": "8d7884bce81b007761d7193248b701bd00555fb4313c099b14a354d796ca1da6",
+  "identity_components": {
+    "schema_version": 1,
+    "command": [
+      "/root/autodl-tmp/paper-academic-tailor-2/bh_source_robust_transfer/.venv/bin/python",
+      "-c",
+      "import importlib.util,json,hashlib,datetime\nfrom pathlib import Path\nimport numpy as np,pandas as pd\nspec=importlib.util.spec_from_file_location(\"training_auditor\",\"scripts/audit_training.py\")\naudit=importlib.util.module_from_spec(spec);spec.loader.exec_module(audit)\ndirectory=Path(\"runs/trajectories/dev_az_eln_2023_dro_g0_i0\")\nsummary,history=audit.inspect_run(directory)\nloss=history.pivot(index=\"step\",columns=\"source\",values=\"group_loss\").sort_index()\nweights=history.pivot(index=\"step\",columns=\"source\",values=\"weight\").reindex(columns=loss.columns)\nz=.01*loss.cumsum().to_numpy();z-=z.max(axis=1,keepdims=True)\nexpected=np.exp(z);expected/=expected.sum(axis=1,keepdims=True)\nerror=float(np.max(np.abs(expected-weights.to_numpy())))\nassert np.isfinite(loss.to_numpy()).all()\nassert error<1e-4,error\nreport={\"status\":\"PASS\",\"scope\":\"full completed internal GPU GroupDRO trajectory; no external performance\", \"checked_utc\":datetime.datetime.now(datetime.timezone.utc).isoformat(),\"run_id\":directory.name,\"steps_checked\":len(loss),\"max_independent_weight_recurrence_error\":error,\"training_state_audit\":summary,\"last_checkpoint_sha256\":hashlib.sha256((directory/\"last.pt\").read_bytes()).hexdigest()}\nPath(\"reports/GROUPDRO_COMPLETED_TRAJECTORY_AUDIT.json\").write_text(json.dumps(report,indent=2))\nprint(json.dumps(report,indent=2))\n"
+    ],
+    "project_scripts": {},
+    "spec_json": {},
+    "implementation_modules": {
+      "src/bh_transfer/__init__.py": "cc722a39a1c088e8d7e06db83dbcf662a4d5c01731651f85f90a2e4b0ace1cab",
+      "src/bh_transfer/data.py": "6f4a6732ea5c7917d4d35e218a2baa678f786ac9abc6c0103cd0caddb0984784",
+      "src/bh_transfer/evaluate.py": "13a48c63681b2b1c282bac609d32175bd483e3e5d69c3499e1ee72e73d2adcaf",
+      "src/bh_transfer/neural.py": "626fd8bc7d9a8a495859679124633f2fe86e5ab2b4cec625ee8d0f41722a9cd9",
+      "src/bh_transfer/tabular.py": "0b143a5a4b3c2d15c66a8b8e90d11ce36bccb3d85dec37bb2766a4d6c76f23d3",
+      "src/bh_transfer/tokenizer.py": "a33f5b4838bad11170c94915d6bb2b5092fb3b3ac466894b79bfa7a7f0acf435"
+    },
+    "final_eval_lock_sha256": "b7005aff7fa71ab452015047b8b3a0d0aa0efa718fcdb937915d1267f6576a84"
+  },
+  "log": "runs/review_first_completed_groupdro_v1/review_first_completed_groupdro_v1__1794281842276357087.log",
+  "status": "completed",
+  "exit_code": 0,
+  "wall_seconds": 4.099038653075695,
+  "gpu_seconds": 0,
+  "cpu_seconds": 3.0131979999999996,
+  "reason": null,
+  "cost_quality": "measured"
+}

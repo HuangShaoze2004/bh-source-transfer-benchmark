@@ -1,0 +1,12 @@
+{
+  "attempt_id": "formal_az_eln_2023_erm_s42__1794325111051564913",
+  "run_id": "formal_az_eln_2023_erm_s42",
+  "observed_unix": 1794325676.348377,
+  "wall_seconds": 565.2967965528369,
+  "gpu_seconds": 565.2967965528369,
+  "cpu_seconds": 579.146468,
+  "pid": 182342,
+  "process_start_ticks": 4998350743,
+  "boot_id": "a8ea9ed8-f60b-41e7-9887-40c805bd8203",
+  "status": "completed"
+}

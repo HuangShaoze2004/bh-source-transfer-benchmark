@@ -1,0 +1,12 @@
+{
+  "attempt_id": "review_final_regression_v1__1794382514435244214",
+  "run_id": "review_final_regression_v1",
+  "observed_unix": 1794382528.940896,
+  "wall_seconds": 14.50563569366932,
+  "gpu_seconds": 0,
+  "cpu_seconds": 12.786330000000001,
+  "pid": 783916,
+  "process_start_ticks": 5004091081,
+  "boot_id": "a8ea9ed8-f60b-41e7-9887-40c805bd8203",
+  "status": "completed"
+}

@@ -1,0 +1,151 @@
+{
+  "status": "complete",
+  "total_steps": 2130,
+  "completed_steps": 2130,
+  "elapsed_seconds": 299.9431910738349,
+  "encoder_grad_verified": true,
+  "candidates": [
+    {
+      "name": "ordinary_best",
+      "checkpoint": "/root/autodl-tmp/paper-academic-tailor-2/bh_source_robust_transfer/runs/trajectories/dev_roche_2023_dro_g1_i1/best.pt",
+      "step": 2130,
+      "val_metrics": {
+        "n": 8136,
+        "log_loss": 1.010228042737809,
+        "brier": 0.35697961742598006,
+        "auroc": 0.32683030749151654,
+        "auprc": 0.28738982491073295,
+        "pooled_auroc": 0.32683030749151654,
+        "source_macro_auroc": 0.32683030749151654,
+        "source_metrics": {
+          "JNJ HTE 2024": {
+            "n": 8136,
+            "log_loss": 1.010228042737809,
+            "brier": 0.35697961742598006,
+            "auroc": 0.32683030749151654,
+            "auprc": 0.28738982491073295
+          }
+        }
+      }
+    },
+    {
+      "name": "swa_050",
+      "checkpoint": "/root/autodl-tmp/paper-academic-tailor-2/bh_source_robust_transfer/runs/trajectories/dev_roche_2023_dro_g1_i1/swa_050.pt",
+      "step": 2130,
+      "n_averaged": 21,
+      "swa_snapshot_steps": [
+        1065,
+        1119,
+        1173,
+        1227,
+        1281,
+        1335,
+        1389,
+        1443,
+        1497,
+        1551,
+        1605,
+        1659,
+        1713,
+        1767,
+        1821,
+        1875,
+        1929,
+        1983,
+        2037,
+        2091,
+        2130
+      ],
+      "val_metrics": {
+        "n": 8136,
+        "log_loss": 1.0099388854027311,
+        "brier": 0.35862322460028345,
+        "auroc": 0.3219709417672334,
+        "auprc": 0.2857196005498505,
+        "pooled_auroc": 0.3219709417672334,
+        "source_macro_auroc": 0.3219709417672334,
+        "source_metrics": {
+          "JNJ HTE 2024": {
+            "n": 8136,
+            "log_loss": 1.0099388854027311,
+            "brier": 0.35862322460028345,
+            "auroc": 0.3219709417672334,
+            "auprc": 0.2857196005498505
+          }
+        }
+      }
+    },
+    {
+      "name": "swa_075",
+      "checkpoint": "/root/autodl-tmp/paper-academic-tailor-2/bh_source_robust_transfer/runs/trajectories/dev_roche_2023_dro_g1_i1/swa_075.pt",
+      "step": 2130,
+      "n_averaged": 11,
+      "swa_snapshot_steps": [
+        1598,
+        1652,
+        1706,
+        1760,
+        1814,
+        1868,
+        1922,
+        1976,
+        2030,
+        2084,
+        2130
+      ],
+      "val_metrics": {
+        "n": 8136,
+        "log_loss": 1.0119495183966802,
+        "brier": 0.35852124529452917,
+        "auroc": 0.3237081938306419,
+        "auprc": 0.2862777746820019,
+        "pooled_auroc": 0.3237081938306419,
+        "source_macro_auroc": 0.3237081938306419,
+        "source_metrics": {
+          "JNJ HTE 2024": {
+            "n": 8136,
+            "log_loss": 1.0119495183966802,
+            "brier": 0.35852124529452917,
+            "auroc": 0.3237081938306419,
+            "auprc": 0.2862777746820019
+          }
+        }
+      }
+    }
+  ],
+  "ordinary_best_step": 2130,
+  "history_path": "/root/autodl-tmp/paper-academic-tailor-2/bh_source_robust_transfer/runs/trajectories/dev_roche_2023_dro_g1_i1/validation_history.csv",
+  "group_history_path": "/root/autodl-tmp/paper-academic-tailor-2/bh_source_robust_transfer/runs/trajectories/dev_roche_2023_dro_g1_i1/group_history.csv",
+  "resume_checkpoint": "/root/autodl-tmp/paper-academic-tailor-2/bh_source_robust_transfer/runs/trajectories/dev_roche_2023_dro_g1_i1/last.pt",
+  "wall_seconds": 301.7264691516757,
+  "peak_gpu_bytes": 457812992,
+  "job_identity": "2879f40c9a7405d5c6acf6666fdcf7e5d534c4850b0a81c042eb9f30a430c30e",
+  "identity_inputs": {
+    "schema_version": 1,
+    "spec_sha256": "40601390ac81186948d01027cd32d57988aec8ea1e506ae5be02f6864f88ece9",
+    "artifacts": {
+      "data/processed/records.parquet": "9c11cb4c36c2ac65f098f9aacfc2a8e9e2e75356be93e5f2d8271b83b936e212",
+      "data/processed/features.npz": "9659800e3b890e81669c969a7332b53550155ff4048bb2f566afa2a24fc90296",
+      "src/bh_transfer/neural.py": "626fd8bc7d9a8a495859679124633f2fe86e5ab2b4cec625ee8d0f41722a9cd9",
+      "src/bh_transfer/tokenizer.py": "a33f5b4838bad11170c94915d6bb2b5092fb3b3ac466894b79bfa7a7f0acf435",
+      "src/bh_transfer/tabular.py": "0b143a5a4b3c2d15c66a8b8e90d11ce36bccb3d85dec37bb2766a4d6c76f23d3",
+      "weights/rxnfp/manifest.json": "6fedd44427e29e49cd0f89e4be2a0346ad2b7dc45779fab241bcb362d56037cc",
+      "weights/rxnfp/tokenizer_extension_manifest.json": "1bb30463bd8232b8e5bbd34d759ce7fa05a47a996ba20a1ebb7f69a652f46520",
+      "weights/rxnfp/pytorch_model.bin": "50a6ed263d33ae759affa82c1e85554cc5ea9f56145f5c7fb39b6c25d4356437",
+      "weights/rxnfp/config.json": "024d89cb6056e146e066ebbcd9d565d6968d53e82953570a8b110b26495d7d4b",
+      "weights/rxnfp/vocab.txt": "399868a653e85549ce150af4a1f6cd2776240c6a3d951ced2120565f00f027fd",
+      "weights/rxnfp/extended_vocab.txt": "b7c0c14a53d991b68091e910b3e5b147a8e8290cf754f9afc703e64c0d13f0f7"
+    },
+    "job_script_sha256": "c6e9e4ade7d6045f273eedbf992b72879e5a91b2e73d60117aa8e42fa7572add",
+    "evaluation_lock_sha256": "b7005aff7fa71ab452015047b8b3a0d0aa0efa718fcdb937915d1267f6576a84"
+  },
+  "output_artifact_hashes": {
+    "best.pt": "a77364404d20cbef1cbc5779ee95465214080ae844967927e9e7170197baa9b6",
+    "swa_050.pt": "a8a7bd5a5b6b1d741d9fff02a1565965064f40bc59fdacb421141cf1d5300fe7",
+    "swa_075.pt": "245b4630f8dabcc2e23fb09f566478a1c9cae8dcd4eb2346f399700eefa41585",
+    "ordinary_best_validation.npz": "a0f0c4fbcc58c191bf9dbc449949455119ac9ef640fb726e28ea45d1c650a916",
+    "swa_050_validation.npz": "fcfc73fb93d8da8d98423a3c26f0ef9831cb282873194a27a2a32d3ecd2271e5",
+    "swa_075_validation.npz": "18cbe9d9a309bd13b3dd18e30d8f6a1f88207817df19f8c95451e995e9ea453c",
+    "last.pt": "765b00ffeb9b2acce288e5bcd34bd049e2983b7b79535b8740329e07637b87d5"
+  }
+}

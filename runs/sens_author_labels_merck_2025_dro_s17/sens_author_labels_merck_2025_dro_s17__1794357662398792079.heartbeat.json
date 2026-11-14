@@ -1,0 +1,12 @@
+{
+  "attempt_id": "sens_author_labels_merck_2025_dro_s17__1794357662398792079",
+  "run_id": "sens_author_labels_merck_2025_dro_s17",
+  "observed_unix": 1794358284.4239266,
+  "wall_seconds": 622.0251164287329,
+  "gpu_seconds": 622.0251164287329,
+  "cpu_seconds": 638.5037580000001,
+  "pid": 522410,
+  "process_start_ticks": 5001605878,
+  "boot_id": "a8ea9ed8-f60b-41e7-9887-40c805bd8203",
+  "status": "completed"
+}

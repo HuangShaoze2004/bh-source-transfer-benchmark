@@ -1,0 +1,8 @@
+{
+  "model": "R1_substitute",
+  "seed": 2026,
+  "checkpoint": "/root/autodl-tmp/paper-academic-tailor-2/bh_source_robust_transfer/sensitivity/author_labels/runs/tabular/hitea_2024_R1_substitute_s2026/model.pkl",
+  "elapsed_seconds": 35.964821338653564,
+  "label": "y",
+  "identity": "b0fa48184a600c5a20c721bf142e93614363e1f4d2b4d625bc08a1f31152e4ab"
+}

@@ -1,0 +1,3 @@
+{"pid": 688147, "command": ["scripts/prepare_data.py", "--download-only"], "status": "complete", "start_unix": 1794277848.887533, "elapsed_seconds": 24.2796311378479, "cpu_seconds": 0.424150806, "commit": "3a44e398d9fed3f08cf396f1153be2960193f581"}
+{"pid": 696462, "command": ["scripts/prepare_data.py"], "status": "failed", "start_unix": 1794278604.13371, "elapsed_seconds": 9.085896730422974, "cpu_seconds": 8.992169222000001, "commit": "3a44e398d9fed3f08cf396f1153be2960193f581"}
+{"pid": 699565, "command": ["scripts/prepare_data.py"], "status": "complete", "start_unix": 1794278895.5573614, "elapsed_seconds": 31.247389316558838, "cpu_seconds": 31.226221902000002, "commit": "3a44e398d9fed3f08cf396f1153be2960193f581"}

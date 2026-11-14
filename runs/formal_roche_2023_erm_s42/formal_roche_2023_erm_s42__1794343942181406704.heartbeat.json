@@ -1,0 +1,12 @@
+{
+  "attempt_id": "formal_roche_2023_erm_s42__1794343942181406704",
+  "run_id": "formal_roche_2023_erm_s42",
+  "observed_unix": 1794344448.7932875,
+  "wall_seconds": 506.61186385154724,
+  "gpu_seconds": 506.61186385154724,
+  "cpu_seconds": 519.5712250000001,
+  "pid": 378903,
+  "process_start_ticks": 5000233856,
+  "boot_id": "a8ea9ed8-f60b-41e7-9887-40c805bd8203",
+  "status": "completed"
+}

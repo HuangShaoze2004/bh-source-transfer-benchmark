@@ -1,0 +1,12 @@
+{
+  "attempt_id": "predict_hitea_2024_R1_substitute_s17__1794330681816199968",
+  "run_id": "predict_hitea_2024_R1_substitute_s17",
+  "observed_unix": 1794330685.9189806,
+  "wall_seconds": 4.10276485979557,
+  "gpu_seconds": 0,
+  "cpu_seconds": 2.496522,
+  "pid": 240374,
+  "process_start_ticks": 4998907820,
+  "boot_id": "a8ea9ed8-f60b-41e7-9887-40c805bd8203",
+  "status": "completed"
+}

@@ -1,0 +1,12 @@
+{
+  "attempt_id": "sens_author_labels_merck_2025_erm_s42__1794358299353811404",
+  "run_id": "sens_author_labels_merck_2025_erm_s42",
+  "observed_unix": 1794358782.0485013,
+  "wall_seconds": 482.6946732699871,
+  "gpu_seconds": 482.6946732699871,
+  "cpu_seconds": 495.54667,
+  "pid": 529188,
+  "process_start_ticks": 5001669573,
+  "boot_id": "a8ea9ed8-f60b-41e7-9887-40c805bd8203",
+  "status": "completed"
+}

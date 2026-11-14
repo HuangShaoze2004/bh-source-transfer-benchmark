@@ -1,0 +1,12 @@
+{
+  "attempt_id": "dev_merck_2025_bal_g3_i0__1794313032272655856",
+  "run_id": "dev_merck_2025_bal_g3_i0",
+  "observed_unix": 1794313256.1728709,
+  "wall_seconds": 223.90019973367453,
+  "gpu_seconds": 223.90019973367453,
+  "cpu_seconds": 229.36797500000003,
+  "pid": 56891,
+  "process_start_ticks": 4997142865,
+  "boot_id": "a8ea9ed8-f60b-41e7-9887-40c805bd8203",
+  "status": "completed"
+}

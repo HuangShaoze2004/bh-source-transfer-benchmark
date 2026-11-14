@@ -1,0 +1,12 @@
+{
+  "attempt_id": "dev_jnj_hte_2024_dro_g2_i0__1794303224333391009",
+  "run_id": "dev_jnj_hte_2024_dro_g2_i0",
+  "observed_unix": 1794303487.34988,
+  "wall_seconds": 263.01647194474936,
+  "gpu_seconds": 263.01647194474936,
+  "cpu_seconds": 269.1333479999999,
+  "pid": 954451,
+  "process_start_ticks": 4996162071,
+  "boot_id": "a8ea9ed8-f60b-41e7-9887-40c805bd8203",
+  "status": "completed"
+}

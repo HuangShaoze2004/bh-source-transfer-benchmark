@@ -1,0 +1,54 @@
+{
+  "event": "finished",
+  "run_id": "review_all_common_summaries_and_budgets_v1",
+  "attempt_id": "review_all_common_summaries_and_budgets_v1__1794384747398597044",
+  "stage": "review",
+  "gpu": false,
+  "threads": 1,
+  "cpu_slots": [
+    0
+  ],
+  "cpus": [
+    0
+  ],
+  "pid": 807923,
+  "process_start_ticks": 5004314378,
+  "boot_id": "a8ea9ed8-f60b-41e7-9887-40c805bd8203",
+  "launcher_pid": 807911,
+  "launcher_start_ticks": 5004314364,
+  "start_unix": 1794384747.3986104,
+  "command": [
+    ".venv/bin/python",
+    "-c",
+    "import csv,datetime as dt,hashlib,json,math,statistics,sys\nfrom collections import defaultdict\nfrom pathlib import Path\nimport pandas as pd\nsys.path.insert(0,str(Path(\"scripts\").resolve()))\nfrom finalize_report import common_row_summary\nroot=Path.cwd()\ndef read(path):\n    return json.loads((root/path).read_text())\ndef digest(path):\n    return hashlib.sha256((root/path).read_bytes()).hexdigest()\nmain_lock=read(\"FINAL_EVAL_LOCK.json\")\nbranches={}\nfor kind in [\"author_labels\",\"dd_original\"]:\n    assert read(f\"sensitivity/{kind}/artifacts/PREDICTION_COMPLETENESS.json\")[\"complete\"]\n    alternative_lock=read(f\"sensitivity/{kind}/FINAL_EVAL_LOCK.json\")\n    main_sources={fold[\"source\"] for fold in main_lock[\"folds\"] if fold[\"eligible\"]}\n    alternative_sources={fold[\"source\"] for fold in alternative_lock[\"folds\"] if fold[\"eligible\"]}\n    sources=sorted(main_sources&alternative_sources)\n    assert len(sources)==4 and \"HiTEA 2024\" not in sources\n    path=f\"reports/final/{kind}_paired_common_rows.csv\"\n    rows=list(csv.DictReader((root/path).open()))\n    grouped=defaultdict(lambda:defaultdict(list))\n    for row in rows:\n        if row[\"source\"] in sources:\n            key=(row[\"model\"],row[\"truth_regime\"],row[\"metric\"])\n            value=float(row[\"paired_delta\"])\n            assert math.isfinite(value)\n            grouped[key][row[\"source\"]].append(value)\n    computed={}\n    for key,by_source in grouped.items():\n        assert set(by_source)==set(sources)\n        assert all(len(values)==3 for values in by_source.values())\n        computed[key]=math.fsum(statistics.fmean(by_source[source]) for source in sources)/4\n    result=common_row_summary(pd.DataFrame(rows).assign(paired_delta=lambda frame:frame.paired_delta.astype(float)),main_lock,alternative_lock)\n    checked=[]\n    for row in result.to_dict(\"records\"):\n        assert row[\"n_sources\"]==4\n        for metric in [\"auroc\",\"auprc\",\"brier\"]:\n            key=(row[\"model\"],row[\"truth_regime\"],metric)\n            assert math.isclose(row[metric],computed[key],abs_tol=1e-12,rel_tol=0)\n            checked.append(dict(model=key[0],truth_regime=key[1],metric=metric,paired_delta=computed[key]))\n    assert len(checked)==30\n    branches[kind]={\"status\":\"PASS\",\"eligible_sources\":sources,\"checked_summary_values\":30,\"paired_csv_sha256\":digest(path),\"checks\":checked}\naudit_path=root/\"reports/COMMON_ROW_SUMMARY_AUDIT.json\"\narchive=root/\"reports/history/COMMON_ROW_SUMMARY_AUDIT_author_only.json\"\nif not archive.exists():\n    archive.write_bytes(audit_path.read_bytes())\nreport={\"status\":\"PASS\",\"checked_utc\":dt.datetime.now(dt.timezone.utc).isoformat(),\"qualified_source_count\":4,\"checked_summary_values\":60,\"branches\":branches,\"scope\":\"Independent standard-library aggregation of all models, both truths and three metrics over frozen qualified sources\"}\naudit_path.write_text(json.dumps(report,indent=2)+\"\\n\")\nprimary=list(csv.DictReader((root/\"reports/final/training_budget_audit.csv\").open()))\nalternative=read(\"reports/DD_ORIGINAL_NEURAL_RUNTIME_AUDIT.json\")[\"trajectories\"]\nbudget=[]\nfor fold in sorted({row[\"fold\"] for row in primary}):\n    left=[row for row in primary if row[\"fold\"]==fold]\n    right=[row for row in alternative if row[\"fold\"]==fold]\n    entry={\"fold\":fold}\n    for field in [\"training_rows\",\"groups\",\"updates\",\"exposures\"]:\n        a={int(row[field]) for row in left}\n        b={int(row[field]) for row in right}\n        assert len(a)==len(b)==1,(fold,field)\n        entry[\"primary_\"+field]=a.pop()\n        entry[\"dd_original_\"+field]=b.pop()\n    assert entry[\"dd_original_training_rows\"]-entry[\"primary_training_rows\"]==4312\n    budget.append(entry)\nwith (root/\"reports/final/dd_training_budget_comparison.csv\").open(\"w\") as handle:\n    writer=csv.DictWriter(handle,fieldnames=list(budget[0]))\n    writer.writeheader()\n    writer.writerows(budget)\nprint(json.dumps({\"status\":\"PASS\",\"checked_summary_values\":60,\"dd_fixed_truth_auroc_deltas\":[entry for entry in branches[\"dd_original\"][\"checks\"] if entry[\"truth_regime\"]==\"fixed_primary_truth\" and entry[\"metric\"]==\"auroc\"],\"training_budgets\":budget}))\n"
+  ],
+  "command_hash": "a8e622adcd83b4d87db784c2e0dfa3c6fd9b090b48d5f3b70a22f3c22a0e3ed1",
+  "execution_identity": "46dbfe75e33b2ff6b086fd80e2a7b014f8b8505b54eef023ba775567face61de",
+  "identity_components": {
+    "schema_version": 1,
+    "command": [
+      ".venv/bin/python",
+      "-c",
+      "import csv,datetime as dt,hashlib,json,math,statistics,sys\nfrom collections import defaultdict\nfrom pathlib import Path\nimport pandas as pd\nsys.path.insert(0,str(Path(\"scripts\").resolve()))\nfrom finalize_report import common_row_summary\nroot=Path.cwd()\ndef read(path):\n    return json.loads((root/path).read_text())\ndef digest(path):\n    return hashlib.sha256((root/path).read_bytes()).hexdigest()\nmain_lock=read(\"FINAL_EVAL_LOCK.json\")\nbranches={}\nfor kind in [\"author_labels\",\"dd_original\"]:\n    assert read(f\"sensitivity/{kind}/artifacts/PREDICTION_COMPLETENESS.json\")[\"complete\"]\n    alternative_lock=read(f\"sensitivity/{kind}/FINAL_EVAL_LOCK.json\")\n    main_sources={fold[\"source\"] for fold in main_lock[\"folds\"] if fold[\"eligible\"]}\n    alternative_sources={fold[\"source\"] for fold in alternative_lock[\"folds\"] if fold[\"eligible\"]}\n    sources=sorted(main_sources&alternative_sources)\n    assert len(sources)==4 and \"HiTEA 2024\" not in sources\n    path=f\"reports/final/{kind}_paired_common_rows.csv\"\n    rows=list(csv.DictReader((root/path).open()))\n    grouped=defaultdict(lambda:defaultdict(list))\n    for row in rows:\n        if row[\"source\"] in sources:\n            key=(row[\"model\"],row[\"truth_regime\"],row[\"metric\"])\n            value=float(row[\"paired_delta\"])\n            assert math.isfinite(value)\n            grouped[key][row[\"source\"]].append(value)\n    computed={}\n    for key,by_source in grouped.items():\n        assert set(by_source)==set(sources)\n        assert all(len(values)==3 for values in by_source.values())\n        computed[key]=math.fsum(statistics.fmean(by_source[source]) for source in sources)/4\n    result=common_row_summary(pd.DataFrame(rows).assign(paired_delta=lambda frame:frame.paired_delta.astype(float)),main_lock,alternative_lock)\n    checked=[]\n    for row in result.to_dict(\"records\"):\n        assert row[\"n_sources\"]==4\n        for metric in [\"auroc\",\"auprc\",\"brier\"]:\n            key=(row[\"model\"],row[\"truth_regime\"],metric)\n            assert math.isclose(row[metric],computed[key],abs_tol=1e-12,rel_tol=0)\n            checked.append(dict(model=key[0],truth_regime=key[1],metric=metric,paired_delta=computed[key]))\n    assert len(checked)==30\n    branches[kind]={\"status\":\"PASS\",\"eligible_sources\":sources,\"checked_summary_values\":30,\"paired_csv_sha256\":digest(path),\"checks\":checked}\naudit_path=root/\"reports/COMMON_ROW_SUMMARY_AUDIT.json\"\narchive=root/\"reports/history/COMMON_ROW_SUMMARY_AUDIT_author_only.json\"\nif not archive.exists():\n    archive.write_bytes(audit_path.read_bytes())\nreport={\"status\":\"PASS\",\"checked_utc\":dt.datetime.now(dt.timezone.utc).isoformat(),\"qualified_source_count\":4,\"checked_summary_values\":60,\"branches\":branches,\"scope\":\"Independent standard-library aggregation of all models, both truths and three metrics over frozen qualified sources\"}\naudit_path.write_text(json.dumps(report,indent=2)+\"\\n\")\nprimary=list(csv.DictReader((root/\"reports/final/training_budget_audit.csv\").open()))\nalternative=read(\"reports/DD_ORIGINAL_NEURAL_RUNTIME_AUDIT.json\")[\"trajectories\"]\nbudget=[]\nfor fold in sorted({row[\"fold\"] for row in primary}):\n    left=[row for row in primary if row[\"fold\"]==fold]\n    right=[row for row in alternative if row[\"fold\"]==fold]\n    entry={\"fold\":fold}\n    for field in [\"training_rows\",\"groups\",\"updates\",\"exposures\"]:\n        a={int(row[field]) for row in left}\n        b={int(row[field]) for row in right}\n        assert len(a)==len(b)==1,(fold,field)\n        entry[\"primary_\"+field]=a.pop()\n        entry[\"dd_original_\"+field]=b.pop()\n    assert entry[\"dd_original_training_rows\"]-entry[\"primary_training_rows\"]==4312\n    budget.append(entry)\nwith (root/\"reports/final/dd_training_budget_comparison.csv\").open(\"w\") as handle:\n    writer=csv.DictWriter(handle,fieldnames=list(budget[0]))\n    writer.writeheader()\n    writer.writerows(budget)\nprint(json.dumps({\"status\":\"PASS\",\"checked_summary_values\":60,\"dd_fixed_truth_auroc_deltas\":[entry for entry in branches[\"dd_original\"][\"checks\"] if entry[\"truth_regime\"]==\"fixed_primary_truth\" and entry[\"metric\"]==\"auroc\"],\"training_budgets\":budget}))\n"
+    ],
+    "project_scripts": {},
+    "spec_json": {},
+    "implementation_modules": {
+      "src/bh_transfer/__init__.py": "cc722a39a1c088e8d7e06db83dbcf662a4d5c01731651f85f90a2e4b0ace1cab",
+      "src/bh_transfer/data.py": "6f4a6732ea5c7917d4d35e218a2baa678f786ac9abc6c0103cd0caddb0984784",
+      "src/bh_transfer/evaluate.py": "13a48c63681b2b1c282bac609d32175bd483e3e5d69c3499e1ee72e73d2adcaf",
+      "src/bh_transfer/neural.py": "626fd8bc7d9a8a495859679124633f2fe86e5ab2b4cec625ee8d0f41722a9cd9",
+      "src/bh_transfer/tabular.py": "0b143a5a4b3c2d15c66a8b8e90d11ce36bccb3d85dec37bb2766a4d6c76f23d3",
+      "src/bh_transfer/tokenizer.py": "a33f5b4838bad11170c94915d6bb2b5092fb3b3ac466894b79bfa7a7f0acf435"
+    },
+    "final_eval_lock_sha256": "b7005aff7fa71ab452015047b8b3a0d0aa0efa718fcdb937915d1267f6576a84"
+  },
+  "log": "runs/review_all_common_summaries_and_budgets_v1/review_all_common_summaries_and_budgets_v1__1794384747398597044.log",
+  "status": "completed",
+  "exit_code": 0,
+  "wall_seconds": 2.0775302797555923,
+  "gpu_seconds": 0,
+  "cpu_seconds": 1.2130759999999998,
+  "reason": null,
+  "cost_quality": "measured"
+}

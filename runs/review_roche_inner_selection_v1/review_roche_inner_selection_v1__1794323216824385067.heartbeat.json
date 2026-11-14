@@ -1,0 +1,12 @@
+{
+  "attempt_id": "review_roche_inner_selection_v1__1794323216824385067",
+  "run_id": "review_roche_inner_selection_v1",
+  "observed_unix": 1794323227.1182957,
+  "wall_seconds": 10.293894313275814,
+  "gpu_seconds": 0,
+  "cpu_seconds": 10.233001000000002,
+  "pid": 162179,
+  "process_start_ticks": 4998161320,
+  "boot_id": "a8ea9ed8-f60b-41e7-9887-40c805bd8203",
+  "status": "completed"
+}

@@ -1,0 +1,12 @@
+{
+  "attempt_id": "sens_dd_original_merck_2025_erm_s2026__1794378817955890629",
+  "run_id": "sens_dd_original_merck_2025_erm_s2026",
+  "observed_unix": 1794379477.4941063,
+  "wall_seconds": 659.5381981804967,
+  "gpu_seconds": 659.5381981804967,
+  "cpu_seconds": 607.871142,
+  "pid": 744854,
+  "process_start_ticks": 5003721434,
+  "boot_id": "a8ea9ed8-f60b-41e7-9887-40c805bd8203",
+  "status": "completed"
+}

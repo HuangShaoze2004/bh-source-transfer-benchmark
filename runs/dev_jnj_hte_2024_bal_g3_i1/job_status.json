@@ -1,0 +1,60 @@
+{
+  "event": "finished",
+  "run_id": "dev_jnj_hte_2024_bal_g3_i1",
+  "attempt_id": "dev_jnj_hte_2024_bal_g3_i1__1794304567186069368",
+  "stage": "development",
+  "gpu": true,
+  "threads": 1,
+  "cpu_slots": [
+    0
+  ],
+  "cpus": [
+    0
+  ],
+  "pid": 968484,
+  "process_start_ticks": 4996296357,
+  "boot_id": "a8ea9ed8-f60b-41e7-9887-40c805bd8203",
+  "launcher_pid": 968480,
+  "launcher_start_ticks": 4996296343,
+  "start_unix": 1794304567.186083,
+  "command": [
+    "/root/autodl-tmp/paper-academic-tailor-2/bh_source_robust_transfer/.venv/bin/python",
+    "scripts/run_neural_job.py",
+    "--spec",
+    "/root/autodl-tmp/paper-academic-tailor-2/bh_source_robust_transfer/runs/specs/dev_jnj_hte_2024_bal_g3_i1.json"
+  ],
+  "command_hash": "634aca836183cddb752f7805d3f0036ac749c31b4dca6faaae38a470f39046e2",
+  "execution_identity": "ded41869a0782f254bf4a0d97dc675d9ba002992b0d3fdb815af5e6ef9747bba",
+  "identity_components": {
+    "schema_version": 1,
+    "command": [
+      "/root/autodl-tmp/paper-academic-tailor-2/bh_source_robust_transfer/.venv/bin/python",
+      "scripts/run_neural_job.py",
+      "--spec",
+      "/root/autodl-tmp/paper-academic-tailor-2/bh_source_robust_transfer/runs/specs/dev_jnj_hte_2024_bal_g3_i1.json"
+    ],
+    "project_scripts": {
+      "scripts/run_neural_job.py": "c6e9e4ade7d6045f273eedbf992b72879e5a91b2e73d60117aa8e42fa7572add"
+    },
+    "spec_json": {
+      "runs/specs/dev_jnj_hte_2024_bal_g3_i1.json": "88d82b8686578ebb5960c6780f9687d53f6479fedf85535ad80a5c17e51fdc10"
+    },
+    "implementation_modules": {
+      "src/bh_transfer/__init__.py": "cc722a39a1c088e8d7e06db83dbcf662a4d5c01731651f85f90a2e4b0ace1cab",
+      "src/bh_transfer/data.py": "6f4a6732ea5c7917d4d35e218a2baa678f786ac9abc6c0103cd0caddb0984784",
+      "src/bh_transfer/evaluate.py": "13a48c63681b2b1c282bac609d32175bd483e3e5d69c3499e1ee72e73d2adcaf",
+      "src/bh_transfer/neural.py": "626fd8bc7d9a8a495859679124633f2fe86e5ab2b4cec625ee8d0f41722a9cd9",
+      "src/bh_transfer/tabular.py": "0b143a5a4b3c2d15c66a8b8e90d11ce36bccb3d85dec37bb2766a4d6c76f23d3",
+      "src/bh_transfer/tokenizer.py": "a33f5b4838bad11170c94915d6bb2b5092fb3b3ac466894b79bfa7a7f0acf435"
+    },
+    "final_eval_lock_sha256": "b7005aff7fa71ab452015047b8b3a0d0aa0efa718fcdb937915d1267f6576a84"
+  },
+  "log": "runs/dev_jnj_hte_2024_bal_g3_i1/dev_jnj_hte_2024_bal_g3_i1__1794304567186069368.log",
+  "status": "completed",
+  "exit_code": 0,
+  "wall_seconds": 289.71233578026295,
+  "gpu_seconds": 289.71233578026295,
+  "cpu_seconds": 296.8684140000001,
+  "reason": null,
+  "cost_quality": "measured"
+}

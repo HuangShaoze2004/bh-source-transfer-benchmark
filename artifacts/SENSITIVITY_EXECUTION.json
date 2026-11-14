@@ -1,0 +1,38 @@
+{
+  "author_labels": {
+    "status": "COMPLETE",
+    "kind": "author_labels",
+    "coverage": {
+      "expected_prediction_files": 75,
+      "present_prediction_files": 75,
+      "missing_prediction_files": []
+    },
+    "budget": {
+      "gpu_hours": 23.398660854065998,
+      "cpu_core_hours": 26.182479135555553,
+      "active_cpu_threads": 1,
+      "development_gpu_hours": 12.129947342723607,
+      "feasibility_gpu_hours": 0.025113719089163673,
+      "sensitivity_gpu_hours": 4.61030198522326
+    },
+    "external_metrics_computed": false
+  },
+  "dd_original": {
+    "status": "COMPLETE",
+    "kind": "dd_original",
+    "coverage": {
+      "expected_prediction_files": 75,
+      "present_prediction_files": 75,
+      "missing_prediction_files": []
+    },
+    "budget": {
+      "gpu_hours": 29.039922166025885,
+      "cpu_core_hours": 31.998969121944445,
+      "active_cpu_threads": 0,
+      "development_gpu_hours": 12.129947342723607,
+      "feasibility_gpu_hours": 0.025113719089163673,
+      "sensitivity_gpu_hours": 10.25156329718315
+    },
+    "external_metrics_computed": false
+  }
+}

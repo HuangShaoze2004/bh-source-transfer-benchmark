@@ -1,0 +1,11 @@
+{
+  "pid": 699565,
+  "command": [
+    "scripts/prepare_data.py"
+  ],
+  "status": "complete",
+  "start_unix": 1794278895.5573614,
+  "elapsed_seconds": 31.247389316558838,
+  "cpu_seconds": 31.226221902000002,
+  "commit": "3a44e398d9fed3f08cf396f1153be2960193f581"
+}

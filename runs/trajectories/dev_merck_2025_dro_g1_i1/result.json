@@ -1,0 +1,151 @@
+{
+  "status": "complete",
+  "total_steps": 4560,
+  "completed_steps": 4560,
+  "elapsed_seconds": 598.5902918204665,
+  "encoder_grad_verified": true,
+  "candidates": [
+    {
+      "name": "ordinary_best",
+      "checkpoint": "/root/autodl-tmp/paper-academic-tailor-2/bh_source_robust_transfer/runs/trajectories/dev_merck_2025_dro_g1_i1/best.pt",
+      "step": 912,
+      "val_metrics": {
+        "n": 610,
+        "log_loss": 1.3241445648522838,
+        "brier": 0.4852327311440298,
+        "auroc": 0.5371674491392802,
+        "auprc": 0.7840242710032387,
+        "pooled_auroc": 0.5371674491392802,
+        "source_macro_auroc": 0.5371674491392802,
+        "source_metrics": {
+          "AZ ELN 2023": {
+            "n": 610,
+            "log_loss": 1.3241445648522838,
+            "brier": 0.4852327311440298,
+            "auroc": 0.5371674491392802,
+            "auprc": 0.7840242710032387
+          }
+        }
+      }
+    },
+    {
+      "name": "swa_050",
+      "checkpoint": "/root/autodl-tmp/paper-academic-tailor-2/bh_source_robust_transfer/runs/trajectories/dev_merck_2025_dro_g1_i1/swa_050.pt",
+      "step": 4560,
+      "n_averaged": 21,
+      "swa_snapshot_steps": [
+        2280,
+        2394,
+        2508,
+        2622,
+        2736,
+        2850,
+        2964,
+        3078,
+        3192,
+        3306,
+        3420,
+        3534,
+        3648,
+        3762,
+        3876,
+        3990,
+        4104,
+        4218,
+        4332,
+        4446,
+        4560
+      ],
+      "val_metrics": {
+        "n": 610,
+        "log_loss": 1.466323892065569,
+        "brier": 0.5110507387965036,
+        "auroc": 0.5138437462381125,
+        "auprc": 0.7681932760779961,
+        "pooled_auroc": 0.5138437462381125,
+        "source_macro_auroc": 0.5138437462381125,
+        "source_metrics": {
+          "AZ ELN 2023": {
+            "n": 610,
+            "log_loss": 1.466323892065569,
+            "brier": 0.5110507387965036,
+            "auroc": 0.5138437462381125,
+            "auprc": 0.7681932760779961
+          }
+        }
+      }
+    },
+    {
+      "name": "swa_075",
+      "checkpoint": "/root/autodl-tmp/paper-academic-tailor-2/bh_source_robust_transfer/runs/trajectories/dev_merck_2025_dro_g1_i1/swa_075.pt",
+      "step": 4560,
+      "n_averaged": 11,
+      "swa_snapshot_steps": [
+        3420,
+        3534,
+        3648,
+        3762,
+        3876,
+        3990,
+        4104,
+        4218,
+        4332,
+        4446,
+        4560
+      ],
+      "val_metrics": {
+        "n": 610,
+        "log_loss": 1.4601729960369725,
+        "brier": 0.5091803574851882,
+        "auroc": 0.5134826050319008,
+        "auprc": 0.7672022922554729,
+        "pooled_auroc": 0.5134826050319008,
+        "source_macro_auroc": 0.5134826050319008,
+        "source_metrics": {
+          "AZ ELN 2023": {
+            "n": 610,
+            "log_loss": 1.4601729960369725,
+            "brier": 0.5091803574851882,
+            "auroc": 0.5134826050319008,
+            "auprc": 0.7672022922554729
+          }
+        }
+      }
+    }
+  ],
+  "ordinary_best_step": 912,
+  "history_path": "/root/autodl-tmp/paper-academic-tailor-2/bh_source_robust_transfer/runs/trajectories/dev_merck_2025_dro_g1_i1/validation_history.csv",
+  "group_history_path": "/root/autodl-tmp/paper-academic-tailor-2/bh_source_robust_transfer/runs/trajectories/dev_merck_2025_dro_g1_i1/group_history.csv",
+  "resume_checkpoint": "/root/autodl-tmp/paper-academic-tailor-2/bh_source_robust_transfer/runs/trajectories/dev_merck_2025_dro_g1_i1/last.pt",
+  "wall_seconds": 600.440811470151,
+  "peak_gpu_bytes": 444287488,
+  "job_identity": "9434ae97701bc4601c17a0e19feb1a15385bcb56b12b3acd329be1220fc04439",
+  "identity_inputs": {
+    "schema_version": 1,
+    "spec_sha256": "494c43656bfdeded90aa81769eb817a83baba084b3f3daf33107483ca5c2dc61",
+    "artifacts": {
+      "data/processed/records.parquet": "9c11cb4c36c2ac65f098f9aacfc2a8e9e2e75356be93e5f2d8271b83b936e212",
+      "data/processed/features.npz": "9659800e3b890e81669c969a7332b53550155ff4048bb2f566afa2a24fc90296",
+      "src/bh_transfer/neural.py": "626fd8bc7d9a8a495859679124633f2fe86e5ab2b4cec625ee8d0f41722a9cd9",
+      "src/bh_transfer/tokenizer.py": "a33f5b4838bad11170c94915d6bb2b5092fb3b3ac466894b79bfa7a7f0acf435",
+      "src/bh_transfer/tabular.py": "0b143a5a4b3c2d15c66a8b8e90d11ce36bccb3d85dec37bb2766a4d6c76f23d3",
+      "weights/rxnfp/manifest.json": "6fedd44427e29e49cd0f89e4be2a0346ad2b7dc45779fab241bcb362d56037cc",
+      "weights/rxnfp/tokenizer_extension_manifest.json": "1bb30463bd8232b8e5bbd34d759ce7fa05a47a996ba20a1ebb7f69a652f46520",
+      "weights/rxnfp/pytorch_model.bin": "50a6ed263d33ae759affa82c1e85554cc5ea9f56145f5c7fb39b6c25d4356437",
+      "weights/rxnfp/config.json": "024d89cb6056e146e066ebbcd9d565d6968d53e82953570a8b110b26495d7d4b",
+      "weights/rxnfp/vocab.txt": "399868a653e85549ce150af4a1f6cd2776240c6a3d951ced2120565f00f027fd",
+      "weights/rxnfp/extended_vocab.txt": "b7c0c14a53d991b68091e910b3e5b147a8e8290cf754f9afc703e64c0d13f0f7"
+    },
+    "job_script_sha256": "c6e9e4ade7d6045f273eedbf992b72879e5a91b2e73d60117aa8e42fa7572add",
+    "evaluation_lock_sha256": "b7005aff7fa71ab452015047b8b3a0d0aa0efa718fcdb937915d1267f6576a84"
+  },
+  "output_artifact_hashes": {
+    "best.pt": "0345836ee8e821f7bff24993a3a7c16d5936fa3a73078bf04467cf4f7d91456a",
+    "swa_050.pt": "03eca2f5506affcf7e72ce722578797d24e556165994557aa5b99114c8360f99",
+    "swa_075.pt": "370004ff4b3bb6a9833122544680d6bfe03dd2a781afa7edfdd8b179f190b874",
+    "ordinary_best_validation.npz": "621c266edb444eef2ef3cabacee3afda0563e4bbc5ec1b2bf46325ac3cf1dea6",
+    "swa_050_validation.npz": "47e856163608010bc8ede8fd5aea2721f6ea791554064436acb817c426dcb9c4",
+    "swa_075_validation.npz": "24ad60b4195c16509139cfc8e794d3574fae117509d983d7de9d0d79636df7c2",
+    "last.pt": "0c0ada1b61edfddbee14085f54f2c182f7cfd88bf9808766cc980d18673c9461"
+  }
+}

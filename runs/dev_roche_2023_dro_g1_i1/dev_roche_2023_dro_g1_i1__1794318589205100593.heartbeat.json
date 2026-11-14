@@ -1,0 +1,12 @@
+{
+  "attempt_id": "dev_roche_2023_dro_g1_i1__1794318589205100593",
+  "run_id": "dev_roche_2023_dro_g1_i1",
+  "observed_unix": 1794318895.4293628,
+  "wall_seconds": 306.22424464672804,
+  "gpu_seconds": 306.22424464672804,
+  "cpu_seconds": 312.2731,
+  "pid": 114326,
+  "process_start_ticks": 4997698558,
+  "boot_id": "a8ea9ed8-f60b-41e7-9887-40c805bd8203",
+  "status": "completed"
+}

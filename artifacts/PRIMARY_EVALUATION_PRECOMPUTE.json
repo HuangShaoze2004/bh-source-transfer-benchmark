@@ -1,0 +1,41 @@
+{
+  "started_utc": "2026-11-10T21:53:05.200954+00:00",
+  "run_id": "review_primary_evaluation_v1",
+  "launcher_pid": 417000,
+  "launcher_start_time": 1794347584.58,
+  "command": [
+    "/root/autodl-tmp/paper-academic-tailor-2/bh_source_robust_transfer/.venv/bin/python",
+    "scripts/run_guard.py",
+    "--run-id",
+    "review_primary_evaluation_v1",
+    "--stage",
+    "review",
+    "--threads",
+    "1",
+    "--",
+    "/root/autodl-tmp/paper-academic-tailor-2/bh_source_robust_transfer/.venv/bin/python",
+    "-m",
+    "bh_transfer.evaluate",
+    "--predictions",
+    "/root/autodl-tmp/paper-academic-tailor-2/bh_source_robust_transfer/artifacts/predictions.parquet",
+    "--lock",
+    "/root/autodl-tmp/paper-academic-tailor-2/bh_source_robust_transfer/FINAL_EVAL_LOCK.json",
+    "--out",
+    "/root/autodl-tmp/paper-academic-tailor-2/bh_source_robust_transfer/reports/final"
+  ],
+  "log": "runs/primary_evaluation_precompute.log",
+  "primary_prediction_completeness": {
+    "complete": true,
+    "rows": 387666,
+    "files": 135,
+    "lock_sha256": "b7005aff7fa71ab452015047b8b3a0d0aa0efa718fcdb937915d1267f6576a84",
+    "predictions_sha256": "26fa5487d45ac043bfc07e43bee7c9b789eeafd4e6d72f6a7adb86dc3950078d",
+    "truth_and_chemistry_verified": true
+  },
+  "scope": "Uniform complete main matrix only; frozen sensitivity GPU work continues; controller later reuses exact guarded job identity",
+  "scientific_configuration_changed": false,
+  "status": "COMPLETE",
+  "observed_complete_utc": "2026-11-10T21:56:51.467604+00:00",
+  "guard_cpu_seconds": 77.07100200000001,
+  "guard_gpu_seconds": 0
+}

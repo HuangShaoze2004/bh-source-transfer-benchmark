@@ -1,0 +1,12 @@
+{
+  "attempt_id": "review_az_author_label_invariance_v1__1794351432155157836",
+  "run_id": "review_az_author_label_invariance_v1",
+  "observed_unix": 1794351438.3478708,
+  "wall_seconds": 6.192696653306484,
+  "gpu_seconds": 0,
+  "cpu_seconds": 4.6085080000000005,
+  "pid": 457823,
+  "process_start_ticks": 5000982853,
+  "boot_id": "a8ea9ed8-f60b-41e7-9887-40c805bd8203",
+  "status": "completed"
+}

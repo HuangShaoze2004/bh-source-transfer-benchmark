@@ -1,0 +1,12 @@
+{
+  "attempt_id": "sens_author_labels_predict_merck_2025_R1_substitute_s42__1794359417936627123",
+  "run_id": "sens_author_labels_predict_merck_2025_R1_substitute_s42",
+  "observed_unix": 1794359422.0542023,
+  "wall_seconds": 4.11756145209074,
+  "gpu_seconds": 0,
+  "cpu_seconds": 2.4285010000000002,
+  "pid": 540767,
+  "process_start_ticks": 5001781432,
+  "boot_id": "a8ea9ed8-f60b-41e7-9887-40c805bd8203",
+  "status": "completed"
+}

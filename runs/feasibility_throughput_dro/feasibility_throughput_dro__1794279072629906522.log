@@ -1,0 +1,15 @@
+{
+  "status": "complete",
+  "total_steps": 120,
+  "completed_steps": 120,
+  "elapsed_seconds": 16.087637171149254,
+  "encoder_grad_verified": true,
+  "ordinary_best_step": 120,
+  "history_path": "/root/autodl-tmp/paper-academic-tailor-2/bh_source_robust_transfer/runs/trajectories/feasibility_throughput_dro/validation_history.csv",
+  "group_history_path": "/root/autodl-tmp/paper-academic-tailor-2/bh_source_robust_transfer/runs/trajectories/feasibility_throughput_dro/group_history.csv",
+  "resume_checkpoint": "/root/autodl-tmp/paper-academic-tailor-2/bh_source_robust_transfer/runs/trajectories/feasibility_throughput_dro/last.pt",
+  "inference_rows": 1024,
+  "inference_seconds": 0.4564249664545059,
+  "wall_seconds": 18.34295430779457,
+  "peak_gpu_bytes": 426513920
+}

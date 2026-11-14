@@ -1,0 +1,12 @@
+{
+  "attempt_id": "review_merck_inner_selection_v1__1794314627506777446",
+  "run_id": "review_merck_inner_selection_v1",
+  "observed_unix": 1794314637.8458066,
+  "wall_seconds": 10.339013502001762,
+  "gpu_seconds": 0,
+  "cpu_seconds": 9.400365,
+  "pid": 73460,
+  "process_start_ticks": 4997302389,
+  "boot_id": "a8ea9ed8-f60b-41e7-9887-40c805bd8203",
+  "status": "completed"
+}

@@ -1,0 +1,12 @@
+{
+  "attempt_id": "sens_dd_original_roche_2023_erm_s17__1794380261870964925",
+  "run_id": "sens_dd_original_roche_2023_erm_s17",
+  "observed_unix": 1794380875.1079514,
+  "wall_seconds": 613.2369701191783,
+  "gpu_seconds": 613.2369701191783,
+  "cpu_seconds": 631.434078,
+  "pid": 760327,
+  "process_start_ticks": 5003865825,
+  "boot_id": "a8ea9ed8-f60b-41e7-9887-40c805bd8203",
+  "status": "completed"
+}

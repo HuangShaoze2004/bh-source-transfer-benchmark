@@ -1,0 +1,12 @@
+{
+  "attempt_id": "formal_merck_2025_dro_s2026__1794341619152158794",
+  "run_id": "formal_merck_2025_dro_s2026",
+  "observed_unix": 1794342238.8831544,
+  "wall_seconds": 619.730978935957,
+  "gpu_seconds": 619.730978935957,
+  "cpu_seconds": 634.9846660000001,
+  "pid": 354598,
+  "process_start_ticks": 5000001553,
+  "boot_id": "a8ea9ed8-f60b-41e7-9887-40c805bd8203",
+  "status": "completed"
+}

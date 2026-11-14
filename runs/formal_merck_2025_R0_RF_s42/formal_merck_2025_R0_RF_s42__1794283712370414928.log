@@ -1,0 +1,8 @@
+{
+  "model": "R0_RF",
+  "seed": 42,
+  "checkpoint": "/root/autodl-tmp/paper-academic-tailor-2/bh_source_robust_transfer/runs/tabular/formal_merck_2025_R0_RF_s42/model.pkl",
+  "elapsed_seconds": 18.769418954849243,
+  "label": "y",
+  "identity": "4b825fd0b03a4b3580eed923948030c8fa9b4321051d6bb6b1bdd3e53b40f5d1"
+}

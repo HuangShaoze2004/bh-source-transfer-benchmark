@@ -1,0 +1,12 @@
+{
+  "attempt_id": "review_common_summary_real_data_v1__1794364702800312398",
+  "run_id": "review_common_summary_real_data_v1",
+  "observed_unix": 1794364704.8796024,
+  "wall_seconds": 2.0792750269174576,
+  "gpu_seconds": 0,
+  "cpu_seconds": 1.211302,
+  "pid": 595763,
+  "process_start_ticks": 5002309918,
+  "boot_id": "a8ea9ed8-f60b-41e7-9887-40c805bd8203",
+  "status": "completed"
+}

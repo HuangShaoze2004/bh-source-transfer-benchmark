@@ -1,0 +1,12 @@
+{
+  "attempt_id": "sens_author_labels_predict_jnj_hte_2024_R1_substitute_s17__1794355709681350903",
+  "run_id": "sens_author_labels_predict_jnj_hte_2024_R1_substitute_s17",
+  "observed_unix": 1794355713.7933145,
+  "wall_seconds": 4.111948683857918,
+  "gpu_seconds": 0,
+  "cpu_seconds": 2.9271740000000004,
+  "pid": 502145,
+  "process_start_ticks": 5001410606,
+  "boot_id": "a8ea9ed8-f60b-41e7-9887-40c805bd8203",
+  "status": "completed"
+}

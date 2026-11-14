@@ -1,0 +1,19 @@
+Reusing data/raw/BH_HTE_Curated_Dataset_v20260219.csv
+Reusing third_party/bh-hte-ood/README.md
+Reusing third_party/bh-hte-ood/LICENSE.txt
+Reusing third_party/bh-hte-ood/Production Model.ipynb
+Reusing third_party/bh-hte-ood/Reagent Recommender.ipynb
+Reusing third_party/bh-hte-ood/Data Sources Benchmark.ipynb
+Reusing third_party/bh-hte-ood/utils/drfp_cluster.py
+Reusing third_party/bh-hte-ood/utils/ml_train.py
+Reusing third_party/bh-hte-ood/data/reagent_dictionary.csv
+[10:43:27] WARNING: not removing hydrogen atom without neighbors
+[10:43:27] Can't kekulize mol.  Unkekulized atoms: 2 6
+[10:43:29] Can't kekulize mol.  Unkekulized atoms: 4 8
+[10:43:29] Can't kekulize mol.  Unkekulized atoms: 3 7
+Traceback (most recent call last):
+  File "/root/autodl-tmp/paper-academic-tailor-2/bh_source_robust_transfer/scripts/prepare_data.py", line 213, in <module>
+    prepare()
+  File "/root/autodl-tmp/paper-academic-tailor-2/bh_source_robust_transfer/scripts/prepare_data.py", line 138, in prepare
+    raise RuntimeError(f"{token_audit['full_reaction']['n_invalid']} tokenization failures; inspect data/audit/token_audit.json and resolve before features/split freeze; no rows silently dropped")
+RuntimeError: 720 tokenization failures; inspect data/audit/token_audit.json and resolve before features/split freeze; no rows silently dropped

@@ -1,0 +1,12 @@
+{
+  "attempt_id": "sens_author_labels_roche_2023_R1_substitute_s17__1794323848964827175",
+  "run_id": "sens_author_labels_roche_2023_R1_substitute_s17",
+  "observed_unix": 1794323884.3718545,
+  "wall_seconds": 35.4070111066103,
+  "gpu_seconds": 0,
+  "cpu_seconds": 36.36206399999999,
+  "pid": 168984,
+  "process_start_ticks": 4998224534,
+  "boot_id": "a8ea9ed8-f60b-41e7-9887-40c805bd8203",
+  "status": "completed"
+}

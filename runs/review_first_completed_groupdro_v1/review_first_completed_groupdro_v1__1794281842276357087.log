@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "scope": "full completed internal GPU GroupDRO trajectory; no external performance",
+  "checked_utc": "2026-11-10T03:37:24.613565+00:00",
+  "run_id": "dev_az_eln_2023_dro_g0_i0",
+  "steps_checked": 4560,
+  "max_independent_weight_recurrence_error": 1.8909266630839916e-06,
+  "training_state_audit": {
+    "objective": "dro",
+    "seed": 42,
+    "updates": 4560,
+    "training_rows": 18231,
+    "groups": 5,
+    "exposures": 182400,
+    "ordinary_step": 3648,
+    "swa_050_snapshots": 21,
+    "swa_075_snapshots": 11,
+    "max_group_weight": 0.7598474621772766,
+    "final_group_weight_ess": 1.583566188812256,
+    "minimum_final_sample_ess": 143.5378694417234
+  },
+  "last_checkpoint_sha256": "177ad75e653463874d8fb31d7ad10f2b5f845eab31058b183d62a5b0cfa5319e"
+}

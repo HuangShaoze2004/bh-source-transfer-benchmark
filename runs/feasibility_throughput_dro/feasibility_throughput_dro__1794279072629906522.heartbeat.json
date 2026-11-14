@@ -1,0 +1,12 @@
+{
+  "attempt_id": "feasibility_throughput_dro__1794279072629906522",
+  "run_id": "feasibility_throughput_dro",
+  "observed_unix": 1794279095.1896434,
+  "wall_seconds": 22.559720762073994,
+  "gpu_seconds": 22.559720762073994,
+  "cpu_seconds": 21.326863999999997,
+  "pid": 701537,
+  "process_start_ticks": 4993746901,
+  "boot_id": "a8ea9ed8-f60b-41e7-9887-40c805bd8203",
+  "status": "completed"
+}

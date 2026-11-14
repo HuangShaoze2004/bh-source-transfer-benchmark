@@ -1,0 +1,12 @@
+{
+  "attempt_id": "formal_merck_2025_R0_RF_s42__1794283712370414928",
+  "run_id": "formal_merck_2025_R0_RF_s42",
+  "observed_unix": 1794283732.928828,
+  "wall_seconds": 20.558397315442562,
+  "gpu_seconds": 0,
+  "cpu_seconds": 20.768261000000003,
+  "pid": 750592,
+  "process_start_ticks": 4994210875,
+  "boot_id": "a8ea9ed8-f60b-41e7-9887-40c805bd8203",
+  "status": "completed"
+}

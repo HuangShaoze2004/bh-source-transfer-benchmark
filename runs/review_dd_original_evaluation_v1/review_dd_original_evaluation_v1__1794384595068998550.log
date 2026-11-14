@@ -1,0 +1,92 @@
+pair bootstrap 100/5000
+pair bootstrap 200/5000
+pair bootstrap 300/5000
+pair bootstrap 400/5000
+pair bootstrap 500/5000
+pair bootstrap 600/5000
+pair bootstrap 700/5000
+pair bootstrap 800/5000
+pair bootstrap 900/5000
+pair bootstrap 1000/5000
+pair bootstrap 1100/5000
+pair bootstrap 1200/5000
+pair bootstrap 1300/5000
+pair bootstrap 1400/5000
+pair bootstrap 1500/5000
+pair bootstrap 1600/5000
+pair bootstrap 1700/5000
+pair bootstrap 1800/5000
+pair bootstrap 1900/5000
+pair bootstrap 2000/5000
+pair bootstrap 2100/5000
+pair bootstrap 2200/5000
+pair bootstrap 2300/5000
+pair bootstrap 2400/5000
+pair bootstrap 2500/5000
+pair bootstrap 2600/5000
+pair bootstrap 2700/5000
+pair bootstrap 2800/5000
+pair bootstrap 2900/5000
+pair bootstrap 3000/5000
+pair bootstrap 3100/5000
+pair bootstrap 3200/5000
+pair bootstrap 3300/5000
+pair bootstrap 3400/5000
+pair bootstrap 3500/5000
+pair bootstrap 3600/5000
+pair bootstrap 3700/5000
+pair bootstrap 3800/5000
+pair bootstrap 3900/5000
+pair bootstrap 4000/5000
+pair bootstrap 4100/5000
+pair bootstrap 4200/5000
+pair bootstrap 4300/5000
+pair bootstrap 4400/5000
+pair bootstrap 4500/5000
+pair bootstrap 4600/5000
+pair bootstrap 4700/5000
+pair bootstrap 4800/5000
+pair bootstrap 4900/5000
+pair bootstrap 5000/5000
+pigeonhole bootstrap 100/1000
+pigeonhole bootstrap 200/1000
+pigeonhole bootstrap 300/1000
+pigeonhole bootstrap 400/1000
+pigeonhole bootstrap 500/1000
+pigeonhole bootstrap 600/1000
+pigeonhole bootstrap 700/1000
+pigeonhole bootstrap 800/1000
+pigeonhole bootstrap 900/1000
+pigeonhole bootstrap 1000/1000
+{
+  "status": "EVALUATION_COMPLETE",
+  "signature": "ceb088df9dbe160c07d4fdedf2f82279b647a265ed17949f91b816198d30d071",
+  "prediction_sha256": "1e0de17e2c7a388401bc2ac63ebb3b9fdd8c0d014779f6c056357be6d4a6a5fc",
+  "lock_sha256": "3f2b9cd00f0cfeef381ce7669ac21542d7a15868a39bd3a873d0d4ec4f7b544b",
+  "evaluator_sha256": "13a48c63681b2b1c282bac609d32175bd483e3e5d69c3499e1ee72e73d2adcaf",
+  "models": [
+    "R1_substitute",
+    "B",
+    "B_S",
+    "B_A",
+    "B_A_S"
+  ],
+  "seeds": [
+    17,
+    42,
+    2026
+  ],
+  "eligible_sources": [
+    "AZ ELN 2023",
+    "JNJ HTE 2024",
+    "Merck 2025",
+    "Roche 2023"
+  ],
+  "acceptance": {
+    "status": "NOT_ASSESSED",
+    "reason": "No primary candidate/comparator set frozen in lock"
+  },
+  "inference": "Equal fixed-source macro, seedwise metrics averaged; pair-cluster paired bootstrap conditional on fitted runs",
+  "auprc_definition": "Non-interpolated average precision, weighted for bootstrap",
+  "calibration": "Ranking uses raw probabilities; calibration is auxiliary Brier/reliability only"
+}

@@ -1,0 +1,26 @@
+{
+  "tokenizer_version": "rxnfp_dative_v1",
+  "extension": {
+    "version": "rxnfp_dative_v1",
+    "added_tokens": [
+      "->",
+      "<-"
+    ],
+    "added_token_ids": [
+      591,
+      592
+    ],
+    "original_vocab_size": 591,
+    "extended_vocab_size": 593,
+    "embedding_initialization": "copy_original_minus_embedding",
+    "regex_sha256": "a013643a65bc228c8133ca2c0908e61a78453908735906f44b2722d6f7516b47",
+    "rule_sha256": "aaf1880a7c161babfd9dc7eecb448b39485f0dac256d6eba6c49aba93d70663e",
+    "original_vocab_sha256": "399868a653e85549ce150af4a1f6cd2776240c6a3d951ced2120565f00f027fd",
+    "extended_vocab_sha256": "b7c0c14a53d991b68091e910b3e5b147a8e8290cf754f9afc703e64c0d13f0f7"
+  },
+  "n_rows": 27497,
+  "n_valid": 27497,
+  "n_invalid": 0,
+  "max_tokens": 277,
+  "failures": []
+}

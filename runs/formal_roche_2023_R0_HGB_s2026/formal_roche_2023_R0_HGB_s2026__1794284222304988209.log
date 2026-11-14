@@ -1,0 +1,8 @@
+{
+  "model": "R0_HGB",
+  "seed": 2026,
+  "checkpoint": "/root/autodl-tmp/paper-academic-tailor-2/bh_source_robust_transfer/runs/tabular/formal_roche_2023_R0_HGB_s2026/model.pkl",
+  "elapsed_seconds": 60.811938524246216,
+  "label": "y",
+  "identity": "4dbd4f09be8f68075a7169ef805838aa01ec3074442fb22b2f5ba08d81fa02e6"
+}

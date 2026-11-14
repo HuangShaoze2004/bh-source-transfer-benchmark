@@ -1,0 +1,58 @@
+{
+  "event": "finished",
+  "run_id": "review_stage_report_author_labels_v1",
+  "attempt_id": "review_stage_report_author_labels_v1__1794364235945266420",
+  "stage": "review",
+  "gpu": false,
+  "threads": 1,
+  "cpu_slots": [
+    1
+  ],
+  "cpus": [
+    1
+  ],
+  "pid": 590884,
+  "process_start_ticks": 5002263232,
+  "boot_id": "a8ea9ed8-f60b-41e7-9887-40c805bd8203",
+  "launcher_pid": 590881,
+  "launcher_start_ticks": 5002263217,
+  "start_unix": 1794364235.9452791,
+  "command": [
+    ".venv/bin/python",
+    "scripts/finalize_report.py",
+    "--project",
+    "."
+  ],
+  "command_hash": "4dc487a2c959f5e49b53be5cc5cd67ce4ab2df6986db3ce1b6aa28f3f72dc218",
+  "execution_identity": "02945a88760a58a508e3aa39ba2fba4d7fccaa2b142c159d806d1e545ff1928e",
+  "identity_components": {
+    "schema_version": 1,
+    "command": [
+      ".venv/bin/python",
+      "scripts/finalize_report.py",
+      "--project",
+      "."
+    ],
+    "project_scripts": {
+      "scripts/finalize_report.py": "c8756d086c4c63fe26dd3ee12be99905cdc926495a206a6eaa0d697f0a75b7aa"
+    },
+    "spec_json": {},
+    "implementation_modules": {
+      "src/bh_transfer/__init__.py": "cc722a39a1c088e8d7e06db83dbcf662a4d5c01731651f85f90a2e4b0ace1cab",
+      "src/bh_transfer/data.py": "6f4a6732ea5c7917d4d35e218a2baa678f786ac9abc6c0103cd0caddb0984784",
+      "src/bh_transfer/evaluate.py": "13a48c63681b2b1c282bac609d32175bd483e3e5d69c3499e1ee72e73d2adcaf",
+      "src/bh_transfer/neural.py": "626fd8bc7d9a8a495859679124633f2fe86e5ab2b4cec625ee8d0f41722a9cd9",
+      "src/bh_transfer/tabular.py": "0b143a5a4b3c2d15c66a8b8e90d11ce36bccb3d85dec37bb2766a4d6c76f23d3",
+      "src/bh_transfer/tokenizer.py": "a33f5b4838bad11170c94915d6bb2b5092fb3b3ac466894b79bfa7a7f0acf435"
+    },
+    "final_eval_lock_sha256": "b7005aff7fa71ab452015047b8b3a0d0aa0efa718fcdb937915d1267f6576a84"
+  },
+  "log": "runs/review_stage_report_author_labels_v1/review_stage_report_author_labels_v1__1794364235945266420.log",
+  "status": "completed",
+  "exit_code": 0,
+  "wall_seconds": 26.87304811179638,
+  "gpu_seconds": 0,
+  "cpu_seconds": 26.016417999999998,
+  "reason": null,
+  "cost_quality": "measured"
+}

@@ -1,0 +1,12 @@
+{
+  "attempt_id": "sens_dd_original_jnj_hte_2024_erm_s17__1794373159222247059",
+  "run_id": "sens_dd_original_jnj_hte_2024_erm_s17",
+  "observed_unix": 1794373568.4397783,
+  "wall_seconds": 409.2175142914057,
+  "gpu_seconds": 409.2175142914057,
+  "cpu_seconds": 419.6953270000001,
+  "pid": 683872,
+  "process_start_ticks": 5003155560,
+  "boot_id": "a8ea9ed8-f60b-41e7-9887-40c805bd8203",
+  "status": "completed"
+}

@@ -1,0 +1,107 @@
+{
+  "az_eln_2023": {
+    "source": "AZ ELN 2023",
+    "eligibility_frozen_in_split": true,
+    "current_labels": {
+      "rows": 607,
+      "pairs": 376,
+      "positive_rows": 490,
+      "negative_rows": 117,
+      "positive_pairs": 312,
+      "negative_pairs": 83,
+      "aryls": 230,
+      "amines": 207,
+      "positive_rate": 0.8072487644151565
+    }
+  },
+  "dreher_2014": {
+    "source": "Dreher 2014",
+    "eligibility_frozen_in_split": false,
+    "current_labels": {
+      "rows": 0,
+      "pairs": 0,
+      "positive_rows": 0,
+      "negative_rows": 0,
+      "positive_pairs": 0,
+      "negative_pairs": 0,
+      "aryls": 0,
+      "amines": 0,
+      "positive_rate": null
+    }
+  },
+  "dreher_2016": {
+    "source": "Dreher 2016",
+    "eligibility_frozen_in_split": false,
+    "current_labels": {
+      "rows": 0,
+      "pairs": 0,
+      "positive_rows": 0,
+      "negative_rows": 0,
+      "positive_pairs": 0,
+      "negative_pairs": 0,
+      "aryls": 0,
+      "amines": 0,
+      "positive_rate": null
+    }
+  },
+  "hitea_2024": {
+    "source": "HiTEA 2024",
+    "eligibility_frozen_in_split": false,
+    "current_labels": {
+      "rows": 1387,
+      "pairs": 15,
+      "positive_rows": 194,
+      "negative_rows": 1193,
+      "positive_pairs": 11,
+      "negative_pairs": 12,
+      "aryls": 14,
+      "amines": 13,
+      "positive_rate": 0.13987022350396539
+    }
+  },
+  "jnj_hte_2024": {
+    "source": "JNJ HTE 2024",
+    "eligibility_frozen_in_split": true,
+    "current_labels": {
+      "rows": 8016,
+      "pairs": 546,
+      "positive_rows": 2917,
+      "negative_rows": 5099,
+      "positive_pairs": 519,
+      "negative_pairs": 309,
+      "aryls": 90,
+      "amines": 65,
+      "positive_rate": 0.3638972055888224
+    }
+  },
+  "merck_2025": {
+    "source": "Merck 2025",
+    "eligibility_frozen_in_split": true,
+    "current_labels": {
+      "rows": 2668,
+      "pairs": 2668,
+      "positive_rows": 1080,
+      "negative_rows": 1588,
+      "positive_pairs": 1080,
+      "negative_pairs": 1588,
+      "aryls": 335,
+      "amines": 8,
+      "positive_rate": 0.4047976011994003
+    }
+  },
+  "roche_2023": {
+    "source": "Roche 2023",
+    "eligibility_frozen_in_split": true,
+    "current_labels": {
+      "rows": 1680,
+      "pairs": 65,
+      "positive_rows": 754,
+      "negative_rows": 926,
+      "positive_pairs": 55,
+      "negative_pairs": 61,
+      "aryls": 28,
+      "amines": 18,
+      "positive_rate": 0.4488095238095238
+    }
+  }
+}

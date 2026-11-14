@@ -1,0 +1,12 @@
+{
+  "attempt_id": "review_all_formal_trees_v1__1794284408418414066",
+  "run_id": "review_all_formal_trees_v1",
+  "observed_unix": 1794284420.7456636,
+  "wall_seconds": 12.327234260737896,
+  "gpu_seconds": 0,
+  "cpu_seconds": 11.99115,
+  "pid": 757837,
+  "process_start_ticks": 4994280480,
+  "boot_id": "a8ea9ed8-f60b-41e7-9887-40c805bd8203",
+  "status": "completed"
+}

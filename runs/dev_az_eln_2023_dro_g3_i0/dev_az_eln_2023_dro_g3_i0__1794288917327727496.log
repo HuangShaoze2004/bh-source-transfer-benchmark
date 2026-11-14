@@ -1,0 +1,42 @@
+{
+  "status": "complete",
+  "total_steps": 4560,
+  "completed_steps": 4560,
+  "elapsed_seconds": 601.6861749142408,
+  "encoder_grad_verified": true,
+  "ordinary_best_step": 456,
+  "history_path": "/root/autodl-tmp/paper-academic-tailor-2/bh_source_robust_transfer/runs/trajectories/dev_az_eln_2023_dro_g3_i0/validation_history.csv",
+  "group_history_path": "/root/autodl-tmp/paper-academic-tailor-2/bh_source_robust_transfer/runs/trajectories/dev_az_eln_2023_dro_g3_i0/group_history.csv",
+  "resume_checkpoint": "/root/autodl-tmp/paper-academic-tailor-2/bh_source_robust_transfer/runs/trajectories/dev_az_eln_2023_dro_g3_i0/last.pt",
+  "wall_seconds": 603.5938246324658,
+  "peak_gpu_bytes": 444287488,
+  "job_identity": "be9e02979a59de74ff83f45925a4edbf5ed910ea9ba479c1e2985da369efa80a",
+  "identity_inputs": {
+    "schema_version": 1,
+    "spec_sha256": "56c326a581f11b53475f129c7c43b89faa06f89bb23bc4cdc5047b75e87b646f",
+    "artifacts": {
+      "data/processed/records.parquet": "9c11cb4c36c2ac65f098f9aacfc2a8e9e2e75356be93e5f2d8271b83b936e212",
+      "data/processed/features.npz": "9659800e3b890e81669c969a7332b53550155ff4048bb2f566afa2a24fc90296",
+      "src/bh_transfer/neural.py": "626fd8bc7d9a8a495859679124633f2fe86e5ab2b4cec625ee8d0f41722a9cd9",
+      "src/bh_transfer/tokenizer.py": "a33f5b4838bad11170c94915d6bb2b5092fb3b3ac466894b79bfa7a7f0acf435",
+      "src/bh_transfer/tabular.py": "0b143a5a4b3c2d15c66a8b8e90d11ce36bccb3d85dec37bb2766a4d6c76f23d3",
+      "weights/rxnfp/manifest.json": "6fedd44427e29e49cd0f89e4be2a0346ad2b7dc45779fab241bcb362d56037cc",
+      "weights/rxnfp/tokenizer_extension_manifest.json": "1bb30463bd8232b8e5bbd34d759ce7fa05a47a996ba20a1ebb7f69a652f46520",
+      "weights/rxnfp/pytorch_model.bin": "50a6ed263d33ae759affa82c1e85554cc5ea9f56145f5c7fb39b6c25d4356437",
+      "weights/rxnfp/config.json": "024d89cb6056e146e066ebbcd9d565d6968d53e82953570a8b110b26495d7d4b",
+      "weights/rxnfp/vocab.txt": "399868a653e85549ce150af4a1f6cd2776240c6a3d951ced2120565f00f027fd",
+      "weights/rxnfp/extended_vocab.txt": "b7c0c14a53d991b68091e910b3e5b147a8e8290cf754f9afc703e64c0d13f0f7"
+    },
+    "job_script_sha256": "c6e9e4ade7d6045f273eedbf992b72879e5a91b2e73d60117aa8e42fa7572add",
+    "evaluation_lock_sha256": "b7005aff7fa71ab452015047b8b3a0d0aa0efa718fcdb937915d1267f6576a84"
+  },
+  "output_artifact_hashes": {
+    "best.pt": "fdd5e446ad0b7309c195371691e4ebc7fd0ce415ae7a135b30d935cad99d0096",
+    "swa_050.pt": "ad56cba2d782b67074b87abb0b60f89bb089ccab8c491689356a9104c5a58500",
+    "swa_075.pt": "10b95ab4c63d0d5046b5083bf70f663b8061543efac65eeea7d94ddf616b942a",
+    "ordinary_best_validation.npz": "a5e2b29fa0187982bdd63943764b2e777a22040524ccdc032e2c43d4ccc25944",
+    "swa_050_validation.npz": "403b49942784576228a7d3bafd43e767a1d8965af038b75ca6a38989bcc989e7",
+    "swa_075_validation.npz": "9796512a77ad6a135a387e41753d00079eb622a28ed338a8aff9e3c4d0a79a0d",
+    "last.pt": "62447ce50a4aca287ce268f701a5c8901b581ba1101044bfb1b92db91385786b"
+  }
+}

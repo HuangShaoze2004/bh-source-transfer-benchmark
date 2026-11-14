@@ -1,0 +1,8 @@
+{
+  "model": "R1_substitute",
+  "seed": 42,
+  "checkpoint": "/root/autodl-tmp/paper-academic-tailor-2/bh_source_robust_transfer/runs/tabular/dev_roche_2023_R1_substitute_i1/model.pkl",
+  "elapsed_seconds": 13.100024938583374,
+  "label": "y",
+  "identity": "d5c71643546fe42ea23f60352bb30c66eb2c4a9b62367fc617750d86c89a8a11"
+}

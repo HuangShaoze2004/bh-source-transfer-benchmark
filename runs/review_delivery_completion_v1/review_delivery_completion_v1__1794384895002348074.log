@@ -1,0 +1,1 @@
+{"status": "PASS", "scientific_status": "NOT_READY", "prediction_rows": 814671, "formal_neural_states": 105, "tests_passed": 74, "budget": {"gpu_hours": 29.039922166025885, "cpu_core_hours": 32.02379874361111, "active_cpu_threads": 1, "development_gpu_hours": 12.129947342723607, "feasibility_gpu_hours": 0.025113719089163673}}

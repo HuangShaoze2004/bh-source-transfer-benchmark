@@ -1,0 +1,62 @@
+{
+  "commit": "3a44e398d9fed3f08cf396f1153be2960193f581",
+  "code_license": "Apache-2.0",
+  "data_license": "CC-BY-4.0",
+  "data_archive": "https://zenodo.org/records/19636649",
+  "files": [
+    {
+      "path": "data/raw/BH_HTE_Curated_Dataset_v20260219.csv",
+      "url": "https://raw.githubusercontent.com/schwallergroup/bh-hte-ood/3a44e398d9fed3f08cf396f1153be2960193f581/data/BH_HTE_Curated_Dataset_v20260219.csv",
+      "bytes": 42383154,
+      "sha256": "247473787c33fb22ee48a4177593188f2a2c6ef140756566fe4610fee89ba333"
+    },
+    {
+      "path": "third_party/bh-hte-ood/README.md",
+      "url": "https://raw.githubusercontent.com/schwallergroup/bh-hte-ood/3a44e398d9fed3f08cf396f1153be2960193f581/README.md",
+      "bytes": 11547,
+      "sha256": "686d927b7415fe3c852aaa604e97fcf5772583442bbb11db64e698ebd8efffed"
+    },
+    {
+      "path": "third_party/bh-hte-ood/LICENSE.txt",
+      "url": "https://raw.githubusercontent.com/schwallergroup/bh-hte-ood/3a44e398d9fed3f08cf396f1153be2960193f581/LICENSE.txt",
+      "bytes": 11357,
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "path": "third_party/bh-hte-ood/Production Model.ipynb",
+      "url": "https://raw.githubusercontent.com/schwallergroup/bh-hte-ood/3a44e398d9fed3f08cf396f1153be2960193f581/Production%20Model.ipynb",
+      "bytes": 32457,
+      "sha256": "498c659b6aee05232c06aae4aa96b24e4e764dac16ae6f7e4140ddbac3cc0a1e"
+    },
+    {
+      "path": "third_party/bh-hte-ood/Reagent Recommender.ipynb",
+      "url": "https://raw.githubusercontent.com/schwallergroup/bh-hte-ood/3a44e398d9fed3f08cf396f1153be2960193f581/Reagent%20Recommender.ipynb",
+      "bytes": 168977,
+      "sha256": "22442ab18dee38d430847e47e20a71e14748fd69879725fb1b57818c242c3c48"
+    },
+    {
+      "path": "third_party/bh-hte-ood/Data Sources Benchmark.ipynb",
+      "url": "https://raw.githubusercontent.com/schwallergroup/bh-hte-ood/3a44e398d9fed3f08cf396f1153be2960193f581/Data%20Sources%20Benchmark.ipynb",
+      "bytes": 18236,
+      "sha256": "d011f8f41069a170efc8724ed54b43481795c2cd6ae98f4413b0fcb5be91ef05"
+    },
+    {
+      "path": "third_party/bh-hte-ood/utils/drfp_cluster.py",
+      "url": "https://raw.githubusercontent.com/schwallergroup/bh-hte-ood/3a44e398d9fed3f08cf396f1153be2960193f581/utils/drfp_cluster.py",
+      "bytes": 5638,
+      "sha256": "404b12949082d38a11ba1b591d4288fef35a0ecac7649b9f83c247745d8725aa"
+    },
+    {
+      "path": "third_party/bh-hte-ood/utils/ml_train.py",
+      "url": "https://raw.githubusercontent.com/schwallergroup/bh-hte-ood/3a44e398d9fed3f08cf396f1153be2960193f581/utils/ml_train.py",
+      "bytes": 10580,
+      "sha256": "df8e539030757c34baf8e2aa3e0882c7ac1c222325bcb76455314bf7e931d789"
+    },
+    {
+      "path": "third_party/bh-hte-ood/data/reagent_dictionary.csv",
+      "url": "https://raw.githubusercontent.com/schwallergroup/bh-hte-ood/3a44e398d9fed3f08cf396f1153be2960193f581/data/reagent_dictionary.csv",
+      "bytes": 6073,
+      "sha256": "e976c3bc0aecf59fceac97420705b815fda6ffe53aa85ce09bf1d7f172edb6c7"
+    }
+  ]
+}

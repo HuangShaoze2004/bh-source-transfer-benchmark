@@ -1,0 +1,35 @@
+{
+  "event": "finished",
+  "run_id": "feasibility_throughput_erm",
+  "attempt_id": "feasibility_throughput_erm__1794279053937751874",
+  "stage": "feasibility",
+  "gpu": true,
+  "threads": 1,
+  "cpu_slots": [
+    0
+  ],
+  "cpus": [
+    0
+  ],
+  "pid": 701338,
+  "process_start_ticks": 4993745032,
+  "boot_id": "a8ea9ed8-f60b-41e7-9887-40c805bd8203",
+  "launcher_pid": 701335,
+  "launcher_start_ticks": 4993745016,
+  "start_unix": 1794279053.937764,
+  "command": [
+    "/root/autodl-tmp/paper-academic-tailor-2/bh_source_robust_transfer/.venv/bin/python",
+    "scripts/run_neural_job.py",
+    "--spec",
+    "/root/autodl-tmp/paper-academic-tailor-2/bh_source_robust_transfer/runs/specs/feasibility_throughput_erm.json"
+  ],
+  "command_hash": "f3efd72d5a6ad934bc3870dcfcd2d8427087b18d2b562b7de03d6bd36e05d65f",
+  "log": "runs/feasibility_throughput_erm/feasibility_throughput_erm__1794279053937751874.log",
+  "status": "completed",
+  "exit_code": 0,
+  "wall_seconds": 18.493750505149364,
+  "gpu_seconds": 18.493750505149364,
+  "cpu_seconds": 17.681792999999995,
+  "reason": null,
+  "cost_quality": "measured"
+}

@@ -1,0 +1,12 @@
+{
+  "attempt_id": "sens_dd_original_hitea_2024_dro_s42__1794370888537275405",
+  "run_id": "sens_dd_original_hitea_2024_dro_s42",
+  "observed_unix": 1794371691.5447826,
+  "wall_seconds": 803.0074903741479,
+  "gpu_seconds": 803.0074903741479,
+  "cpu_seconds": 826.370077,
+  "pid": 660254,
+  "process_start_ticks": 5002928492,
+  "boot_id": "a8ea9ed8-f60b-41e7-9887-40c805bd8203",
+  "status": "completed"
+}

@@ -1,0 +1,8 @@
+{
+  "complete": true,
+  "rows": 387666,
+  "files": 135,
+  "lock_sha256": "b7005aff7fa71ab452015047b8b3a0d0aa0efa718fcdb937915d1267f6576a84",
+  "predictions_sha256": "26fa5487d45ac043bfc07e43bee7c9b789eeafd4e6d72f6a7adb86dc3950078d",
+  "truth_and_chemistry_verified": true
+}

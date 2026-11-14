@@ -1,0 +1,12 @@
+{
+  "attempt_id": "sens_author_labels_predict_hitea_2024_B_s17__1794351859493811790",
+  "run_id": "sens_author_labels_predict_hitea_2024_B_s17",
+  "observed_unix": 1794351863.606715,
+  "wall_seconds": 4.112886793911457,
+  "gpu_seconds": 4.112886793911457,
+  "cpu_seconds": 3.5083539999999998,
+  "pid": 462238,
+  "process_start_ticks": 5001025587,
+  "boot_id": "a8ea9ed8-f60b-41e7-9887-40c805bd8203",
+  "status": "completed"
+}

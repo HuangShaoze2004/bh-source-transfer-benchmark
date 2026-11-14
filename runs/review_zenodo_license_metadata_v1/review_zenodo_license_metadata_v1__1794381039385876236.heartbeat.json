@@ -1,0 +1,12 @@
+{
+  "attempt_id": "review_zenodo_license_metadata_v1__1794381039385876236",
+  "run_id": "review_zenodo_license_metadata_v1",
+  "observed_unix": 1794381043.5575876,
+  "wall_seconds": 4.1716959327459335,
+  "gpu_seconds": 0,
+  "cpu_seconds": 0.28208200000000005,
+  "pid": 768487,
+  "process_start_ticks": 5003943577,
+  "boot_id": "a8ea9ed8-f60b-41e7-9887-40c805bd8203",
+  "status": "completed"
+}

@@ -1,0 +1,35 @@
+{
+  "event": "finished",
+  "run_id": "feasibility_small_fit",
+  "attempt_id": "feasibility_small_fit__1794279004397002823",
+  "stage": "feasibility",
+  "gpu": true,
+  "threads": 1,
+  "cpu_slots": [
+    0
+  ],
+  "cpus": [
+    0
+  ],
+  "pid": 700755,
+  "process_start_ticks": 4993740078,
+  "boot_id": "a8ea9ed8-f60b-41e7-9887-40c805bd8203",
+  "launcher_pid": 700752,
+  "launcher_start_ticks": 4993740066,
+  "start_unix": 1794279004.3970165,
+  "command": [
+    "/root/autodl-tmp/paper-academic-tailor-2/bh_source_robust_transfer/.venv/bin/python",
+    "scripts/run_neural_job.py",
+    "--spec",
+    "/root/autodl-tmp/paper-academic-tailor-2/bh_source_robust_transfer/runs/specs/feasibility_small_fit.json"
+  ],
+  "command_hash": "50ce03a3217132b0654485c2b7a1b1aff0af49396076a0e056dcb858f0998603",
+  "log": "runs/feasibility_small_fit/feasibility_small_fit__1794279004397002823.log",
+  "status": "completed",
+  "exit_code": 0,
+  "wall_seconds": 49.35591745376587,
+  "gpu_seconds": 49.35591745376587,
+  "cpu_seconds": 49.198204999999994,
+  "reason": null,
+  "cost_quality": "measured"
+}

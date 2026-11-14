@@ -1,0 +1,12 @@
+{
+  "attempt_id": "review_all_common_summaries_and_budgets_v1__1794384747398597044",
+  "run_id": "review_all_common_summaries_and_budgets_v1",
+  "observed_unix": 1794384749.4761426,
+  "wall_seconds": 2.0775302797555923,
+  "gpu_seconds": 0,
+  "cpu_seconds": 1.2130759999999998,
+  "pid": 807923,
+  "process_start_ticks": 5004314378,
+  "boot_id": "a8ea9ed8-f60b-41e7-9887-40c805bd8203",
+  "status": "completed"
+}

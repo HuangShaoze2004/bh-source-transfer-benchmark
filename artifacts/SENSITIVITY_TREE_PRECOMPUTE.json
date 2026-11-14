@@ -1,0 +1,223 @@
+{
+  "status": "FITS_COMPLETE",
+  "utc": "2026-11-10T15:31:38.356149+00:00",
+  "main_lock_sha256": "b7005aff7fa71ab452015047b8b3a0d0aa0efa718fcdb937915d1267f6576a84",
+  "sensitivity_lock_sha256": {
+    "author_labels": "208273c7d487cbaae271a3f6d004f655b0a318a5554c637eee9106600fa8814f",
+    "dd_original": "3f2b9cd00f0cfeef381ce7669ac21542d7a15868a39bd3a873d0d4ec4f7b544b"
+  },
+  "completed_fits": [
+    {
+      "kind": "author_labels",
+      "fold": "az_eln_2023",
+      "seed": 17,
+      "run_id": "sens_author_labels_az_eln_2023_R1_substitute_s17",
+      "result_sha256": "7abc60599926a8f6f459377c1612c462dfe0b93da59beed3673a79f3880c092c"
+    },
+    {
+      "kind": "author_labels",
+      "fold": "az_eln_2023",
+      "seed": 42,
+      "run_id": "sens_author_labels_az_eln_2023_R1_substitute_s42",
+      "result_sha256": "c43e6f8941d1dd3c3f1f519b2a743db21d1e4568817eaba0013f0bf670832e32"
+    },
+    {
+      "kind": "author_labels",
+      "fold": "az_eln_2023",
+      "seed": 2026,
+      "run_id": "sens_author_labels_az_eln_2023_R1_substitute_s2026",
+      "result_sha256": "0cd0453e6c9ee13cd4a2d0837aa9e04cc456d98b01c7e967effa40007d22643c"
+    },
+    {
+      "kind": "author_labels",
+      "fold": "hitea_2024",
+      "seed": 17,
+      "run_id": "sens_author_labels_hitea_2024_R1_substitute_s17",
+      "result_sha256": "31381c47d1d068282497af2dfb0d23fa15311c1fa2b28582e0983e547b96aa88"
+    },
+    {
+      "kind": "author_labels",
+      "fold": "hitea_2024",
+      "seed": 42,
+      "run_id": "sens_author_labels_hitea_2024_R1_substitute_s42",
+      "result_sha256": "d46e8c9b0b16117378b6175ff528b3799cfe92c4fca9fd635ead4d4c929677f2"
+    },
+    {
+      "kind": "author_labels",
+      "fold": "hitea_2024",
+      "seed": 2026,
+      "run_id": "sens_author_labels_hitea_2024_R1_substitute_s2026",
+      "result_sha256": "485b9b1e13d59f3bfb8e500c814ca8ba1824e4e4dee87b9b6912fd2ec38d4dda"
+    },
+    {
+      "kind": "author_labels",
+      "fold": "jnj_hte_2024",
+      "seed": 17,
+      "run_id": "sens_author_labels_jnj_hte_2024_R1_substitute_s17",
+      "result_sha256": "cc880c6d9469abd045c849c01789c21bd65f87014ac09e30cc50ff9cd04c97fe"
+    },
+    {
+      "kind": "author_labels",
+      "fold": "jnj_hte_2024",
+      "seed": 42,
+      "run_id": "sens_author_labels_jnj_hte_2024_R1_substitute_s42",
+      "result_sha256": "8d699696c9a13abc2503bff5eae686873110087b5a0923c0a5a0734413370f49"
+    },
+    {
+      "kind": "author_labels",
+      "fold": "jnj_hte_2024",
+      "seed": 2026,
+      "run_id": "sens_author_labels_jnj_hte_2024_R1_substitute_s2026",
+      "result_sha256": "01350e145cc30939a3a97648aec241058a6f22cdcabe7252c6f53b11c521b9da"
+    },
+    {
+      "kind": "author_labels",
+      "fold": "merck_2025",
+      "seed": 17,
+      "run_id": "sens_author_labels_merck_2025_R1_substitute_s17",
+      "result_sha256": "618f06cd88a3d834a0dc85cf62e55ccc8eda3725c4e2624bab2701bad73c3e46"
+    },
+    {
+      "kind": "author_labels",
+      "fold": "merck_2025",
+      "seed": 42,
+      "run_id": "sens_author_labels_merck_2025_R1_substitute_s42",
+      "result_sha256": "8aba6387a42653030946e749dcbe45938a39df54d799eadd15c1340f900539c6"
+    },
+    {
+      "kind": "author_labels",
+      "fold": "merck_2025",
+      "seed": 2026,
+      "run_id": "sens_author_labels_merck_2025_R1_substitute_s2026",
+      "result_sha256": "fbcbb27eeb817b08066808adf207b372e3c007b5f882e19118e7a4f8952147cd"
+    },
+    {
+      "kind": "author_labels",
+      "fold": "roche_2023",
+      "seed": 17,
+      "run_id": "sens_author_labels_roche_2023_R1_substitute_s17",
+      "result_sha256": "c0484e7e47e9f88b066719ecbd11aaa767127782ec622bdb5929cf6726e99777"
+    },
+    {
+      "kind": "author_labels",
+      "fold": "roche_2023",
+      "seed": 42,
+      "run_id": "sens_author_labels_roche_2023_R1_substitute_s42",
+      "result_sha256": "d92feedd368d4c0d3a007e8ef9bcaaa2d954b84fbf6e237ef2277ab0a061043c"
+    },
+    {
+      "kind": "author_labels",
+      "fold": "roche_2023",
+      "seed": 2026,
+      "run_id": "sens_author_labels_roche_2023_R1_substitute_s2026",
+      "result_sha256": "489a480afd9d6f8fc8b286fc4b4499f1ab09aa08024e0222c4a1e10c00c874d4"
+    },
+    {
+      "kind": "dd_original",
+      "fold": "az_eln_2023",
+      "seed": 17,
+      "run_id": "sens_dd_original_az_eln_2023_R1_substitute_s17",
+      "result_sha256": "4d9ce7d4b350144dd8c7d238a79e2969153f9faa230ff1cac2e7b0e63b9611fc"
+    },
+    {
+      "kind": "dd_original",
+      "fold": "az_eln_2023",
+      "seed": 42,
+      "run_id": "sens_dd_original_az_eln_2023_R1_substitute_s42",
+      "result_sha256": "08526b7539d71479d1d99422df10f1680c2e5a8f9608e5c8ddd77359eb176122"
+    },
+    {
+      "kind": "dd_original",
+      "fold": "az_eln_2023",
+      "seed": 2026,
+      "run_id": "sens_dd_original_az_eln_2023_R1_substitute_s2026",
+      "result_sha256": "65dfb8fdf33edac8cfc5864b9de36f95976b2e5aeccb30a4feecdede28de86ac"
+    },
+    {
+      "kind": "dd_original",
+      "fold": "hitea_2024",
+      "seed": 17,
+      "run_id": "sens_dd_original_hitea_2024_R1_substitute_s17",
+      "result_sha256": "a7195b74a28dd65600b45b5bf4309dcd384b4ed94786099079eff836a07100b3"
+    },
+    {
+      "kind": "dd_original",
+      "fold": "hitea_2024",
+      "seed": 42,
+      "run_id": "sens_dd_original_hitea_2024_R1_substitute_s42",
+      "result_sha256": "9e62249664df51589c4ab466a4270f7c90db86fadadd88ca07f7ebb16202792d"
+    },
+    {
+      "kind": "dd_original",
+      "fold": "hitea_2024",
+      "seed": 2026,
+      "run_id": "sens_dd_original_hitea_2024_R1_substitute_s2026",
+      "result_sha256": "e035d5decebc8e04af6632a6a31d03843df1c85c95fdac94e1cce6c9c72bbb13"
+    },
+    {
+      "kind": "dd_original",
+      "fold": "jnj_hte_2024",
+      "seed": 17,
+      "run_id": "sens_dd_original_jnj_hte_2024_R1_substitute_s17",
+      "result_sha256": "9fbffe246c4aac80716e28a904d3280caedfc4e17ec3ee03bfe9b7a4ec2a1c6a"
+    },
+    {
+      "kind": "dd_original",
+      "fold": "jnj_hte_2024",
+      "seed": 42,
+      "run_id": "sens_dd_original_jnj_hte_2024_R1_substitute_s42",
+      "result_sha256": "9bf52b462fb32566f5d7c46bf2a94f8930e8e399e04fd0ccd0e66661b78d0f77"
+    },
+    {
+      "kind": "dd_original",
+      "fold": "jnj_hte_2024",
+      "seed": 2026,
+      "run_id": "sens_dd_original_jnj_hte_2024_R1_substitute_s2026",
+      "result_sha256": "0f3ec1b070bb04bd4757e0a98a37fed39ae8f8ae4cbba766ba96461f2e7a5f0a"
+    },
+    {
+      "kind": "dd_original",
+      "fold": "merck_2025",
+      "seed": 17,
+      "run_id": "sens_dd_original_merck_2025_R1_substitute_s17",
+      "result_sha256": "4efbb2d73459674b2e9e82fa584bacee4e27db0afe3eca1428ef53fdf5ec8c07"
+    },
+    {
+      "kind": "dd_original",
+      "fold": "merck_2025",
+      "seed": 42,
+      "run_id": "sens_dd_original_merck_2025_R1_substitute_s42",
+      "result_sha256": "9462407e707feb558ef75a181b4e4f8fbc1149bf62370404e580418ee153cdc8"
+    },
+    {
+      "kind": "dd_original",
+      "fold": "merck_2025",
+      "seed": 2026,
+      "run_id": "sens_dd_original_merck_2025_R1_substitute_s2026",
+      "result_sha256": "870469f5db15aa3e7a3d68b4091104f02a6d80d7ae12298caadd395e0d0e5d79"
+    },
+    {
+      "kind": "dd_original",
+      "fold": "roche_2023",
+      "seed": 17,
+      "run_id": "sens_dd_original_roche_2023_R1_substitute_s17",
+      "result_sha256": "240ea02c9ca3060e3e5df3751a59b86163e74f0b97c2ae10591f9af90f90d0b1"
+    },
+    {
+      "kind": "dd_original",
+      "fold": "roche_2023",
+      "seed": 42,
+      "run_id": "sens_dd_original_roche_2023_R1_substitute_s42",
+      "result_sha256": "3d1c2359ca3092a472b0071b28df1e122743750a28a83f39219eecf64a5a62b5"
+    },
+    {
+      "kind": "dd_original",
+      "fold": "roche_2023",
+      "seed": 2026,
+      "run_id": "sens_dd_original_roche_2023_R1_substitute_s2026",
+      "result_sha256": "7d7b2ba9736198aec4b38c6a9562e81b52f5177f6a75b0b35e318f214b731363"
+    }
+  ],
+  "external_predictions_generated": false,
+  "external_metrics_computed": false
+}

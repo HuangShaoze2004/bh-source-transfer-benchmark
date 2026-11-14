@@ -1,0 +1,54 @@
+{
+  "event": "finished",
+  "run_id": "review_rxnfp_original_provenance_v1",
+  "attempt_id": "review_rxnfp_original_provenance_v1__1794381015206200387",
+  "stage": "review",
+  "gpu": false,
+  "threads": 1,
+  "cpu_slots": [
+    1
+  ],
+  "cpus": [
+    1
+  ],
+  "pid": 768195,
+  "process_start_ticks": 5003941159,
+  "boot_id": "a8ea9ed8-f60b-41e7-9887-40c805bd8203",
+  "launcher_pid": 768191,
+  "launcher_start_ticks": 5003941142,
+  "start_unix": 1794381015.2062137,
+  "command": [
+    ".venv/bin/python",
+    "-c",
+    "import io,json,re,tarfile,urllib.request\nfrom pathlib import Path\np=Path(\".cache/literature/rxnfp_2012.06051v1.src\")\np.parent.mkdir(parents=True,exist_ok=True)\nif not p.exists():\n    with urllib.request.urlopen(\"https://arxiv.org/src/2012.06051v1\",timeout=45) as response:\n        p.write_bytes(response.read(30000000))\nwith tarfile.open(fileobj=io.BytesIO(p.read_bytes()),mode=\"r:*\") as archive:\n    for member in archive.getmembers():\n        if member.name.endswith(\".tex\") and member.size<3000000:\n            f=archive.extractfile(member)\n            content=f.read().decode(\"utf-8\",errors=\"replace\")\n            for match in re.finditer(r\"Pistachio|2[.,]6|pre.train\",content,re.I):\n                print(json.dumps({\"file\":member.name,\"excerpt\":content[max(0,match.start()-140):match.end()+300]}))\n"
+  ],
+  "command_hash": "cf645c15864f70af91761c7c143ab7116b49f1a0188b4c1e225eea3375ee081e",
+  "execution_identity": "7b20e67e2796ab0eb84cca88c7bbc9ad23eae466bb7dfeb950d7548ceb4df3e6",
+  "identity_components": {
+    "schema_version": 1,
+    "command": [
+      ".venv/bin/python",
+      "-c",
+      "import io,json,re,tarfile,urllib.request\nfrom pathlib import Path\np=Path(\".cache/literature/rxnfp_2012.06051v1.src\")\np.parent.mkdir(parents=True,exist_ok=True)\nif not p.exists():\n    with urllib.request.urlopen(\"https://arxiv.org/src/2012.06051v1\",timeout=45) as response:\n        p.write_bytes(response.read(30000000))\nwith tarfile.open(fileobj=io.BytesIO(p.read_bytes()),mode=\"r:*\") as archive:\n    for member in archive.getmembers():\n        if member.name.endswith(\".tex\") and member.size<3000000:\n            f=archive.extractfile(member)\n            content=f.read().decode(\"utf-8\",errors=\"replace\")\n            for match in re.finditer(r\"Pistachio|2[.,]6|pre.train\",content,re.I):\n                print(json.dumps({\"file\":member.name,\"excerpt\":content[max(0,match.start()-140):match.end()+300]}))\n"
+    ],
+    "project_scripts": {},
+    "spec_json": {},
+    "implementation_modules": {
+      "src/bh_transfer/__init__.py": "cc722a39a1c088e8d7e06db83dbcf662a4d5c01731651f85f90a2e4b0ace1cab",
+      "src/bh_transfer/data.py": "6f4a6732ea5c7917d4d35e218a2baa678f786ac9abc6c0103cd0caddb0984784",
+      "src/bh_transfer/evaluate.py": "13a48c63681b2b1c282bac609d32175bd483e3e5d69c3499e1ee72e73d2adcaf",
+      "src/bh_transfer/neural.py": "626fd8bc7d9a8a495859679124633f2fe86e5ab2b4cec625ee8d0f41722a9cd9",
+      "src/bh_transfer/tabular.py": "0b143a5a4b3c2d15c66a8b8e90d11ce36bccb3d85dec37bb2766a4d6c76f23d3",
+      "src/bh_transfer/tokenizer.py": "a33f5b4838bad11170c94915d6bb2b5092fb3b3ac466894b79bfa7a7f0acf435"
+    },
+    "final_eval_lock_sha256": "b7005aff7fa71ab452015047b8b3a0d0aa0efa718fcdb937915d1267f6576a84"
+  },
+  "log": "runs/review_rxnfp_original_provenance_v1/review_rxnfp_original_provenance_v1__1794381015206200387.log",
+  "status": "completed",
+  "exit_code": 0,
+  "wall_seconds": 8.28995718061924,
+  "gpu_seconds": 0,
+  "cpu_seconds": 0.579361,
+  "reason": null,
+  "cost_quality": "measured"
+}

@@ -1,0 +1,12 @@
+{
+  "attempt_id": "predict_roche_2023_B_A_S_s42__1794345626381710572",
+  "run_id": "predict_roche_2023_B_A_S_s42",
+  "observed_unix": 1794345630.4972687,
+  "wall_seconds": 4.115541942417622,
+  "gpu_seconds": 4.115541942417622,
+  "cpu_seconds": 3.551449,
+  "pid": 396347,
+  "process_start_ticks": 5000402276,
+  "boot_id": "a8ea9ed8-f60b-41e7-9887-40c805bd8203",
+  "status": "completed"
+}

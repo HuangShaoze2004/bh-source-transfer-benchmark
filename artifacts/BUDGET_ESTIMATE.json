@@ -1,0 +1,36 @@
+{
+  "estimates": [
+    {
+      "epochs": 10,
+      "development_gpu_hours": 19.414120709709817,
+      "formal_gpu_hours": 10.355188093748584,
+      "safety_multiplier": 1.5,
+      "development_trajectories": 120,
+      "formal_trajectories": 45
+    },
+    {
+      "epochs": 6,
+      "development_gpu_hours": 11.935575265012684,
+      "formal_gpu_hours": 6.3458074225230945,
+      "safety_multiplier": 1.5,
+      "development_trajectories": 120,
+      "formal_trajectories": 45
+    },
+    {
+      "epochs": 3,
+      "development_gpu_hours": 6.326666181489826,
+      "formal_gpu_hours": 3.338771919103979,
+      "safety_multiplier": 1.5,
+      "development_trajectories": 120,
+      "formal_trajectories": 45
+    }
+  ],
+  "selected": {
+    "epochs": 10,
+    "development_gpu_hours": 19.414120709709817,
+    "formal_gpu_hours": 10.355188093748584,
+    "safety_multiplier": 1.5,
+    "development_trajectories": 120,
+    "formal_trajectories": 45
+  }
+}
