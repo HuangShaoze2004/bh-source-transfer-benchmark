@@ -1,0 +1,5 @@
+{"utc": "2026-11-14T03:48:48.059579+00:00", "event": "upload_started", "name": "checkpoints-0023.tar.zst", "bytes": 1460469393, "attempt": 1}
+{"utc": "2026-11-14T03:48:48.062816+00:00", "event": "upload_started", "name": "checkpoints-0021.tar.zst", "bytes": 1460746712, "attempt": 1}
+{"preupload_verified": "checkpoints-0021.tar.zst", "bytes": 1460746712}
+{"preupload_verified": "checkpoints-0023.tar.zst", "bytes": 1460469393}
+{"preupload_status": "PASS", "bytes": 2921216105, "elapsed_seconds": 336.43888057023287}

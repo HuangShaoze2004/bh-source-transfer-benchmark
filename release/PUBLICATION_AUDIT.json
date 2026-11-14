@@ -1,0 +1,69 @@
+{
+  "status": "PASS",
+  "credential_pattern_scan": "PASS",
+  "git_file_limit_check": "PASS",
+  "regression_tests_passed": 80,
+  "relocated_metrics": {
+    "primary": {
+      "status": "PASS",
+      "checked_prediction_rows": 387666,
+      "macro_auroc": {
+        "R0_RF": 0.4802481435444381,
+        "R0_HGB": 0.5016180969441242,
+        "R1_substitute": 0.513338503798209,
+        "B": 0.5582702035401639,
+        "B_S": 0.5571674291618874,
+        "B_bal": 0.534197160446734,
+        "B_bal_S": 0.5409346479784806,
+        "B_A": 0.5602468090997279,
+        "B_A_S": 0.5593152887059915
+      }
+    },
+    "author_labels": {
+      "status": "PASS",
+      "checked_prediction_rows": 215370,
+      "macro_auroc": {
+        "R1_substitute": 0.5152788268576256,
+        "B": 0.5511529040416923,
+        "B_S": 0.5517255151502165,
+        "B_A": 0.557924561160147,
+        "B_A_S": 0.5571103695914281
+      }
+    },
+    "dd_original": {
+      "status": "PASS",
+      "checked_prediction_rows": 211635,
+      "macro_auroc": {
+        "R1_substitute": 0.5084420571576097,
+        "B": 0.5521188973524149,
+        "B_S": 0.5568352756034914,
+        "B_A": 0.5513257642073593,
+        "B_A_S": 0.5553129125458025
+      }
+    }
+  },
+  "relocated_checkpoint_prediction": {
+    "job": "predict_az_eln_2023_R0_HGB_s17",
+    "rows": 607,
+    "score_logit_calibration_exactly_equal": true
+  },
+  "environment_scope": "Same pinned environment, separate Git checkout and data paths",
+  "relocated_neural_checkpoint_prediction": {
+    "status": "PASS",
+    "rows": 8,
+    "device": "cpu",
+    "maximum_probability_difference": 5.960464477539063e-08
+  },
+  "full_archive_restore": {
+    "status": "PASS",
+    "archives": 64,
+    "restored_checkpoint_files": 1245,
+    "all_scientific_files_verified": 6276,
+    "elapsed_seconds": 956.9650322347879
+  },
+  "final_publication_core_verification": "PASS",
+  "total_scientific_file_entries": 6276,
+  "checkpoint_archives": 64,
+  "archive_bytes": 76647095106,
+  "original_frozen_artifacts_unchanged": true
+}

@@ -101,3 +101,32 @@ def test_replay_preserves_archived_spec_and_uses_isolated_guard(tmp_path, monkey
     assert saved["output_dir"] == str(tmp_path / "reproduction/work/runs/tabular/example")
     assert captured[0][captured[0].index("--stage") + 1] == "formal"
     assert Path(captured[0][1]).is_relative_to(tmp_path / "reproduction/runtime")
+
+
+@pytest.mark.parametrize("correct_checksum", [True, False])
+def test_asset_resume_checks_remote_digest_before_any_write(tmp_path, monkeypatch, correct_checksum):
+    publisher = load_script("publish_github")
+    path = tmp_path / "checkpoint.tar.zst"
+    path.write_bytes(b"verified release bytes")
+    checksum = publisher.digest(path)
+    remote = dict(state="uploaded", size=path.stat().st_size,
+                  digest="sha256:" + (checksum if correct_checksum else "0" * 64))
+
+    class Session:
+        def __init__(self):
+            self.headers = {}
+
+        def __enter__(self):
+            return self
+
+        def __exit__(self, *args):
+            return False
+
+    monkeypatch.setattr(publisher.requests, "Session", Session)
+    monkeypatch.setattr(publisher, "assets", lambda *args: {path.name: remote})
+    monkeypatch.setattr(publisher, "api", lambda *args, **kwargs: pytest.fail("Verified resume must avoid a remote write"))
+    if correct_checksum:
+        assert publisher.upload_asset({}, {}, path)["sha256"] == checksum
+    else:
+        with pytest.raises(ValueError, match="digest mismatch"):
+            publisher.upload_asset({}, {}, path)

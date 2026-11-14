@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import argparse
+from concurrent.futures import ThreadPoolExecutor, as_completed
 import datetime as dt
 import hashlib
 import json
@@ -237,7 +238,8 @@ def verify_remote_asset(session, remote, local):
             raise ValueError(f"Remote asset digest mismatch: {local.name}")
         return expected
     result = hashlib.sha256()
-    with requests.get(remote["browser_download_url"], stream=True, timeout=(30, 300)) as response:
+    with session.get(remote["url"], headers={"Accept": "application/octet-stream"},
+                     stream=True, timeout=(30, 300)) as response:
         response.raise_for_status()
         for block in response.iter_content(4 * 1024 * 1024):
             result.update(block)
@@ -246,8 +248,42 @@ def verify_remote_asset(session, remote, local):
     return expected
 
 
+def upload_asset(headers, release, path):
+    with requests.Session() as session:
+        session.headers.update(headers)
+        for attempt in range(4):
+            existing = assets(session, release).get(path.name)
+            if existing and existing["state"] == "starter" and existing["size"] == 0:
+                api(session, "DELETE", existing["url"])
+                existing = None
+            if existing:
+                checksum = verify_remote_asset(session, existing, path)
+                return dict(name=path.name, sha256=checksum, bytes=path.stat().st_size)
+            try:
+                progress("upload_started", name=path.name, bytes=path.stat().st_size, attempt=attempt + 1)
+                with path.open("rb") as handle:
+                    remote = api(session, "POST", release["upload_url"].split("{")[0],
+                                 params=dict(name=path.name), data=handle,
+                                 headers={"Content-Type": "application/octet-stream"})
+                checksum = verify_remote_asset(session, remote, path)
+                return dict(name=path.name, sha256=checksum, bytes=path.stat().st_size)
+            except (requests.RequestException, RuntimeError):
+                if attempt == 3:
+                    raise
+                time.sleep(10 * (attempt + 1))
+
+
 def upload(args):
     manifest = json.loads((OUTPUT / "MANIFEST.json").read_text())
+    for item in manifest["files"]:
+        if item["storage"] != "git":
+            continue
+        path = ROOT / item["path"]
+        if item["kind"] == "symlink":
+            if not path.is_symlink() or str(path.readlink()) != item["target"]:
+                raise ValueError(f"Local symlink differs from the manifest: {item['path']}")
+        elif not path.is_file() or digest(path) != item["sha256"]:
+            raise ValueError(f"Local file differs from the manifest: {item['path']}")
     session, token = authenticated_session()
     repository = api(session, "GET", "/repos/" + REPOSITORY)
     if repository["full_name"] != REPOSITORY or not repository["permissions"]["push"]:
@@ -268,9 +304,11 @@ def upload(args):
     endpoint = "/repos/" + REPOSITORY + "/releases/tags/" + TAG
     response = session.get("https://api.github.com" + endpoint, timeout=30)
     if response.status_code == 404:
-        release = api(session, "POST", "/repos/" + REPOSITORY + "/releases", json=dict(
+        drafts = api(session, "GET", "/repos/" + REPOSITORY + "/releases", params=dict(per_page=100))
+        matching = [item for item in drafts if item["tag_name"] == TAG]
+        release = matching[0] if matching else api(session, "POST", "/repos/" + REPOSITORY + "/releases", json=dict(
             tag_name=TAG, target_commitish=commit, name="Complete experiment snapshot — 2026-11-11",
-            draft=False, prerelease=False, body=(
+            draft=True, prerelease=False, body=(
                 "Complete frozen three-seed experiment, both sensitivity analyses, predictions, logs and resumable checkpoints.\n\n"
                 "Scientific outcome: NOT_READY; the predefined increment criterion was unmet.\n\n"
                 "Core data and evidence are tracked in Git. Download checkpoint archives with scripts/reproduce.py restore. "
@@ -281,34 +319,38 @@ def upload(args):
     pending = [OUTPUT / item["name"] for item in manifest["archives"]]
     pending += [OUTPUT / "MANIFEST.json", OUTPUT / "SHA256SUMS"]
     verified = []
-    for path in pending:
-        for attempt in range(4):
-            existing = assets(session, release).get(path.name)
-            if existing and existing["state"] == "starter" and existing["size"] == 0:
-                api(session, "DELETE", existing["url"])
-                existing = None
-            if existing:
-                sha = verify_remote_asset(session, existing, path)
-                break
-            try:
-                progress("upload_started", name=path.name, bytes=path.stat().st_size, attempt=attempt + 1)
-                with path.open("rb") as handle:
-                    remote = api(session, "POST", release["upload_url"].split("{")[0],
-                                 params=dict(name=path.name), data=handle,
-                                 headers={"Content-Type": "application/octet-stream"})
-                sha = verify_remote_asset(session, remote, path)
-                break
-            except (requests.RequestException, RuntimeError):
-                if attempt == 3:
-                    raise
-                time.sleep(10 * (attempt + 1))
-        verified.append(dict(name=path.name, sha256=sha, bytes=path.stat().st_size))
-        save(OUTPUT / "UPLOAD_RECEIPT.json", dict(repository=REPOSITORY, release_url=release["html_url"],
-             source_commit=commit, status="UPLOADING", verified_assets=verified))
-        progress("upload_verified", name=path.name, completed=len(verified), expected=len(pending))
+    executor = ThreadPoolExecutor(max_workers=args.workers)
+    futures = [executor.submit(upload_asset, dict(session.headers), release, path) for path in pending]
+    try:
+        for future in as_completed(futures):
+            record = future.result()
+            verified.append(record)
+            save(OUTPUT / "UPLOAD_RECEIPT.json", dict(repository=REPOSITORY, release_url=release["html_url"],
+                 source_commit=commit, status="UPLOADING", verified_assets=verified))
+            progress("upload_verified", name=record["name"], completed=len(verified), expected=len(pending))
+    finally:
+        executor.shutdown(wait=True, cancel_futures=True)
     remote_head = api(session, "GET", "/repos/" + REPOSITORY + "/git/ref/heads/main")["object"]["sha"]
     if remote_head != commit:
         raise ValueError("Remote main differs from the pushed commit")
+    if release["draft"]:
+        source_url = f"https://github.com/{REPOSITORY}/blob/{commit}"
+        body = (
+            "Complete controlled experiments for cross-source Buchwald–Hartwig feasibility prediction "
+            "at Yield >= 10%, with both substrate entities individually unseen.\n\n"
+            "Scientific status: NOT_READY. The frozen increment criteria were unmet. "
+            "The main nine-method, three-seed comparison and both sensitivities are complete.\n\n"
+            f"[Reproduction instructions]({source_url}/REPRODUCING.md) · "
+            f"[Experimental report]({source_url}/reports/EXPERIMENT_REPORT.md) · "
+            f"[Attribution]({source_url}/THIRD_PARTY_NOTICES.md)\n\n"
+            "Git contains data, fixed features/splits, all predictions, specifications, logs and statistics. "
+            "The 64 checkpoint archives preserve every neural/tree model and recovery state. "
+            "MANIFEST.json and SHA256SUMS identify all artifacts and their checksums.\n\n"
+            "After cloning and installing the pinned environment, run:\n\n"
+            "```bash\npython scripts/reproduce.py verify\npython scripts/reproduce.py metrics\n"
+            "python scripts/reproduce.py restore\npython scripts/reproduce.py verify --full\n```\n"
+        )
+        release = api(session, "PATCH", release["url"], json=dict(draft=False, target_commitish=commit, body=body))
     save(OUTPUT / "UPLOAD_RECEIPT.json", dict(repository=REPOSITORY, release_url=release["html_url"],
          source_commit=commit, status="COMPLETE", verified_assets=verified,
          verified_utc=dt.datetime.now(dt.timezone.utc).isoformat()))
@@ -321,7 +363,8 @@ def main():
     prepare_parser = sub.add_parser("prepare")
     prepare_parser.add_argument("--archive-mib", type=int, default=1536)
     prepare_parser.add_argument("--zstd", default="zstd")
-    sub.add_parser("upload")
+    upload_parser = sub.add_parser("upload")
+    upload_parser.add_argument("--workers", type=int, choices=range(1, 4), default=3)
     args = parser.parse_args()
     if args.action == "prepare":
         if not 1 <= args.archive_mib <= 1792:

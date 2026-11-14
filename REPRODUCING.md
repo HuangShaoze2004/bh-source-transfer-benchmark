@@ -72,8 +72,8 @@ The restore command downloads the release archives, checks archive SHA-256,
 checks every extracted file, and resumes at already verified archives after an
 interruption. It restores all ordinary/SWA weights, final and previous recovery
 checkpoints, optimizers, schedulers, group weights, sampler/random states and
-tree estimators. The full snapshot needs approximately 94 GB of model storage
-plus space for the compressed downloads. The manifest gives exact sizes.
+tree estimators. The full snapshot needs approximately 92 GiB of model storage
+plus 72 GiB for the compressed downloads. The manifest gives exact sizes.
 
 To restore one archive, use its name from `release/MANIFEST.json`
 

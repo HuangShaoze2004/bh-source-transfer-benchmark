@@ -1,4 +1,4 @@
-# BH source robust transfer
+# BH source transfer benchmark
 
 The GitHub repository is `HuangShaoze2004/bh-source-transfer-benchmark`.
 For another computer, follow [REPRODUCING.md](REPRODUCING.md) to verify data,
