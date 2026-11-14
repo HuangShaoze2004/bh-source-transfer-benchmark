@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "checked_utc": "2026-11-14T05:14:38.515238+00:00",
+  "repository": "HuangShaoze2004/bh-source-transfer-benchmark",
+  "repository_public": true,
+  "release_public": true,
+  "release_url": "https://github.com/HuangShaoze2004/bh-source-transfer-benchmark/releases/tag/experiment-2026-11-11",
+  "release_tag": "experiment-2026-11-11",
+  "release_source_commit": "9305cf12283a0c3c067fc5da77e7c1763abdff09",
+  "verified_assets": 66,
+  "all_remote_sizes_and_sha256_match": true,
+  "anonymous_manifest_download_verified": true,
+  "scientific_file_entries": 6276,
+  "checkpoint_files": 1245,
+  "checkpoint_archive_bytes": 76647095106
+}

@@ -1,0 +1,12 @@
+[
+  {
+    "name": "checkpoints-0021.tar.zst",
+    "sha256": "bfea8bfccef2e1bc35661fba8a2434e33bf11254202bce7d076064cb0b10f14b",
+    "bytes": 1460746712
+  },
+  {
+    "name": "checkpoints-0023.tar.zst",
+    "sha256": "9d92429ceba97325fb3ffe5dc4b425da551b5e6393336538f241150751980d89",
+    "bytes": 1460469393
+  }
+]

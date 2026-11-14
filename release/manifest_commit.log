@@ -1,0 +1,14 @@
+[master 9305cf1] Add complete checkpoint manifest and verified cross-machine reproduction evidence
+ 16 files changed, 52277 insertions(+), 32 deletions(-)
+ create mode 100644 release/MANIFEST.json
+ create mode 100644 release/PUBLICATION_AUDIT.json
+ create mode 100644 release/SHA256SUMS
+ create mode 100644 release/full_restore_check.log
+ create mode 100644 release/initial_push.log
+ create mode 100644 release/packaging_cost.json
+ create mode 100644 release/preupload.log
+ create mode 100644 release/publication_regressions.log
+ create mode 100644 release/relocated_metrics.log
+ create mode 100644 release/relocated_prediction.log
+ create mode 100644 release/sample_upload.log
+ create mode 100644 release/tests.log
